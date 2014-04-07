@@ -1,5 +1,5 @@
 Hi! 
-this my first github test txt file.!!
+this is my first github test txt file.!!
 
 every things has been done.
 
