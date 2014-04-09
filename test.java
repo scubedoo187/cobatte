@@ -7,5 +7,6 @@ class test{
 		c = a + b;
 
 		System.out.println("sum of : %d", c);
+		System.out.println("stop this program");
 	}
 }
