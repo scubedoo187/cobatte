@@ -7,5 +7,7 @@ class test{
 		c = a + b;
 
 		System.out.println("sum of : %d", c);
+
+
 	}
 }
