@@ -1,6 +1,10 @@
-Hi! 
-this is my first github test txt file.!!
+ this is test files
 
-every things has been done.
+ git add .
 
-well done.
+ git commit -m 'comment'
+
+ git push
+
+
+ git pull
