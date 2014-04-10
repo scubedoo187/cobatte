@@ -8,7 +8,7 @@ class test{
 
 		System.out.println("sum of : %d", c);
 		System.out.println("out of bound");
-
+		System.out.println("A a value is %d", a);
 
 	}
 }
