@@ -6,5 +6,4 @@
 
  git push
 
-
- git pull
+ Merge test doing.
