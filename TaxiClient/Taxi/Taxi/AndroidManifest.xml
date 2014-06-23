@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.cobatte.taxi.Popup"
+            android:label="@string/title_activity_popup" >
+        </activity>
+        <activity 
+            android:name="com.cobatte.taxi.Login" 
+            android:label="@string/title_activity_login" >
+        </activity>
     </application>
 
 </manifest>
