@@ -4,35 +4,41 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-import android.widget.Button;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class Main extends Activity {
-
-	Button btn;
+	
+	ImageView intro;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+                 
+        new Thread(new Runnable(){
         
-        btn = (Button)findViewById(R.id.btn);
+        @Override
+        public void run(){
+        	try{
+        		intro = (ImageView)findViewById(R.id.logo);
+        		Animation alphaAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.intro);
+        		intro.startAnimation(alphaAnim);
+        		Thread.sleep(2500);
+        		logoIntro();
+        	}catch(Exception e){}
+        }
+        }).start();
+    	}
         
-        btn.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
-				Intent i = new Intent(Main.this, Popup.class);
-				startActivity(i);
-				finish();
-				
-			}
-		});
-    }
-
-
+        private void logoIntro()
+        {
+        	Intent i = new Intent(Main.this, Popup.class);
+        	startActivity(i);
+        	finish();
+        }
+   
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
