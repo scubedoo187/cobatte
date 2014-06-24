@@ -37,6 +37,7 @@ public class Popup extends Activity{
 				
 				Intent intent = new Intent(Popup.this, Login.class);
 				startActivity(intent);
+				finish();
 			}
 		});
         

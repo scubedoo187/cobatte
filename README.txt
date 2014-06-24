@@ -1,6 +1,6 @@
  this is a test file
 
- git add .
+ git add . (git add --all), (git add *)
 
  git commit -m 'comment'
 
