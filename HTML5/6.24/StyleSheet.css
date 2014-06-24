@@ -1,0 +1,189 @@
+﻿@CHARSET "utf-8";
+body{
+ background: url(images/bg.jpg) repeat-x left top;
+}
+
+
+#top{
+ margin:10px 0;
+ background:#fff url(images/bg2.png) no-repeat fixed right top;
+ padding: 0 10px 0 20px;
+ border-bottom: thick solid #030;
+ height: 180px;
+ width: 100%;
+}
+
+#top h1{
+ color:#036;
+ font-family:"굴림";
+ position:relative;
+ top:60px;
+ margin-left:10px; 
+}
+
+#top h3{
+ color:#036;
+ font-family:"굴림";
+ position:relative;
+ top:50px;
+ margin-left:10px; 
+}
+
+#mainNav{
+ position:relative;
+ margin: 10px 0 10px auto;
+ padding:0;
+ top:-10px;
+ height:40px;
+ width:800px; 
+}
+
+#mainNav ul{
+ list-style: none;
+ margin:10px 0 10px auto;
+ padding-top:10px;
+ width:580px;
+}
+
+#mainNav ul li{
+ display:inline;
+ float:left;
+ margin-top:2px;
+}
+
+#mainNav ul li a {
+ margin:-10px 20px 10px 20px;
+ text-decoration:none;
+ font:bold 18px 돋움;
+ color: #333;
+}
+
+#mainNav ul li a:hover{
+ margin:-10px 20px 10px 20px;
+ text-decoration:none;
+ font:bold 18px 돋움;
+ color: #03c;
+}
+
+#content{
+ margin-left:5px;
+ border: 1px dotted #030;
+ padding:5px;
+ margin-top:-20px;
+}
+
+#content header h3{
+ padding-bottom: 8px;
+ border-bottom: 1px dotted #666;
+}
+
+#content h4{
+ font-family:"굴림";
+ color:#333;
+ padding:3px 10px 3px 3px;
+ font-size: 13px;
+}
+
+p{
+ font:normal 12px 굴림;
+ color : #333;
+}
+
+header,nav,section,article,figure{
+ display:block;
+}
+@CHARSET "utf-8";
+body{
+ background: url(images/bg.jpg) repeat-x left top;
+}
+
+
+#top{
+ margin:10px 0;
+ background:#fff url(images/bg2.png) no-repeat fixed right top;
+ padding: 0 10px 0 20px;
+ border-bottom: thick solid #030;
+ height: 180px;
+ width: 100%;
+}
+
+#top h1{
+ color:#036;
+ font-family:"굴림";
+ position:relative;
+ top:60px;
+ margin-left:10px; 
+}
+
+#top h3{
+ color:#036;
+ font-family:"굴림";
+ position:relative;
+ top:50px;
+ margin-left:10px; 
+}
+
+#mainNav{
+ position:relative;
+ margin: 10px 0 10px auto;
+ padding:0;
+ top:-10px;
+ height:40px;
+ width:800px; 
+}
+
+#mainNav ul{
+ list-style: none;
+ margin:10px 0 10px auto;
+ padding-top:10px;
+ width:580px;
+}
+
+#mainNav ul li{
+ display:inline;
+ float:left;
+ margin-top:2px;
+}
+
+#mainNav ul li a {
+ margin:-10px 20px 10px 20px;
+ text-decoration:none;
+ font:bold 18px 돋움;
+ color: #333;'
+}
+
+#mainNav ul li a:hover{
+ margin:-10px 20px 10px 20px;
+ text-decoration:none;
+ font:bold 18px 돋움;
+ color: #03c;
+}
+
+#content{
+ margin-left:5px;
+ border: 1px dotted #030;
+ padding:5px;
+ margin-top:-20px;
+}
+
+#content header h3{
+ padding-bottom: 8px;
+ border-bottom: 1px dotted #666;
+}
+
+#content h4{
+ font-family:"굴림";
+ color:#333;
+ padding:3px 10px 3px 3px;
+ font-size: 13px;
+}
+
+p{
+ font:normal 12px 굴림;
+ color : #333;
+}
+
+header,nav,section,article,figure{
+ display:block;
+}
+
