@@ -22,6 +22,7 @@
             android:textSize="30dp"/>
         
         <EditText 
+            android:id="@+id/id"
             android:layout_weight="8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,6 +44,7 @@
             android:textSize="30dp"/>
         
         <EditText 
+            android:id="@+id/passwd"
             android:layout_weight="8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,12 +61,14 @@
         android:layout_margin="20dp">
         
         <Button 
+            android:id="@+id/confirm"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="확 인"/>
         
         <Button
+            android:id="@+id/cancel"
             android:layout_weight="1" 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
