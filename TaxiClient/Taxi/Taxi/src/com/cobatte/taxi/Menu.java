@@ -9,6 +9,7 @@ public class Menu extends Activity{
 	 protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
+        setTitle("메인메뉴");
         
         
         

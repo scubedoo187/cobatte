@@ -33,7 +33,11 @@
             android:label="@string/title_activity_login" >
         </activity>
         <activity 
-            android:name="com.cobatte.taxi.Menu"></activity>
+            android:name="com.cobatte.taxi.Menu">            
+        </activity>
+        <activity 
+            android:name="com.cobatte.taxi.Resist">            
+        </activity>
     </application>
 
 </manifest>
