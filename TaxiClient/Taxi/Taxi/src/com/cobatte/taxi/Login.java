@@ -60,9 +60,7 @@ public class Login extends Activity{
 			}
 		});
         
-        
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

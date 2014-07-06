@@ -8,14 +8,14 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class Main extends Activity {
+public class Logo extends Activity {
 	
 	ImageView intro;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.logo);
                  
         new Thread(new Runnable(){
         
@@ -34,7 +34,7 @@ public class Main extends Activity {
         
         private void logoIntro()
         {
-        	Intent i = new Intent(Main.this, Popup.class);
+        	Intent i = new Intent(Logo.this, Popup.class);
         	startActivity(i);
         	finish();
         }

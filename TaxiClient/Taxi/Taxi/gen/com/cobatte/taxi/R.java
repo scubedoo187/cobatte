@@ -71,7 +71,7 @@ public final class R {
     }
     public static final class layout {
         public static final int login=0x7f030000;
-        public static final int main=0x7f030001;
+        public static final int logo=0x7f030001;
         public static final int mainmenu=0x7f030002;
         public static final int popup=0x7f030003;
         public static final int register=0x7f030004;
