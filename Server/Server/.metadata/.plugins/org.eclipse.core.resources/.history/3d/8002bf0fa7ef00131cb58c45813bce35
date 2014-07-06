@@ -1,0 +1,15 @@
+
+public class test 
+{
+	public static void main(String[] args) 
+	{
+		UserInfo_DB db = new UserInfo_DB();
+		String a;
+		
+		db.single_easy("Á¤¿µ±Õ", 17220);
+		
+		a = db.select_easy_rank();
+		
+		System.out.println(a);
+	}
+}

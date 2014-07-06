@@ -1,0 +1,17 @@
+
+public class UserInfo
+{
+	private String Name;
+	private int Score;
+	private String Pw;
+	
+	public String getName()
+	{
+		return Name;
+	}
+	
+	public void setName(String Name)
+	{
+		this.Name = Name;
+	}
+}

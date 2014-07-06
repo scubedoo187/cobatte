@@ -1,0 +1,147 @@
+import java.sql.*;
+
+class UseDatabase
+{
+	Connection conn;
+	Statement stmt;
+	ResultSet rs;
+	private String Name;
+	private int Score;
+	private String Pw;
+	
+	public UseDatabase()
+	{
+		connect();
+	}
+	
+	public String getName()
+	{
+		return Name;
+	}
+	
+	public void setName(String Name)
+	{
+		this.Name = Name;
+	}
+	
+	public int getScore()
+	{
+		return Score;
+	}
+	
+	public void setScore(int Score)
+	{
+		this.Score = Score;
+	}
+	
+	public String getPw()
+	{
+		return Pw;
+	}
+	
+	public void setPw(String Pw)
+	{
+		this.Pw = Pw;
+	}
+	
+	public void connect()
+	{
+		String url = "jdbc:mysql://localhost:3306/DB_Server";
+		String user = "root";
+		String dbpw = "jmwa1308-1";
+		
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			this.conn = DriverManager.getConnection(url, user, dbpw);
+			this.stmt = this.conn.createStatement();
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Connect error : " + e);
+		}
+	}
+
+	public void insert()
+	{
+		try
+		{
+			if (getName() != getName())
+			{
+				this.stmt.executeUpdate("insert into single values('"+getName()+"', '"+getScore()+"', '"+getPw()+"')");
+			}
+			
+			else
+			{
+				System.out.println("중복된 ID");
+			}
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Insert Error " + e);
+		}
+	}
+	
+	
+	public void select()
+	{
+		try
+		{
+			this.rs = this.stmt.executeQuery("select * from single");
+		}
+		
+		catch (Exception e)
+		{
+			System.out.println("Select Error " + e);
+		}
+	}
+	
+	public void close()
+	{
+		try
+		{
+			conn.close();
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Close Error" + e);
+		}
+	}
+}
+
+public class single_DB
+{
+	public static void main(String[] args) 
+	{	
+		UseDatabase db = new UseDatabase();
+
+		db.setName("정민우");
+		db.setScore(100);
+		db.setPw("1234");
+		
+		
+		
+		db.insert();
+		db.select();
+		
+		try
+		{
+			db.rs.beforeFirst();
+			
+			while(db.rs.next())
+			{
+				System.out.println(db.rs.getString("Name") + db.rs.getString("Score") + db.rs.getString("Pw"));
+			}
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("getString Error " + e);
+		}
+		
+		db.close();
+	}
+}

@@ -1,0 +1,10 @@
+import java.net.*;
+import java.io.*;
+
+public class multi_server
+{
+	public static void main(String[] args) 
+	{
+		ServerSocket socket = null;
+	}
+}

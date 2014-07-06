@@ -1,0 +1,148 @@
+import java.net.*;
+import java.io.*;
+import java.util.*;
+
+public class Server
+{
+
+	private ServerSocket  server;
+    Vector V = new Vector(); //  소켓을  관리하는  벡터
+
+    void  startServer()
+    {
+        try
+        {
+            server = new ServerSocket(13080);
+            System.out.println("서버소켓이 생성되었습니다.");
+
+            while(true)
+            {
+                Socket socket=server.accept();
+                System.out.println("클라이언트와 연결되었습니다.");
+
+                new Puzzle_Thread(socket).start(); // 클라이언트와 통신하는 스레드를 생성하고 실행시킨다
+                V.add(socket); // 소켓 관리자 리스트에 소켓을 추가한다.
+                InetAddress inetaddr = socket.getInetAddress(); // 접속자의 IP를 알아낸다
+                System.out.println(inetaddr.getHostAddress() + "소환사님이 접속하셧습니다."); // IP찍어쥬공
+                System.out.println("현재 접속자 수: " + V.size()); // 현재 접속하고 있는 클라이언트의 수를 화면에 출력한다.
+            }
+        }
+        
+        catch(Exception  e)
+        {
+            System.out.println(e);
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Server server = new Server();
+        server.startServer(); // 서버를 실행한다.
+    }
+    
+    class Puzzle_Thread extends Thread // 클라이언트와 통신하는 스레드 클래스
+    {
+        Socket socket; // 소켓의 레퍼런스
+        private DataInputStream reader; // 소켓의 입력 스트림
+        private DataOutputStream writer; // 소켓의 출력 스트림
+        
+        Puzzle_Thread(Socket socket) // 생성자
+        {          
+            this.socket=socket;
+        }
+
+        public void run()
+        {
+            try
+            {
+            	UserInfo_DB db = new UserInfo_DB();
+            	
+                reader = new DataInputStream(socket.getInputStream()); // 소켓의 입력스트림을 얻음
+                writer = new DataOutputStream(socket.getOutputStream()); // 소켓의 출력스트림을 얻음
+                
+                String  msg = null; // 입력 스트림으로부터 메시지를 얻는다.
+                msg = reader.readUTF();
+                StringTokenizer tok = new StringTokenizer(msg, "\t");
+                
+                int header = 0; // 일련번호
+                String result = null; // 리턴값
+                String Name = null; // 이름
+                String Pw = null; // 비밀번호
+
+                while(tok.hasMoreTokens()) // 토큰이 더있나 알아봄
+                {
+                	header = Integer.parseInt(tok.nextToken()); // 앞으 헤더부분을 int형으로 변환
+                	Name = tok.nextToken(); // 뒤의 이름은 String으로 저장
+                	Pw = tok.nextToken(); // 뒤의 패스워드는 String으로 저장
+                	
+                	db.setName(Name); // UserInfo_DB의 setName에 Name을 입력
+                	db.setPw(Pw); // UserInfo_DB의 setPw에 Pw를 입력
+                	
+                	switch(header) // 맨처음 헤더부분을 Switch로
+                	{
+                		case 0 : // 헤더가 0일때 로그인 시도
+                			System.out.println(msg);
+                 			result = db.login(); // return 값 0 or -1
+                			writer.writeUTF(result); // return값을 client에게 쏴줌
+                			writer.flush(); // 버퍼 비워주고
+                			break; // 스위치 종료
+                			
+                		case 1 : // 헤더가 1일때 id 중복체크
+                			System.out.println(msg);
+                			result = db.overlap(); // return값 1 or -1
+                			writer.writeUTF(result); // return값을 client에게 쏴줌
+                			writer.flush(); // 버퍼비워주고
+                			break; // 스위치 종료
+                			
+                		case 2 : // 헤더가 2일때 회원가입 시도
+                			System.out.println(msg);
+                			db.insert(); // 이름, 패스워드를 DB에 저장
+                			// db.select(); // Select 문으로 쫘르륵 표시
+                			writer.writeUTF("2"); // Client에게 2를 다시 쏴줌
+                			writer.flush(); // 버퍼비워주고
+                			break; // 종료
+                			
+            			default :
+            				System.out.println("bye");
+            				break;
+                	}
+            
+                }    
+            }
+            
+            catch(Exception  e)
+            {
+            }
+            
+            finally // 클라이언트와 접속이 끊겼을때
+            {
+                try
+                {
+                    V.remove(socket); // 소켓 관리자 리스트에서 소켓을 제거한다.
+                    
+                    if(reader!=null)  
+                    	reader.close();
+
+                    if(writer!=null)  
+                    	writer.close();
+
+                    if(socket!=null)  
+                    	socket.close();
+
+                    reader=null;  
+                    writer=null;  
+                    socket=null;
+                    // 소켓과 IO Stream을 close
+                    
+
+                    System.out.println("소환사님이 탈주닌자라뉘!");
+                    System.out.println("현재 클라이언트 수: "+ V.size());
+                }
+                
+                catch(Exception  e)
+                {
+                }
+            }
+        }
+    }
+}

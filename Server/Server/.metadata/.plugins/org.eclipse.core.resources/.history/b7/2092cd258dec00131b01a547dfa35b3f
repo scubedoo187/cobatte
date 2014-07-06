@@ -1,0 +1,17 @@
+import java.net.*;
+import java.io.*;
+
+public class multi_server 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			ServerSocket server = new ServerSocket(13081); // 13081번 포트에서 동작하는 serversock을 생성
+			System.out.println("Wating Connect...");
+			
+			Socket sock = server.accept();	
+		}
+		
+	}
+}

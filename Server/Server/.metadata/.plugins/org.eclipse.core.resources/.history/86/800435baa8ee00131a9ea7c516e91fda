@@ -1,0 +1,35 @@
+import java.net.*;
+import java.io.*;
+
+public class Client 
+{
+	private DataInputStream reader;
+	private DataOutputStream writer;
+	Socket socket;
+	
+	private void connect()
+	{
+		try
+		{
+			System.out.println("Connecting...");
+			socket = new Socket("210.115.229.248", 13080);
+			System.out.println("Connected");
+			
+			reader = new DataInputStream(socket.getInputStream());
+			writer = new DataOutputStream(socket.getOutputStream());
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Connect Error " + e);
+		}
+	}
+	
+	public void Action()
+	{
+		try
+		{
+			writer.writeUTF("0\ta\t1");
+		}
+	}
+}

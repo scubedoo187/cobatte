@@ -1,0 +1,12 @@
+import java.net.*;
+import java.io.*;
+
+public class multi_server implements Runnable
+{
+	ServerSocket server;
+	
+	public multi_server() throws IOException
+	{
+		server = new ServerSocket(13081)
+	}
+}

@@ -1,0 +1,7 @@
+import java.net.*;
+import java.io.*;
+
+public class multi_server 
+{
+	ServerSocket server;
+}

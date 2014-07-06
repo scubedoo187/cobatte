@@ -1,0 +1,35 @@
+import java.net.*;
+import java.io.*;
+
+public class multi_server implements Runnable
+{
+	ServerSocket server;
+	
+	public multi_server() throws IOException
+	{
+		server = new ServerSocket(13081);
+	}
+	
+	public void run()
+	{
+		try
+		{
+			Socket sk;
+			InputStream in1, in2;
+			OutputStream ou1, ou2;
+			
+			while(true)
+			{
+				System.out.println("Waiting for connection");
+				sk = server.accept();
+				in1 = sk.getInputStream();
+				ou1 = sk.getOutputStream();
+				
+				in2 = sk.getInputStream();
+				ou2 = sk.getOutputStream();
+				
+				
+			}
+		}
+	}
+}
