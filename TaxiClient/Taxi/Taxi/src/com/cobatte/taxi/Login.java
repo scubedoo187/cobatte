@@ -32,10 +32,9 @@ public class Login extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				
-				Intent intent = new Intent(Login.this, Menu.class);
+				Intent intent = new Intent(Login.this, MainMenu.class);
 				startActivity(intent);
-				overridePendingTransition(R.anim.left_in, R.anim.left_out);							
-				
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
 		});
         
@@ -57,8 +56,7 @@ public class Login extends Activity{
 				
 				Intent intent = new Intent(Login.this, Register.class );
 				startActivity(intent);
-				overridePendingTransition(R.anim.left_in, R.anim.left_out);
-			
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);			
 			}
 		});
         

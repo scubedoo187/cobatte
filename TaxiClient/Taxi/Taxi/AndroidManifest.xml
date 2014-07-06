@@ -25,19 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cobatte.taxi.Popup"
-            android:label="@string/title_activity_popup" >
-        </activity>
+            android:name="com.cobatte.taxi.Popup"></activity>
         <activity 
-            android:name="com.cobatte.taxi.Login" 
-            android:label="@string/title_activity_login" >
-        </activity>
+            android:name="com.cobatte.taxi.Login"></activity>       
         <activity 
-            android:name="com.cobatte.taxi.Menu">            
-        </activity>
+            android:name="com.cobatte.taxi.Register"></activity>
         <activity 
-            android:name="com.cobatte.taxi.Register">            
-        </activity>
+            android:name="com.cobatte.taxi.MainMenu"></activity>
     </application>
 
 </manifest>
