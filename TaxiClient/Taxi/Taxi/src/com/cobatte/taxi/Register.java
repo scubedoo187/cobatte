@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class Resist extends Activity{
+public class Register extends Activity{
 
 	EditText idcon, pw, repw, email;
 	Button overrap, done, clearAll;
@@ -21,7 +21,7 @@ public class Resist extends Activity{
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.resist);
+        setContentView(R.layout.register);
         setTitle("회원가입");
         
         Spinner year = (Spinner)findViewById(R.id.birth_y);
@@ -113,7 +113,7 @@ public class Resist extends Activity{
 				if( idtmp.equals("") || idtmp == null || pwTmp1.equals("") || pwTmp1 == null || pwTmp2.equals("") || pwTmp2 == null || mTmp.equals("") || mTmp == null )  
 				{
 					AlertDialog.Builder ab = null;
-					ab = new AlertDialog.Builder( Resist.this);
+					ab = new AlertDialog.Builder( Register.this);
 					ab.setMessage("빈 칸이 있습니다. 모두 입력해 주세요.");
 					ab.setPositiveButton(android.R.string.ok, null);
 					ab.setTitle("경고창");

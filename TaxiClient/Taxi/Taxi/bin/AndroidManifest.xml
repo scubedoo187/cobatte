@@ -36,7 +36,7 @@
             android:name="com.cobatte.taxi.Menu">            
         </activity>
         <activity 
-            android:name="com.cobatte.taxi.Resist">            
+            android:name="com.cobatte.taxi.Register">            
         </activity>
     </application>
 
