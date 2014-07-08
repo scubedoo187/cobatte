@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -32,6 +32,10 @@
             android:name="com.cobatte.taxi.Register"></activity>
         <activity 
             android:name="com.cobatte.taxi.MainMenu"></activity>
+        <activity 
+            android:name="com.cobatte.taxi.RoomList"></activity>
+        <activity 
+            android:name="com.cobatte.taxi.CreateRoom"></activity>"
     </application>
 
 </manifest>

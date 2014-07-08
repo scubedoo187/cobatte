@@ -60,7 +60,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="E-mail 입력"
-            android:ems="25"/>
+            android:ems="25"
+            android:inputType="textEmailAddress"/>  
     </LinearLayout>
     
     <LinearLayout 
