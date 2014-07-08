@@ -35,7 +35,9 @@
         <activity 
             android:name="com.cobatte.taxi.RoomList"></activity>
         <activity 
-            android:name="com.cobatte.taxi.CreateRoom"></activity>"
+            android:name="com.cobatte.taxi.CreateRoom"></activity>
+        <activity
+            android:name="com.cobatte.taxi.WaitingRoom"></activity>"
     </application>
 
 </manifest>
