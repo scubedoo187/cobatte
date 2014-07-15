@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* wetoz */
+
+/*  */
+.stylebox {overflow: hidden;position: relative;margin: 0;border-top: 1px solid #bfc2c4;border-left: 1px solid #bfc2c4;border-right: 1px solid #a8aaab;border-bottom: 1px solid #a8aaab;background-color: #fff;box-shadow: 0 1px 0 rgba(164,168,171,0.2);-webkit-box-shadow: 0 1px 0 rgba(164,168,171,0.2);clear: both;}
+.stylebox .tsubject {height: 27px;padding-top: 9px;border-bottom: 1px solid #d4d9dd;border-top: 1px solid #fff;line-height: 1.571em;color: #000;letter-spacing: -1px;text-indent: 12px;text-shadow: 0 1px 0 rgba(255,255,255,1);background-color: #f9fafa;background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#f6f7f8));background-image: -moz-linear-gradient(top,#fff,#f6f7f8);background-image: -o-linear-gradient(top,#fff,#f6f7f8);background-image: linear-gradient(to bottom,#fff,#f6f7f8);}
+.stylebox ul {margin:0;padding:0;}
+.stylebox li {position: relative;background: 0;text-indent: 0;border-top: 1px solid #efefef;}
+.stylebox li:first-child {border-top: 0 none;}
+.stylebox .list {display: block;overflow: hidden;padding: 10px 6px 10px 12px;letter-spacing: -1px;color: #131313;}
+.stylebox .list .wsubject {margin-right: 2px;}
+.stylebox .list .wsubject.active {font-weight:bold}
+.stylebox .list .wname {color: #999;letter-spacing: -1px;display: inline-block;margin-left:0px;font-family: '돋움',Dotum,Verdana,applegothic;font-size: 11px;letter-spacing: -1px;}
+.stylebox .gopage {position: absolute;	top: 0;	right: 0;width: 100%;height: 26px;padding-top: 10px;font-weight: bold;letter-spacing: -1px;color: #000;text-align: right;}
+.stylebox .gopage .more_page {width: 7px;height: 11px;margin: 3px 11px 0 4px;background-position: -24px 2px;}
+
+.writebox .tips {padding:10px;background-color:#fff;}
+.writebox .tips p {padding:3px 0}
+
+.admconer .tblv,.tblv th,.tblv td{border:0}
+.admconer .tblv {border:1px solid #dddee2;font-family:'돋움',dotum;font-size:12px;table-layout:fixed}
+.admconer .tblv caption{display:none}
+.admconer .tblv th{
+		padding:8px 0 5px 5px;border-top:1px solid #dddee2;background:#f4f4f4;color:#666;font-weight:bold;text-align:left;vertical-align:middle;
+		text-shadow: 1px 1px 0 #FFF;
+		font-family: '돋움',Dotum,Verdana,applegothic;font-size: 11px;letter-spacing: -1px;}
+.admconer .tblv td{
+		padding:5px 5px 5px 5px;border-top:1px solid #dddee2;line-height:16px;vertical-align:middle;background-color:#ffffff;
+		font-family: '돋움',Dotum,Verdana,applegothic;font-size: 11px;letter-spacing: -1px;}
+.admconer .i_text {position:relative;margin:2px;padding:3px 4px;border:1px solid #b7b7b7;border-right-color:#e1e1e1;border-bottom-color:#e1e1e1;background:transparent}

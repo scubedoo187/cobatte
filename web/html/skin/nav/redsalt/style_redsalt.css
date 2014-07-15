@@ -1,0 +1,17 @@
+﻿/* 상단메뉴 적용 */
+#hd { z-index:5 !important; }
+.navi { position:relative; z-index:15; margin:-1px 0 0;height:2.95em; border-top:1px dotted #dde4e9;border-bottom:1px solid #dde4e9;background:#ecf0f7; } 
+.navBox { position:absolute; z-index:15; width:100%;}
+.navBox:after {display:block;visibility:hidden;clear:both;content:""} 
+.nav { position:absolute; z-index:15; top:0px; left:50%; margin-left:-485px; }
+.nav ul.depth1 {z-index:10; clear:both; zoom:1; }
+.nav ul.depth1:after {display:block; visibility:hidden; clear:both; content:""; }
+.nav ul.depth1 li.gnb1 { position:relative; float:left; text-align:center; display:inline; width:120px; }
+.nav_1da {display:black; float:left; font-weight:bold; height:38px; padding:0 10px; line-height:2.95em; text-decoration:none; }
+.nav_1da:focus, .nav_1da:hover {text-decoration:none; color:#e8180c; background:url(img/icon_top_arrow_black.png) no-repeat center 30px; } 
+.subBox { position:absolute; z-index:15; top:38px; width:100%; height:200px; background-color:#B0E0E6; border-bottom:1px solid #F00; display:none; }
+.subBox:after {display:block;visibility:hidden;clear:both;content:""}
+.nav ul.depth1 ul.depth2 {position:absolute; width:120px; top:38px; display:none;  }
+.nav ul.depth1 ul.depth2 li {display:block !important; height:18px; margin-bottom:7px; }
+.nav_2da {display:block; float:left; width:100px; height:30px; text-align:left; padding:0 10px; line-height:30px; text-decoration:none; color:#FFFFFF !important; font-weight:bold;  }
+.nav_2da:focus, .nav_2da:hover {text-decoration:none; background:#F00 !important; } 

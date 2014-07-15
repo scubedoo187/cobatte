@@ -1,0 +1,15 @@
+/* 인기검색어 스킨 */
+#popular_aside {position:relative;padding:15px 15px 14px 14px}
+#popular_aside div {margin:0 auto}
+#popular_aside div:after {display:block;visibility:hidden;clear:both;content:""}
+#popular_aside h2 {margin:0;padding:0}
+#popular_aside .btn_admin {margin-top:5px;width:158px;text-align:center}
+#popular_aside .btn_admin a {display:inline-block;padding:0px;color:#000;text-decoration:none}
+#popular_aside .btn_admin a:focus,
+#popular_aside .btn_admin a:hover {background:#333;color:#fff}
+#popular_aside ul {background:#f7f7f7;width:180px;margin:5px 0;padding:0;list-style:none}
+#popular_aside ul {float:left;list-style:none}
+#popular_aside li {float:left}
+#popular_aside ul a {display:inline-block;padding:10px;color:#000;text-decoration:none}
+#popular_aside ul a:focus,
+#popular_aside ul a:hover {background:#333;color:#fff}
