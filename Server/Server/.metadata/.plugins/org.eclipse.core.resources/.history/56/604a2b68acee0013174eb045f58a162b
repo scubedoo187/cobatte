@@ -1,0 +1,42 @@
+import java.net.*;
+import java.io.*;
+
+public class Client
+{
+	public static void main(String[] args) 
+	{
+		DataInputStream reader;
+		private DataOutputStream writer;
+		try
+		{
+			Socket socket = new Socket("210.115.229.248", 13080);
+			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+			
+			reader = new DataInputStream(socket.getInputStream());
+			writer = new DataOutputStream(socket.getOutputStream());
+			
+			String line = null;
+			
+			while((line = keyboard.readLine()) != null)
+			{
+				if(line.equals("exit"))
+					break;
+				
+				writer.writerUTF(line);
+				writer.flush();
+				
+				String echo = reader.readUTF();
+				System.out.println("Server : " + echo);
+			}
+			
+			writer.close();
+			reader.close();
+			socket.close();
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+}

@@ -1,0 +1,39 @@
+import java.net.*;
+import java.io.*;
+
+public class Client 
+{
+	UserInfo dbinfo = new UserInfo();
+	private DataInputStream reader;
+	private DataOutputStream writer;
+	private String Naem;
+	private int Score;
+	private String Pw;
+	public int index;
+	Socket socket;
+	
+	private void connect()
+	{
+		try
+		{
+			System.out.println("Wating Server....");
+			socket = new Socket("210.115.229.245", 13081);
+			System.out.println("Server Connection Success");
+			
+			Userinfo_DB userdb = new Userinfo_DB();
+			
+			reader = new DataInputStream(socket.getInputStream());
+			writer = new DataOutputStream(socket.getOutputStream());
+		}
+		
+		catch (Exception e)
+		{
+			System.out.println("Connect Error" + e);
+		}
+	}
+	
+	public void Action()
+	{
+		
+	}
+}

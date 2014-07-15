@@ -1,0 +1,19 @@
+
+public class test 
+{
+	public static void main(String[] args) 
+	{
+		UserInfo_DB db = new UserInfo_DB();
+		String a;
+		
+		db.single_hard("¾ûµ¢ÀÌ", 93510);
+		db.single_hard("¾ûµ¢ÀÌ", 109433);
+		db.single_hard("Á¤¹Î¿ì", 119320);
+		db.single_hard("ÀÓÇØ¼º", 90142);
+		db.single_hard("Á¤¿µ±Õ", 95301);
+		
+		a = db.select_hard_rank();
+		
+		System.out.println(a);
+	}
+}

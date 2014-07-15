@@ -6,15 +6,15 @@
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/taxi_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.cobatte.taxi.Main"
+            android:name="com.cobatte.taxi.Logo"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:label="@string/app_name" >
@@ -25,13 +25,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cobatte.taxi.Popup"
-            android:label="@string/title_activity_popup" >
-        </activity>
+            android:name="com.cobatte.taxi.Popup"></activity>
         <activity 
-            android:name="com.cobatte.taxi.Login" 
-            android:label="@string/title_activity_login" >
-        </activity>
+            android:name="com.cobatte.taxi.Login"></activity>       
+        <activity 
+            android:name="com.cobatte.taxi.Register"></activity>
+        <activity 
+            android:name="com.cobatte.taxi.MainMenu"></activity>
+        <activity 
+            android:name="com.cobatte.taxi.RoomList"></activity>
+        <activity 
+            android:name="com.cobatte.taxi.CreateRoom"></activity>
+        <activity
+            android:name="com.cobatte.taxi.WaitingRoom"></activity>"
     </application>
 
 </manifest>

@@ -1,0 +1,14 @@
+import java.net.*;
+import java.io.*;
+
+public class multi_server 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			Socket sock = new Socket("210.115.229.245", 13081);	
+		}
+		
+	}
+}

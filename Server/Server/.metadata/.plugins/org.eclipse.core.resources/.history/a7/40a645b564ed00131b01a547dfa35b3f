@@ -1,0 +1,11 @@
+import java.net.*;
+import java.io.*;
+
+public class Client 
+{
+	private DataInputStream reader;
+	private DataOutputStream writer;
+	private String Naem;
+	private int Score;
+	Socket socket;
+}

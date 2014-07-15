@@ -1,0 +1,17 @@
+import java.sql.*;
+import java.util.StringTokenizer;
+
+public class test 
+{
+	public static void main(String[] args) 
+	{
+		UserInfo_DB db = new UserInfo_DB();
+		
+		db.setName("aa");
+		db.select();
+		System.out.println("----------------------");
+		db.overlap();
+		
+		System.out.println(db.overlap());
+	}
+}

@@ -1,0 +1,17 @@
+
+public class test 
+{
+	public static void main(String[] args) 
+	{
+		UserInfo_DB db = new UserInfo_DB();
+		String a;
+		db.single_easy("정민우", 8);
+		db.single_easy("임해성", 9);
+		db.single_easy("정영균", 10);
+		db.single_easy("박충현", 11);
+		db.single_easy("임한철", 8);
+		a = db.select_easy_rank();
+		
+		System.out.println(a);
+	}
+}

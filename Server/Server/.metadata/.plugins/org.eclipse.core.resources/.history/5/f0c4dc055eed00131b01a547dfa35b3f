@@ -1,0 +1,21 @@
+import java.net.*;
+import java.io.*;
+import java.util.*;
+
+public class multi_server
+{
+	public static void main(String[] args) 
+	{
+		ServerSocket socket = null;
+		
+		try
+		{
+			socket = new ServerSocket(13081);
+			
+			while(true)
+			{
+				
+			}
+		}
+	}
+}

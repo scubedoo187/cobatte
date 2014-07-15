@@ -1,0 +1,6 @@
+
+public class UserInfo
+{
+	private String Name;
+	private int Score;
+}

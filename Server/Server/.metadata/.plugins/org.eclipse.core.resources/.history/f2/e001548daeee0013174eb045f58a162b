@@ -1,0 +1,178 @@
+import java.sql.*;
+
+public class UserInfo_DB 
+{
+	Connection conn = null;
+	Statement stmt = null;
+	ResultSet rs = null;
+	
+	private String Name;
+	private int Score;
+	private String Pw;
+	public String a; // login return 값
+	
+	public UserInfo_DB()
+	{
+		connect();
+	}
+	
+	public String getName()
+	{
+		return Name;
+	}
+	
+	public void setName(String Name)
+	{
+		this.Name = Name;
+	}
+	
+	public int getScore()
+	{
+		return Score;
+	}
+	
+	public void setScore(int Score)
+	{
+		this.Score = Score;
+	}
+	
+	public String getPw()
+	{
+		return Pw;
+	}
+	
+	public void setPw(String Pw)
+	{
+		this.Pw = Pw;
+	}
+	
+	public void connect()
+	{
+		String url = "jdbc:mysql://localhost:3306/DB";
+		String user = "root";
+		String dbpw = "jmwa1308-1";
+		
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			this.conn = DriverManager.getConnection(url, user, dbpw);
+			this.stmt = this.conn.createStatement();
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Connect error : " + e);
+		}
+	}
+
+	public void insert() // insert문
+	{
+		try
+		{
+			stmt.executeUpdate("insert into UserInfo values('"+getName()+"', '"+getPw()+"')"); // 쿼리 날려주공
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Insert Error " + e);
+		}
+	}
+	
+	
+	public void select() // select문
+	{
+		try
+		{
+			rs = stmt.executeQuery("select * from UserInfo"); // java.Statement => java.ResultSet으로 변환
+			
+			rs.beforeFirst(); // select를 해줄 부분을 맨처음으로
+			
+			while(rs.next()) // DB의 레코드를 가져온다,  다음 레코드가 있는지 검사하고 있으면 true 없으면 false
+			{
+				System.out.println(rs.getString("Name") + rs.getString("Pw")); // Name, Pw 찍어쥼
+			}	
+		}
+		
+		catch (Exception e)
+		{
+			System.out.println("Select Error " + e);
+		}
+	}
+	
+	
+	public String login() // login문 헤더가 0일때
+	{
+		try
+		{
+			rs = stmt.executeQuery("select * from UserInfo"); // java.Statement => java.ResultSet으로 변환
+			boolean alogin = false; // 비교할때 쓸꺼임
+			
+			while(rs.next()) // DB의 레코드를 가져옴
+			{
+				if(getName().equals(rs.getString("Name")) && getPw().equals(rs.getString("Pw"))) // 입력한 Name과 DB에 있는 Name이 동일한가? && 입력한 Pw와 DB에 있는 Pw가 동일한가?
+					alogin = true; // 맞으면 true
+			}
+			
+			if(alogin)
+				a = "0"; // true이면 0
+			
+			else
+				a = "quit"; // false이면 -1
+		}
+		
+		catch (Exception e)
+		{
+			System.out.println("Login Error " + e);
+		}
+		
+		return a;
+	}
+	
+	public String overlap()
+	{
+		try
+		{
+			rs = stmt.executeQuery("select * from UserInfo");
+			boolean alogin = false;
+			
+			while(rs.next())
+			{
+				if(getName().equals(rs.getString("Name")))
+					alogin = true;
+			}
+			
+			if(alogin)
+				a = "quit";
+			
+			else
+				a = "1";
+		}
+		
+		catch (Exception e)
+		{
+			System.out.println("Login Error " + e);
+		}
+		
+		return a;
+	}
+	
+	public void close()
+	{
+		try
+		{
+			if(stmt != null)
+				stmt.close();
+			
+			if(conn != null)
+			{
+				if(!conn.isClosed())
+					conn.close();
+			}
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Close Error" + e);
+		}
+	}
+}
