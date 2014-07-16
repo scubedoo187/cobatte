@@ -56,13 +56,13 @@ public final class R {
         public static final int done=0x7f0a001d;
         public static final int email=0x7f0a0019;
         public static final int id=0x7f0a0000;
+        public static final int idBtn=0x7f0a0016;
         public static final int idcon=0x7f0a0015;
         public static final int join=0x7f0a0007;
         public static final int list=0x7f0a001f;
         public static final int logo=0x7f0a0005;
         public static final int member=0x7f0a0023;
         public static final int ok=0x7f0a0014;
-        public static final int overrap=0x7f0a0016;
         public static final int passwd=0x7f0a0001;
         public static final int place=0x7f0a000d;
         public static final int popup=0x7f0a0011;

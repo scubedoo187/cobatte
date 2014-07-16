@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class Register extends Activity{
 
 	EditText idcon, pw, repw, email;
-	Button overrap, done, clearAll;
+	Button idButton, done, clearAll;
 	String birthYear, birthMonth, birthDay;
 	
 	@Override
@@ -34,7 +34,7 @@ public class Register extends Activity{
         pw = (EditText)findViewById(R.id.pw);
         repw = (EditText)findViewById(R.id.pwcon);
         email = (EditText)findViewById(R.id.email);
-        overrap = (Button)findViewById(R.id.overrap);
+        idButton = (Button)findViewById(R.id.idBtn);
         done = (Button)findViewById(R.id.done);
         clearAll = (Button)findViewById(R.id.clearAll);
         
@@ -88,7 +88,7 @@ public class Register extends Activity{
 			}
 		});
         
-        overrap.setOnClickListener(new View.OnClickListener() {
+        idButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -159,7 +159,7 @@ public class Register extends Activity{
 								ab.show();
 							}else if( pwTmp1.equals(pwTmp2) ){
 								finish();
-								// 		DB 연동하여 각 값들 전송.
+								// 		서버에 각 값들 전송.
 								// 		birthYear, birthMonth, birthDay;
 								
 							}
