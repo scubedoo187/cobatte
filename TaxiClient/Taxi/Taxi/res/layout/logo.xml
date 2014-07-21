@@ -8,7 +8,7 @@
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/intro"
+        android:src="@drawable/intro_3"
         />
     
 </LinearLayout>
