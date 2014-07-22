@@ -18,7 +18,7 @@
             android:layout_weight="2"/>
         
         <Button 
-            android:id="@+id/overrap"
+            android:id="@+id/idBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="중복확인"
@@ -60,7 +60,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="E-mail 입력"
-            android:ems="25"/>
+            android:ems="25"
+            android:inputType="textEmailAddress"/>  
     </LinearLayout>
     
     <LinearLayout 

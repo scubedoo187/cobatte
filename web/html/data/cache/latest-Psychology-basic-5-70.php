@@ -1,0 +1,83 @@
+<?php
+if (!defined('_GNUBOARD_')) exit;
+$bo_subject="심리학과 ";
+$list=array (
+  0 => 
+  array (
+    'wr_id' => '1',
+    'wr_num' => '-1',
+    'wr_reply' => '',
+    'wr_parent' => '1',
+    'wr_is_comment' => '0',
+    'wr_comment' => '0',
+    'wr_comment_reply' => '',
+    'ca_name' => '',
+    'wr_option' => '',
+    'wr_subject' => 'www.naver.com',
+    'wr_content' => 'www.naver.com',
+    'wr_link1' => 'www.naver.com',
+    'wr_link2' => '',
+    'wr_link1_hit' => '1',
+    'wr_link2_hit' => '0',
+    'wr_hit' => '1',
+    'wr_good' => '0',
+    'wr_nogood' => '0',
+    'mb_id' => 'admin',
+    'wr_password' => '*E638AD8D542E90E199DF8B4211CF96B12DE7A954',
+    'wr_name' => '최고관리자',
+    'wr_email' => 'skdmltpfk@naver.com',
+    'wr_homepage' => '',
+    'wr_datetime' => '2014-07-03 12:41:42',
+    'wr_file' => '0',
+    'wr_last' => '2014-07-03 12:41:42',
+    'wr_ip' => '210.115.229.232',
+    'wr_facebook_user' => '',
+    'wr_twitter_user' => '',
+    'wr_1' => '',
+    'wr_2' => '',
+    'wr_3' => '',
+    'wr_4' => '',
+    'wr_5' => '',
+    'wr_6' => '',
+    'wr_7' => '',
+    'wr_8' => '',
+    'wr_9' => '',
+    'wr_10' => '',
+    'is_notice' => true,
+    'subject' => 'www.naver.com',
+    'comment_cnt' => '',
+    'datetime' => '2014-07-03',
+    'datetime2' => '12:41',
+    'last' => '2014-07-03',
+    'last2' => '12:41',
+    'name' => '<span class="sv_member">최고관리자</span>',
+    'reply' => 0,
+    'icon_reply' => '',
+    'icon_link' => '<img src="http://hallym.dothome.co.kr/skin/latest/basic/img/icon_link.gif" alt="관련링크">',
+    'ca_name_href' => 'http://hallym.dothome.co.kr/bbs/board.php?bo_table=Psychology&amp;sca=',
+    'href' => 'http://hallym.dothome.co.kr/bbs/board.php?bo_table=Psychology&amp;wr_id=1&amp;me_code=10',
+    'comment_href' => 'http://hallym.dothome.co.kr/bbs/board.php?bo_table=Psychology&amp;wr_id=1&amp;me_code=10',
+    'icon_new' => '<img src="http://hallym.dothome.co.kr/skin/latest/basic/img/icon_new.gif" alt="새글">',
+    'icon_hot' => '',
+    'icon_secret' => '',
+    'link' => 
+    array (
+      1 => 'http://www.naver.com',
+      2 => NULL,
+    ),
+    'link_href' => 
+    array (
+      1 => 'http://hallym.dothome.co.kr/bbs/link.php?bo_table=Psychology&amp;wr_id=1&amp;no=1&amp;me_code=10',
+      2 => 'http://hallym.dothome.co.kr/bbs/link.php?bo_table=Psychology&amp;wr_id=1&amp;no=2&amp;me_code=10',
+    ),
+    'link_hit' => 
+    array (
+      1 => 1,
+      2 => 0,
+    ),
+    'file' => 
+    array (
+      'count' => '0',
+    ),
+  ),
+)?>

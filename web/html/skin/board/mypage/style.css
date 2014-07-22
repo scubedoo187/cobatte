@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#mypage-container{padding:5px 15px 0 15px; background:#ffffff;}
+
+ul#mypage-menu{list-style-type:none; width:100%; position:relative; height:27px; font-family:"Trebuchet MS",Arial,sans-serif; font-size:13px; font-weight:bold; margin:0; padding:0px 0px 20px 0px;}
+ul#mypage-menu li{display:block; float:left; margin:0 0 0 4px; height:27px;}
+ul#mypage-menu li.left{margin:0;}
+ul#mypage-menu li a{display:block; float:left; color:#ffffff; background:#000000; line-height:27px; text-decoration:none; padding:0 17px 0 18px; height:27px;}
+ul#mypage-menu li a.right{padding-right:19px;}
+ul#mypage-menu li a:hover{background:#a9a9a9;}
+ul#mypage-menu li a.current{color:#ffffff; background:#000000;}
+ul#mypage-menu li a.current:hover{color:#ffffff; background:#000000;}

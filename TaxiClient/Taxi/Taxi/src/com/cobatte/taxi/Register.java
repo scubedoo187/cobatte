@@ -2,6 +2,7 @@ package com.cobatte.taxi;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,11 +16,12 @@ import android.widget.Toast;
 public class Register extends Activity{
 
 	EditText idcon, pw, repw, email;
-	Button overrap, done, clearAll;
+	Button idButton, done, clearAll;
 	String birthYear, birthMonth, birthDay;
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
         setTitle("회원가입");
@@ -32,7 +34,7 @@ public class Register extends Activity{
         pw = (EditText)findViewById(R.id.pw);
         repw = (EditText)findViewById(R.id.pwcon);
         email = (EditText)findViewById(R.id.email);
-        overrap = (Button)findViewById(R.id.overrap);
+        idButton = (Button)findViewById(R.id.idBtn);
         done = (Button)findViewById(R.id.done);
         clearAll = (Button)findViewById(R.id.clearAll);
         
@@ -86,7 +88,7 @@ public class Register extends Activity{
 			}
 		});
         
-        overrap.setOnClickListener(new View.OnClickListener() {
+        idButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -109,24 +111,64 @@ public class Register extends Activity{
 				pwTmp2 = repw.getText().toString();
 				mTmp = email.getText().toString();
 				
-				
-				if( idtmp.equals("") || idtmp == null || pwTmp1.equals("") || pwTmp1 == null || pwTmp2.equals("") || pwTmp2 == null || mTmp.equals("") || mTmp == null )  
+				if( idtmp.equals("") || idtmp == null )  
 				{
 					AlertDialog.Builder ab = null;
 					ab = new AlertDialog.Builder( Register.this);
-					ab.setMessage("빈 칸이 있습니다. 모두 입력해 주세요.");
+					ab.setMessage("아이디를 입력해 주세요.");
 					ab.setPositiveButton(android.R.string.ok, null);
-					ab.setTitle("경고창");
+					ab.setTitle("경고");
 					ab.show();
-				}
+				}else if( pwTmp1.equals("") || pwTmp1 == null )
+				{
+					AlertDialog.Builder ab = null;
+					ab = new AlertDialog.Builder( Register.this);
+					ab.setMessage("비밀번호를 입력해 주세요.");
+					ab.setPositiveButton(android.R.string.ok, null);
+					ab.setTitle("경고");
+					ab.show();
+				}else
+				{
+					if(pwTmp2.equals("") || pwTmp2 == null )				
+					{
+						AlertDialog.Builder ab = null;
+						ab = new AlertDialog.Builder( Register.this);
+						ab.setMessage("비밀번호 확인란을 입력해 주세요.");
+						ab.setPositiveButton(android.R.string.ok, null);
+						ab.setTitle("경고");
+						ab.show();
+					}else
+						{
+						if( mTmp.equals("") || mTmp == null )						
+						{
+							AlertDialog.Builder ab = null;
+							ab = new AlertDialog.Builder( Register.this);
+							ab.setMessage("이메일주소를 입력해 주세요.");
+							ab.setPositiveButton(android.R.string.ok, null);
+							ab.setTitle("경고");
+							ab.show();
+						}else
+						{
+							if( !pwTmp1.equals(pwTmp2) )							
+							{
+								AlertDialog.Builder ab = null;
+								ab = new AlertDialog.Builder( Register.this);
+								ab.setMessage("비밀번호가 일치하지 않습니다.");
+								ab.setPositiveButton(android.R.string.ok, null);
+								ab.setTitle("경고");
+								ab.show();
+							}else if( pwTmp1.equals(pwTmp2) ){
+								finish();
+								// 		서버에 각 값들 전송.
+								// 		birthYear, birthMonth, birthDay;
 								
-				if(pwTmp1 != pwTmp2)
-					Toast.makeText(getApplicationContext(), "패스워드가 일치하지 않습니다.", Toast.LENGTH_LONG).show();
-				
-				
-				// DB 연동하여 각 값들 전송.
-				// birthYear, birthMonth, birthDay;				
+							}
+						}
+						}
+						
+				}
 			}
+			
 		});
         
         clearAll.setOnClickListener(new View.OnClickListener() {
@@ -143,5 +185,21 @@ public class Register extends Activity{
         
         
                 		
+	}
+	public void onBackPressed(){
+		AlertDialog.Builder ab = null;
+		ab = new AlertDialog.Builder( Register.this );
+		ab.setMessage("회원가입을 그만하시겠습니까?");
+		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				finish();
+			}
+		});
+		ab.setNegativeButton(android.R.string.cancel, null);
+		ab.setTitle("이 페이지를 닫으려고 합니다.");
+		ab.show();
 	}
 }

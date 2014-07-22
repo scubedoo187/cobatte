@@ -1,6 +1,8 @@
 package com.cobatte.taxi;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -61,6 +63,23 @@ public class Login extends Activity{
 		});
         
     }
+
+	public void onBackPressed(){
+		AlertDialog.Builder ab = null;
+		ab = new AlertDialog.Builder( Login.this );
+		ab.setMessage("애플리케이션을 종료하시겠습니까?");
+		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				finish();
+			}
+		});
+		ab.setNegativeButton(android.R.string.cancel, null);
+		ab.setTitle("알림");
+		ab.show();
+	}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
