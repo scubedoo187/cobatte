@@ -20,10 +20,10 @@ public class UserInfo_DB
 	
 	public void connect()
 	{
-		String url = "jdbc:mysql://localhost:3306/DB?autoReconnect=true";
+		String url = "jdbc:mysql://localhost:3306/Taxi";
 		String validationQuery = "select 1";
 		String user = "root";
-		String dbpw = "jmwa1308-1";
+		String dbpw = "2550";
 		
 		try
 		{
