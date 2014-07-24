@@ -32,7 +32,7 @@ public class CreateRoom extends Activity{
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			Intent intent = new Intent(CreateRoom.this, WaitingRoom.class);
+			Intent intent = new Intent(CreateRoom.this, WaitingRoomActivity.class);
 			startActivity(intent);
 			overridePendingTransition(R.anim.left_in, R.anim.left_out);
 		}
