@@ -129,7 +129,7 @@ public class RegisterActivity extends Activity{
 						ab.show();
 					}
 				});
-				ab.setPositiveButton("다른 아이디 선택", new DialogInterface.OnClickListener() {
+				ab.setPositiveButton("취소", new DialogInterface.OnClickListener() {
 					
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
@@ -207,7 +207,7 @@ public class RegisterActivity extends Activity{
 								ab.show();
 								pw.setFocusable(true);
 							}else if( pwTmp1.equals(pwTmp2) ){
-								/*ms = new messageStr();
+								ms = new messageStr();
 								SocketThread st = new SocketThread(ms);
 								
 								temp = "2";
@@ -218,7 +218,7 @@ public class RegisterActivity extends Activity{
 								ms.setaStr(temp);
 								
 								if(isNetworkAvailable())
-								{
+								{									
 									try{
 										st.start();
 									}catch(Exception e){ e.printStackTrace(); }
@@ -238,8 +238,8 @@ public class RegisterActivity extends Activity{
 								}
 								else
 									Toast.makeText(RegisterActivity.this, "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();
-								*/
-								finish();
+								
+								//finish();
 							}
 						}
 						}

@@ -27,7 +27,7 @@ public class SocketThread extends Thread{
 	{
 		try
 		{	
-			socket = new Socket("210.115.229.245", 13080);
+			socket = new Socket("121.163.245.5", 13080);
 			
 			OutputStream out = socket.getOutputStream();
 			InputStream in = socket.getInputStream();

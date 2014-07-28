@@ -11,7 +11,7 @@ public class RoomListActivity extends Activity{
 	@Override
 	 protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
-       setContentView(R.layout.room);
+       setContentView(R.layout.roomlist);
        setTitle("참가하기");
        
        list = (ExpandableListView)findViewById(R.id.list);
