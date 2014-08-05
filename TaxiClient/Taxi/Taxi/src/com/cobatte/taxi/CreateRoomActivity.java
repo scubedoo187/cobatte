@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TimePicker;
 
-public class CreateRoom extends Activity{
+public class CreateRoomActivity extends Activity{
 
 	Button create, back;
 	EditText roomName, roomPasswd, place;
@@ -32,7 +32,7 @@ public class CreateRoom extends Activity{
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			Intent intent = new Intent(CreateRoom.this, WaitingRoomActivity.class);
+			Intent intent = new Intent(CreateRoomActivity.this, WaitingRoomActivity.class);
 			startActivity(intent);
 			overridePendingTransition(R.anim.left_in, R.anim.left_out);
 		}

@@ -88,7 +88,7 @@ public class UserInfo_DB
 			
 			while(rs.next())
 			{
-				if(Name.toString().equals(rs.getString("Name")))
+				if(Name.toString().equals(rs.getString("id")))
 					alogin = true;
 			}
 			

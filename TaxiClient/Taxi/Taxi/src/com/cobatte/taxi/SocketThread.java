@@ -27,16 +27,15 @@ public class SocketThread extends Thread{
 	{
 		try
 		{	
-			socket = new Socket("121.163.245.5", 13080);
-			
+			socket = new Socket("192.168.219.100", 13080);			
 			OutputStream out = socket.getOutputStream();
 			InputStream in = socket.getInputStream();
 			
 			pw = new PrintWriter(new OutputStreamWriter(out, "utf-8"));
 			br = new BufferedReader(new InputStreamReader(in, "utf-8"));
-
+			
 			while(true){
-
+				
 				if(ms.aChange()){
 
 					str = ms.getaStr();

@@ -13,7 +13,7 @@ import android.widget.EditText;
 public class LoginActivity extends Activity{
 	
 	EditText id, passwd;				// 아이디와 비밀번호 입력 창
-	Button confirm, cancel, regist;				// 확인, 취소, 가입 버튼 
+	Button confirm, regist;				// 확인, 가입 버튼 
 	messageStr ms;
 	
 	@Override
@@ -25,8 +25,7 @@ public class LoginActivity extends Activity{
         id = (EditText)findViewById(R.id.id);
         passwd = (EditText)findViewById(R.id.passwd);
         
-        confirm = (Button)findViewById(R.id.confirm);
-        cancel = (Button)findViewById(R.id.cancel);
+        confirm = (Button)findViewById(R.id.confirm);      
         regist = (Button)findViewById(R.id.regist);
         
         confirm.setOnClickListener(new View.OnClickListener() {
@@ -42,16 +41,6 @@ public class LoginActivity extends Activity{
 				Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
-			}
-		});
-        
-        cancel.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				id.setText("");
-				passwd.setText("");
 			}
 		});
         

@@ -110,33 +110,53 @@ public class RegisterActivity extends Activity{
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
-						String temp;
-						if( idcon.getText().toString().equals("DB") )
+						String idtmp = idcon.getText().toString();
+						ms = new messageStr();
+						SocketThread st = new SocketThread(ms);
+						temp = "1";
+						temp += "\t";
+						temp += idtmp;						
+						ms.setaStr(temp);
+						
+						if( isNetworkAvailable() )
 						{	
-							temp = "사용 가능";
-							done.setEnabled(true);
+							try{
+								st.start();
+							}catch(Exception e){ e.printStackTrace();}
+							while( true ){
+								if(ms.tChange())
+								{											
+									temp = ms.gettStr();
+									System.out.println(temp);
+									if( temp.equals("1") ) //중복값 없을 때,
+									{
+										idtmp+="는 사용이 가능합니다.";
+										done.setEnabled(true);
+										break;
+									}else
+									{
+										idtmp+="는 사용이 불가합니다.";
+										done.setEnabled(false);
+										break;
+									}
+								}					
+							}
+							
 						}
 						else
-						{
-							temp = "사용 불가";
-							done.setEnabled(false);
+						{	
+							Toast.makeText(RegisterActivity.this, "네트워크를 사용할 수 없습니다." , Toast.LENGTH_LONG).show();
+							
 						}
 						AlertDialog.Builder ab = null;
 						ab = new AlertDialog.Builder( RegisterActivity.this );
-						ab.setMessage(temp);
+						ab.setMessage(idtmp);
 						ab.setNegativeButton("확인", null);
 						ab.setTitle("사용 여부");
 						ab.show();
 					}
 				});
-				ab.setPositiveButton("취소", new DialogInterface.OnClickListener() {
-					
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						
-					}
-				});
+				ab.setPositiveButton("취소", null);
 				ab.setTitle("등록할 새 아이디의 중복 여부를 체크합니다.");
 				ab.show();
 				//String temp = idcon.getText().toString();
@@ -208,8 +228,7 @@ public class RegisterActivity extends Activity{
 								pw.setFocusable(true);
 							}else if( pwTmp1.equals(pwTmp2) ){
 								ms = new messageStr();
-								SocketThread st = new SocketThread(ms);
-								
+								SocketThread st = new SocketThread(ms);								
 								temp = "2";
 								temp += "\t";
 								temp += idtmp;
@@ -223,9 +242,9 @@ public class RegisterActivity extends Activity{
 										st.start();
 									}catch(Exception e){ e.printStackTrace(); }
 									
-									while(true){
+									while(true){										
 										if(ms.tChange())
-										{
+										{											
 											temp = ms.gettStr();
 											if(temp.equals("quit"))//회원가입 성공
 											{

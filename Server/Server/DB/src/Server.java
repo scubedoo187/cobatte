@@ -31,7 +31,7 @@ public class Server
 
                 User_Thread pt = new User_Thread(socket); // 클라이언트와 통신하는 스레드를 생성하고 실행시킨다
             	V.add(socket); // 소켓 관리자 리스트에 소켓을 추가한다.
-            	System.out.println(V.size());
+            	
             	pt.start();                 
                 InetAddress inetaddr = socket.getInetAddress(); // 접속자의 IP를 알아낸다
                 System.out.println(inetaddr.getHostAddress() + " 님이 접속하셧습니다."); // IP찍어쥬공
