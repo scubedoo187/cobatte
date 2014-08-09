@@ -15,7 +15,6 @@ public class Server
 	private ServerSocket  server;
     Vector V = new Vector(); //  소켓을  관리하는  벡터
 
-
     void  startServer()
     {
         try

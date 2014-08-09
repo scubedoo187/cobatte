@@ -40,50 +40,55 @@ public class LoginActivity extends Activity{
 				// TODO Auto-generated method stub
 				String idTmp = id.getText().toString();
 				String pwTmp = passwd.getText().toString();
-				ms = new messageStr();
-				SocketThread st = new SocketThread(ms);			
 				
-				temp = "0";		// 로그인 메세지 헤더
-				temp += "\t";
-				temp += idTmp;
-				temp += "\t";
-				temp += pwTmp;
-				ms.setaStr(temp);
-				
-				if( isNetworkAvailable() )
-				{
-					try{
-						st.start();
-					}catch( Exception e ){ e.printStackTrace(); }
-					while(true){
-						if( ms.tChange() )
-						{
-							temp = ms.gettStr();
-							if(temp.equals("0"))
+				if( idTmp.equals("") || pwTmp.equals("") )
+					Toast.makeText(getApplicationContext(), "아이디와 패스워드를 입력해 주세요.", Toast.LENGTH_LONG).show();
+				else{
+					ms = new messageStr();
+					SocketThread st = new SocketThread(ms);			
+					
+					temp = "0";		// 로그인 메세지 헤더
+					temp += "\t";
+					temp += idTmp;
+					temp += "\t";
+					temp += pwTmp;
+					ms.setaStr(temp);
+					
+					if( isNetworkAvailable() )
+					{
+						try{
+							st.start();
+						}catch( Exception e ){ e.printStackTrace(); }
+						while(true){
+							if( ms.tChange() )
 							{
-								Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
-								intent.putExtra("message", ms);
-								startActivity(intent);
-								overridePendingTransition(R.anim.left_in, R.anim.left_out);
-								break;
-							}else if(temp.equals("quit"))
-							{	
-								AlertDialog.Builder ab = null;
-								ab = new AlertDialog.Builder( LoginActivity.this );
-								ab.setMessage("아이디와 패스워드를 다시 확인해 주세요.");
-								ab.setPositiveButton("확안", null);
-								ab.setTitle("로그인 할 수 없습니다!");
-								ab.show();
-								break;
-							}else
-							{
-								Toast.makeText(getApplicationContext(), "로그인 시도중 알수없는 오류가 발생하였습니다.", Toast.LENGTH_LONG).show();
-								break;
+								temp = ms.gettStr();
+								if(temp.equals("0"))
+								{
+									Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
+									intent.putExtra("message", ms);
+									startActivity(intent);
+									overridePendingTransition(R.anim.left_in, R.anim.left_out);
+									break;
+								}else if(temp.equals("quit"))
+								{	
+									AlertDialog.Builder ab = null;
+									ab = new AlertDialog.Builder( LoginActivity.this );
+									ab.setMessage("아이디와 패스워드를 다시 확인해 주세요.");
+									ab.setPositiveButton("확안", null);
+									ab.setTitle("로그인 할 수 없습니다!");
+									ab.show();
+									break;
+								}else
+								{
+									Toast.makeText(getApplicationContext(), "로그인 시도중 알수없는 오류가 발생하였습니다.", Toast.LENGTH_LONG).show();
+									break;
+								}
 							}
 						}
-					}
-				}else
-					Toast.makeText(getApplicationContext(), "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();								
+					}else
+						Toast.makeText(getApplicationContext(), "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();								
+				}
 			}
 		});
         
