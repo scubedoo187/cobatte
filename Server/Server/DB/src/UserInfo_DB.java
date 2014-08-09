@@ -60,7 +60,7 @@ public class UserInfo_DB
 			
 			while(rs.next()) // DB의 레코드를 가져옴
 			{
-				if(Name.toString().equals(rs.getString("Name")) && Pw.toString().equals(rs.getString("Pw"))) // 입력한 Name과 DB에 있는 Name이 동일한가? && 입력한 Pw와 DB에 있는 Pw가 동일한가?
+				if(Name.toString().equals(rs.getString("id")) && Pw.toString().equals(rs.getString("passwd"))) // 입력한 Name과 DB에 있는 Name이 동일한가? && 입력한 Pw와 DB에 있는 Pw가 동일한가?
 					alogin = true; // 맞으면 true
 			}
 			

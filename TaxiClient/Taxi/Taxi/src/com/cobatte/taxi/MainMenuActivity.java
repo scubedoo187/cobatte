@@ -10,6 +10,8 @@ import android.widget.Button;
 
 public class MainMenuActivity extends Activity{
 	
+	SocketThread st;
+	messageStr ms;
 	Button create, join;
 	
 	@Override
@@ -18,6 +20,9 @@ public class MainMenuActivity extends Activity{
         setContentView(R.layout.mainmenu);
         setTitle("¸Þ´º");
         
+        Intent intent = getIntent();
+		ms = (messageStr)intent.getExtras().getSerializable("message");
+		
         create = (Button)findViewById(R.id.create);
         join = (Button)findViewById(R.id.join);
         
@@ -55,6 +60,7 @@ public class MainMenuActivity extends Activity{
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
+				ms.setaStr("quit");
 				finish();
 			}
 		});

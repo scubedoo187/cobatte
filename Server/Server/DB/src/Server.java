@@ -115,6 +115,11 @@ public class Server
 		            			writer.flush(); // 버퍼비워주고
 		            			break;
 		            			
+		            		case 9 : // 종료 
+		            			writer.println("quit"); // quit 값 전송
+		            			writer.flush();	// 버퍼 비워주고
+		            			break;
+		            			
 		        			default :
 		        				System.out.println("Not Found Header Number");
 		        				break;
