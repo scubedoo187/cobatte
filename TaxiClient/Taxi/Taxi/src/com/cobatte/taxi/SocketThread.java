@@ -16,9 +16,9 @@ public class SocketThread extends Thread{
 	
 	PrintWriter pw;
 	BufferedReader br;
-	messageStr ms;
+	MsgString ms;
 	
-	public SocketThread(messageStr m)
+	public SocketThread(MsgString m)
 	{
 		ms = m;
 	}
@@ -36,9 +36,9 @@ public class SocketThread extends Thread{
 			
 			while(true){
 				
-				if(ms.aChange()){
+				if(ms.isActivityChange()){
 
-					str = ms.getaStr();
+					str = ms.getActivityStr();
 					pw.println(str);
 					pw.flush();
 					System.out.println("메시지 \t전송" + str);	
@@ -46,7 +46,7 @@ public class SocketThread extends Thread{
 					System.out.println("Server : " + temp);
 						
 					str = temp;
-					ms.settStr(str);
+					ms.setThreadStr(str);
 					System.out.println("str = temp : " + str);
 					if(str.toString().equals("quit"))
 					{

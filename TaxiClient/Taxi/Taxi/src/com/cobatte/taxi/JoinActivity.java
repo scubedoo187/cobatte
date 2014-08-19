@@ -17,12 +17,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class RegisterActivity extends Activity{
+public class JoinActivity extends Activity{
 
 	EditText idcon, pw, repw, email;
 	Button idButton, done, clearAll;
 	String birthYear, birthMonth, birthDay;
-	messageStr ms;
+	MsgString ms;
 	String temp, idconTemp;
 	
 	@Override
@@ -103,7 +103,7 @@ public class RegisterActivity extends Activity{
 				// TODO Auto-generated method stub
 				if( idcon.getText().toString().equals("") ){
 					AlertDialog.Builder ab = null;
-					ab = new AlertDialog.Builder( RegisterActivity.this);
+					ab = new AlertDialog.Builder( JoinActivity.this);
 					ab.setMessage("아이디를 먼저 입력하세요.");
 					ab.setTitle("경고");
 					ab.setPositiveButton("확인", null);
@@ -113,7 +113,7 @@ public class RegisterActivity extends Activity{
 				{
 					idconTemp = idcon.getText().toString();
 					AlertDialog.Builder ab = null;
-					ab = new AlertDialog.Builder( RegisterActivity.this);
+					ab = new AlertDialog.Builder( JoinActivity.this);
 					ab.setMessage(idconTemp);
 					ab.setNegativeButton("중복  확인", new DialogInterface.OnClickListener() {
 						
@@ -121,12 +121,12 @@ public class RegisterActivity extends Activity{
 						public void onClick(DialogInterface dialog, int which) {
 							// TODO Auto-generated method stub
 							String idtmp = idcon.getText().toString();
-							ms = new messageStr();
+							ms = new MsgString();
 							SocketThread st = new SocketThread(ms);
 							temp = "1";
 							temp += "\t";
 							temp += idtmp;
-							ms.setaStr(temp);
+							ms.setActivityStr(temp);
 							
 							try{
 							
@@ -136,9 +136,9 @@ public class RegisterActivity extends Activity{
 									st.start();
 								}catch(Exception e){ e.printStackTrace();}
 								while( true ){
-									if(ms.tChange())
+									if(ms.isThreadChange())
 									{
-										temp = ms.gettStr();
+										temp = ms.getThreadStr();
 										System.out.println(temp);
 										if( temp.equals("1") ) //중복값 없을 때,
 										{
@@ -153,18 +153,18 @@ public class RegisterActivity extends Activity{
 										}
 									}					
 								}
-							ms.setaStr("quit");	
+							ms.setActivityStr("quit");	
 							}
 							else
 							{	
-								Toast.makeText(RegisterActivity.this, "네트워크를 사용할 수 없습니다." , Toast.LENGTH_LONG).show();						
+								Toast.makeText(JoinActivity.this, "네트워크를 사용할 수 없습니다." , Toast.LENGTH_LONG).show();						
 							}
 							}catch(Exception e)
 							{
 								Toast.makeText(getApplicationContext(), "예기치 않은 오류가 발생했습니다.", Toast.LENGTH_LONG).show();
 							}
 							AlertDialog.Builder ab = null;
-							ab = new AlertDialog.Builder( RegisterActivity.this );
+							ab = new AlertDialog.Builder( JoinActivity.this );
 							ab.setMessage(idtmp);
 							ab.setNegativeButton("확인", null);
 							ab.setTitle("사용 여부");
@@ -193,7 +193,7 @@ public class RegisterActivity extends Activity{
 					if( idtmp.equals("") || idtmp == null )
 					{
 						AlertDialog.Builder ab = null;
-						ab = new AlertDialog.Builder( RegisterActivity.this);
+						ab = new AlertDialog.Builder( JoinActivity.this);
 						ab.setMessage("아이디를 입력해 주세요.");
 						ab.setPositiveButton(android.R.string.ok, null);
 						ab.setTitle("경고");
@@ -202,7 +202,7 @@ public class RegisterActivity extends Activity{
 					}else if( pwTmp1.equals("") || pwTmp1 == null )
 					{
 						AlertDialog.Builder ab = null;
-						ab = new AlertDialog.Builder( RegisterActivity.this);
+						ab = new AlertDialog.Builder( JoinActivity.this);
 						ab.setMessage("비밀번호를 입력해 주세요.");
 						ab.setPositiveButton(android.R.string.ok, null);
 						ab.setTitle("경고");
@@ -213,7 +213,7 @@ public class RegisterActivity extends Activity{
 						if(pwTmp2.equals("") || pwTmp2 == null )
 						{
 							AlertDialog.Builder ab = null;
-							ab = new AlertDialog.Builder( RegisterActivity.this);
+							ab = new AlertDialog.Builder( JoinActivity.this);
 							ab.setMessage("비밀번호를 확인해 주세요.");
 							ab.setPositiveButton(android.R.string.ok, null);
 							ab.setTitle("경고");
@@ -224,7 +224,7 @@ public class RegisterActivity extends Activity{
 							if( mTmp.equals("") || mTmp == null )						
 							{
 								AlertDialog.Builder ab = null;
-								ab = new AlertDialog.Builder( RegisterActivity.this);
+								ab = new AlertDialog.Builder( JoinActivity.this);
 								ab.setMessage("이메일주소를 입력해 주세요.");
 								ab.setPositiveButton(android.R.string.ok, null);
 								ab.setTitle("경고");
@@ -235,21 +235,21 @@ public class RegisterActivity extends Activity{
 								if( !pwTmp1.equals(pwTmp2) )							
 								{
 									AlertDialog.Builder ab = null;
-									ab = new AlertDialog.Builder( RegisterActivity.this);
+									ab = new AlertDialog.Builder( JoinActivity.this);
 									ab.setMessage("비밀번호가 일치하지 않습니다.");
 									ab.setPositiveButton(android.R.string.ok, null);
 									ab.setTitle("경고");
 									ab.show();
 									pw.setFocusable(true);
 								}else if( pwTmp1.equals(pwTmp2) ){
-									ms = new messageStr();
+									ms = new MsgString();
 									SocketThread st = new SocketThread(ms);								
 									temp = "2";
 									temp += "\t";
 									temp += idtmp;
 									temp += "\t";
 									temp += pwTmp1;
-									ms.setaStr(temp);
+									ms.setActivityStr(temp);
 									
 									if(isNetworkAvailable())
 									{									
@@ -258,20 +258,20 @@ public class RegisterActivity extends Activity{
 										}catch(Exception e){ e.printStackTrace(); }
 										
 										while(true){										
-											if(ms.tChange())
+											if(ms.isThreadChange())
 											{											
-												temp = ms.gettStr();
+												temp = ms.getThreadStr();
 												if(temp.equals("quit"))//회원가입 성공
 												{
 													finish();
 													break;
 												}else
-													Toast.makeText(RegisterActivity.this, "회원가입 도중 에러가 발생하였습니다.", Toast.LENGTH_LONG).show();
+													Toast.makeText(JoinActivity.this, "회원가입 도중 에러가 발생하였습니다.", Toast.LENGTH_LONG).show();
 											}
 										}
 									}
 									else
-										Toast.makeText(RegisterActivity.this, "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();
+										Toast.makeText(JoinActivity.this, "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();
 								}
 								
 							}
@@ -280,7 +280,7 @@ public class RegisterActivity extends Activity{
 				}else
 				{
 					AlertDialog.Builder ab = null;
-					ab = new AlertDialog.Builder( RegisterActivity.this );
+					ab = new AlertDialog.Builder( JoinActivity.this );
 					ab.setMessage("먼저 아이디 중복체크를 해주세요.");
 					ab.setPositiveButton("확인", null);
 					ab.setTitle("경고");
@@ -319,7 +319,7 @@ public class RegisterActivity extends Activity{
 	
 	public void onBackPressed(){
 		AlertDialog.Builder ab = null;
-		ab = new AlertDialog.Builder( RegisterActivity.this );
+		ab = new AlertDialog.Builder( JoinActivity.this );
 		ab.setMessage("회원가입을 그만하시겠습니까?");
 		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
 			
