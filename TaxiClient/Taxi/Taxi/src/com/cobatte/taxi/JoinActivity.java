@@ -18,16 +18,22 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class JoinActivity extends Activity{
-
-	EditText idcon, pw, repw, email;
-	Button idButton, done, clearAll;
-	String birthYear, birthMonth, birthDay;
-	MsgString ms;
-	String temp, idconTemp;
+	EditText inputId;
+	EditText inputPw;
+	EditText inputRePw;
+	EditText inputEmail;
+	Button checkId;
+	Button doneBtn;
+	Button clearAll;
+	String birthYear;
+	String birthMonth;
+	String birthDay;
+	MsgString messageObj;
+	String tempStr;
+	String checkIdTemp;
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
         setTitle("회원가입");
@@ -36,133 +42,122 @@ public class JoinActivity extends Activity{
         Spinner month = (Spinner)findViewById(R.id.birth_m);
         Spinner day = (Spinner)findViewById(R.id.birth_d);
         
-        idcon = (EditText)findViewById(R.id.idcon);
-        pw = (EditText)findViewById(R.id.pw);
-        repw = (EditText)findViewById(R.id.pwcon);
-        email = (EditText)findViewById(R.id.email);
-        idButton = (Button)findViewById(R.id.idBtn);
-        done = (Button)findViewById(R.id.done);
+        inputId = (EditText)findViewById(R.id.idcon);
+        inputPw = (EditText)findViewById(R.id.pw);
+        inputRePw = (EditText)findViewById(R.id.pwcon);
+        inputEmail = (EditText)findViewById(R.id.email);
+        checkId = (Button)findViewById(R.id.idBtn);
+        doneBtn = (Button)findViewById(R.id.done);
         clearAll = (Button)findViewById(R.id.clearAll);
         
-        done.setEnabled(false);
+        doneBtn.setEnabled(false);
         
-        ArrayAdapter<CharSequence> adtY = ArrayAdapter.createFromResource(this, R.array.year_arr, android.R.layout.simple_spinner_dropdown_item);
-        year.setAdapter(adtY);
-        ArrayAdapter<CharSequence> adtM = ArrayAdapter.createFromResource(this, R.array.month_arr, android.R.layout.simple_spinner_dropdown_item);
-        month.setAdapter(adtM);
-        ArrayAdapter<CharSequence> adtD = ArrayAdapter.createFromResource(this, R.array.day_arr, android.R.layout.simple_spinner_dropdown_item);
-        day.setAdapter(adtD);
+        ArrayAdapter<CharSequence> adtYear =
+        		ArrayAdapter.createFromResource(this, 
+        				R.array.year_arr, android.R.layout.simple_spinner_dropdown_item);        
+        year.setAdapter(adtYear);
+        
+        ArrayAdapter<CharSequence> adtMonth = 
+        		ArrayAdapter.createFromResource(this,
+        				R.array.month_arr, android.R.layout.simple_spinner_dropdown_item);
+        month.setAdapter(adtMonth);
+        
+        ArrayAdapter<CharSequence> adtDay = 
+        		ArrayAdapter.createFromResource(this,
+        				R.array.day_arr, android.R.layout.simple_spinner_dropdown_item);
+        day.setAdapter(adtDay);
         
         year.setOnItemSelectedListener(new OnItemSelectedListener() {
-
 			@Override
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int pos, long id) {
+			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 				// TODO Auto-generated method stub
 				birthYear = parent.getItemAtPosition(pos).toString();
 			}
-
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub				
-			}
+			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
+        
         month.setOnItemSelectedListener(new OnItemSelectedListener() {
-
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int pos, long id) {
 				// TODO Auto-generated method stub
 				birthMonth = parent.getItemAtPosition(pos).toString();
 			}
-
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub				
-			}
+			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
-        day.setOnItemSelectedListener(new OnItemSelectedListener() {
-
+        
+        day.setOnItemSelectedListener(new OnItemSelectedListener() {        	
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int pos, long id) {
 				// TODO Auto-generated method stub
 				birthDay = parent.getItemAtPosition(pos).toString();
 			}
-
 			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub				
-			}
+			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
         
-        idButton.setOnClickListener(new View.OnClickListener() {
+        checkId.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				if( idcon.getText().toString().equals("") ){
+				if( inputId.getText().toString().equals("") ){
 					AlertDialog.Builder ab = null;
 					ab = new AlertDialog.Builder( JoinActivity.this);
 					ab.setMessage("아이디를 먼저 입력하세요.");
 					ab.setTitle("경고");
 					ab.setPositiveButton("확인", null);
 					ab.show();
-				}
-				else
-				{
-					idconTemp = idcon.getText().toString();
+				}else{
+					checkIdTemp = inputId.getText().toString();
 					AlertDialog.Builder ab = null;
 					ab = new AlertDialog.Builder( JoinActivity.this);
-					ab.setMessage(idconTemp);
-					ab.setNegativeButton("중복  확인", new DialogInterface.OnClickListener() {
-						
+					ab.setMessage(checkIdTemp);
+					ab.setNegativeButton("중복  확인", new DialogInterface.OnClickListener() {						
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							// TODO Auto-generated method stub
-							String idtmp = idcon.getText().toString();
-							ms = new MsgString();
-							SocketThread st = new SocketThread(ms);
-							temp = "1";
-							temp += "\t";
-							temp += idtmp;
-							ms.setActivityStr(temp);
+							String idtmp = inputId.getText().toString();
+							messageObj = new MsgString();
+							SocketThread st = new SocketThread(messageObj);
+							tempStr = "1";
+							tempStr += "\t";
+							tempStr += idtmp;
+							messageObj.setActivityStr(tempStr);
 							
-							try{
-							
-							if( isNetworkAvailable() )
-							{
-								try{
-									st.start();
-								}catch(Exception e){ e.printStackTrace();}
-								while( true ){
-									if(ms.isThreadChange())
-									{
-										temp = ms.getThreadStr();
-										System.out.println(temp);
-										if( temp.equals("1") ) //중복값 없을 때,
-										{
-											idtmp+="는 사용이 가능합니다.";
-											done.setEnabled(true);
-											break;
-										}else
-										{
-											idtmp+="는 사용이 불가합니다.";
-											done.setEnabled(false);
-											break;
-										}
-									}					
+							try{							
+								if( isNetworkAvailable() ){
+									try{
+										st.start();
+									}catch(Exception e){ e.printStackTrace();}
+									
+									while( true ){
+										if(messageObj.isThreadChange()){
+											tempStr = messageObj.getThreadStr();
+											System.out.println(tempStr);
+											if( tempStr.equals("1") ){ //중복값 없을 때,
+												idtmp+="는 사용이 가능합니다.";
+												doneBtn.setEnabled(true);
+												break;
+											}else{
+												idtmp += "는 사용이 불가합니다.";
+												doneBtn.setEnabled(false);
+												break;
+											}
+										}					
+									}
+									messageObj.setActivityStr("quit");	
 								}
-							ms.setActivityStr("quit");	
-							}
-							else
-							{	
+							else{	
 								Toast.makeText(JoinActivity.this, "네트워크를 사용할 수 없습니다." , Toast.LENGTH_LONG).show();						
 							}
-							}catch(Exception e)
-							{
+							}catch(Exception e){
 								Toast.makeText(getApplicationContext(), "예기치 않은 오류가 발생했습니다.", Toast.LENGTH_LONG).show();
 							}
+							
 							AlertDialog.Builder ab = null;
 							ab = new AlertDialog.Builder( JoinActivity.this );
 							ab.setMessage(idtmp);
@@ -178,107 +173,94 @@ public class JoinActivity extends Activity{
 			}
 		});
         
-        done.setOnClickListener(new View.OnClickListener() {
+        doneBtn.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				String idtmp, pwTmp1, pwTmp2, mTmp;
-				idtmp = idcon.getText().toString();
-				pwTmp1 = pw.getText().toString();
-				pwTmp2 = repw.getText().toString();
-				mTmp = email.getText().toString();
+				idtmp = inputId.getText().toString();
+				pwTmp1 = inputPw.getText().toString();
+				pwTmp2 = inputRePw.getText().toString();
+				mTmp = inputEmail.getText().toString();
 				
-				if( idtmp.equals(idconTemp) ){
-					if( idtmp.equals("") || idtmp == null )
-					{
+				if( idtmp.equals(checkIdTemp) ){
+					if( idtmp.equals("") || idtmp == null ){
 						AlertDialog.Builder ab = null;
 						ab = new AlertDialog.Builder( JoinActivity.this);
 						ab.setMessage("아이디를 입력해 주세요.");
 						ab.setPositiveButton(android.R.string.ok, null);
 						ab.setTitle("경고");
 						ab.show();
-						
-					}else if( pwTmp1.equals("") || pwTmp1 == null )
-					{
+					}else if( pwTmp1.equals("") || pwTmp1 == null ){
 						AlertDialog.Builder ab = null;
 						ab = new AlertDialog.Builder( JoinActivity.this);
 						ab.setMessage("비밀번호를 입력해 주세요.");
 						ab.setPositiveButton(android.R.string.ok, null);
 						ab.setTitle("경고");
 						ab.show();
-						pw.setFocusable(true);
-					}else
-					{
-						if(pwTmp2.equals("") || pwTmp2 == null )
-						{
+						inputPw.setFocusable(true);
+					}else{
+						if(pwTmp2.equals("") || pwTmp2 == null ){
 							AlertDialog.Builder ab = null;
 							ab = new AlertDialog.Builder( JoinActivity.this);
 							ab.setMessage("비밀번호를 확인해 주세요.");
 							ab.setPositiveButton(android.R.string.ok, null);
 							ab.setTitle("경고");
 							ab.show();
-							repw.setFocusable(true);
-						}else
-							{
-							if( mTmp.equals("") || mTmp == null )						
-							{
+							inputRePw.setFocusable(true);
+						}else{
+							if( mTmp.equals("") || mTmp == null ){
 								AlertDialog.Builder ab = null;
 								ab = new AlertDialog.Builder( JoinActivity.this);
 								ab.setMessage("이메일주소를 입력해 주세요.");
 								ab.setPositiveButton(android.R.string.ok, null);
 								ab.setTitle("경고");
 								ab.show();
-								email.setFocusable(true);
-							}else
-							{
-								if( !pwTmp1.equals(pwTmp2) )							
-								{
+								inputEmail.setFocusable(true);
+							}else{
+								if( !pwTmp1.equals(pwTmp2) ){
 									AlertDialog.Builder ab = null;
 									ab = new AlertDialog.Builder( JoinActivity.this);
 									ab.setMessage("비밀번호가 일치하지 않습니다.");
 									ab.setPositiveButton(android.R.string.ok, null);
 									ab.setTitle("경고");
 									ab.show();
-									pw.setFocusable(true);
+									inputPw.setFocusable(true);
 								}else if( pwTmp1.equals(pwTmp2) ){
-									ms = new MsgString();
-									SocketThread st = new SocketThread(ms);								
-									temp = "2";
-									temp += "\t";
-									temp += idtmp;
-									temp += "\t";
-									temp += pwTmp1;
-									ms.setActivityStr(temp);
+									messageObj = new MsgString();
+									SocketThread st = new SocketThread(messageObj);								
+									tempStr = "2";
+									tempStr += "\t";
+									tempStr += idtmp;
+									tempStr += "\t";
+									tempStr += pwTmp1;
+									messageObj.setActivityStr(tempStr);
 									
-									if(isNetworkAvailable())
-									{									
+									if(isNetworkAvailable()){									
 										try{
 											st.start();
 										}catch(Exception e){ e.printStackTrace(); }
 										
-										while(true){										
-											if(ms.isThreadChange())
-											{											
-												temp = ms.getThreadStr();
-												if(temp.equals("quit"))//회원가입 성공
-												{
+										while(true){								
+											if(messageObj.isThreadChange()){											
+												tempStr = messageObj.getThreadStr();
+												if(tempStr.equals("quit")){//회원가입 성공												
 													finish();
 													break;
-												}else
+												}else{
 													Toast.makeText(JoinActivity.this, "회원가입 도중 에러가 발생하였습니다.", Toast.LENGTH_LONG).show();
+												}
 											}
 										}
-									}
-									else
+									}else{
 										Toast.makeText(JoinActivity.this, "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();
-								}
-								
+									}
+								}								
 							}
 						}
 					}					
-				}else
-				{
+				}else{
 					AlertDialog.Builder ab = null;
 					ab = new AlertDialog.Builder( JoinActivity.this );
 					ab.setMessage("먼저 아이디 중복체크를 해주세요.");
@@ -286,34 +268,29 @@ public class JoinActivity extends Activity{
 					ab.setTitle("경고");
 					ab.show();
 				}
-			}
-			
+			}			
 		});
         
-        clearAll.setOnClickListener(new View.OnClickListener() {
-			
+        clearAll.setOnClickListener(new View.OnClickListener() {			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				idcon.setText("");
-				pw.setText("");
-				repw.setText("");
-				email.setText("");				
+				inputId.setText("");
+				inputPw.setText("");
+				inputRePw.setText("");
+				inputEmail.setText("");				
 			}
-		});
-        
+		});        
 	}
 	
 	private boolean isNetworkAvailable() {
-		boolean available = false;
-		
-		ConnectivityManager conn = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		
-		NetworkInfo netInfo = conn.getActiveNetworkInfo();
-		
-		if(netInfo != null && netInfo.isAvailable())
+		boolean available = false;		
+		ConnectivityManager conn = 
+				(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);		
+		NetworkInfo netInfo = conn.getActiveNetworkInfo();		
+		if(netInfo != null && netInfo.isAvailable()){
 			available = true;
-		
+		}		
 		return available;
     }
 	
@@ -321,11 +298,9 @@ public class JoinActivity extends Activity{
 		AlertDialog.Builder ab = null;
 		ab = new AlertDialog.Builder( JoinActivity.this );
 		ab.setMessage("회원가입을 그만하시겠습니까?");
-		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-			
+		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
 				finish();
 			}
 		});
