@@ -8,11 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainMenuActivity extends Activity{
-	
-	SocketThread st;
-	messageStr ms;
-	Button create, join;
+public class MainMenuActivity extends Activity{	
+	SocketThread sktThread;
+	MsgString messageObj;
+	Button createBtn;
+	Button joinBtn;
 	
 	@Override
 	 protected void onCreate(Bundle savedInstanceState) {
@@ -21,46 +21,39 @@ public class MainMenuActivity extends Activity{
         setTitle("메뉴");
         
         Intent intent = getIntent();
-		ms = (messageStr)intent.getExtras().getSerializable("message");
+		messageObj = (MsgString)intent.getExtras().getSerializable("message");
 		
-        create = (Button)findViewById(R.id.create);
-        join = (Button)findViewById(R.id.join);
+        createBtn = (Button)findViewById(R.id.create);
+        joinBtn = (Button)findViewById(R.id.join);
         
-        create.setOnClickListener(new View.OnClickListener() {
+        createBtn.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+			public void onClick(View v) {				
 				Intent intent = new Intent(MainMenuActivity.this, CreateRoomActivity.class);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
 		});
         
-        join.setOnClickListener(new View.OnClickListener() {
-			
+        joinBtn.setOnClickListener(new View.OnClickListener() {			
 			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+			public void onClick(View v) {				
 				Intent intent = new Intent(MainMenuActivity.this, RoomListActivity.class);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
-		});
-        
+		});        
 	}
+	
 	public void onBackPressed(){
 		AlertDialog.Builder ab = null;
 		ab = new AlertDialog.Builder( MainMenuActivity.this );
 		ab.setMessage("로그아웃 하시겠습니까?");
-		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-			
+		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
-				ms.setaStr("quit");
+				messageObj.setActivityStr("quit");
 				finish();
 			}
 		});

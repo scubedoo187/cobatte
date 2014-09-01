@@ -32,7 +32,7 @@
         <activity 
             android:name="com.cobatte.taxi.LoginActivity"></activity>       
         <activity 
-            android:name="com.cobatte.taxi.RegisterActivity"></activity>
+            android:name="com.cobatte.taxi.JoinActivity"></activity>
         <activity 
             android:name="com.cobatte.taxi.MainMenuActivity"></activity>
         <activity 
@@ -40,7 +40,7 @@
         <activity 
             android:name="com.cobatte.taxi.CreateRoomActivity"></activity>
         <activity
-            android:name="com.cobatte.taxi.WaitingRoomActivity"></activity>"
+            android:name="com.cobatte.taxi.WaitingActivity"></activity>"
     </application>
 
 </manifest>
