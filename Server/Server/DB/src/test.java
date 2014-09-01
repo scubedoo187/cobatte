@@ -3,10 +3,10 @@ public class test
 {
 	public static void main(String[] args) 
 	{
-		UserInfo_DB db = new UserInfo_DB();
+		LinkDatabase db = new LinkDatabase();
 		String a;
 		
-		db.join("임해성", "222");
+		db.signup("임해성", "222");
 		System.out.println("입력");
 
 	}
