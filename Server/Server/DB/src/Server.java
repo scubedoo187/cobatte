@@ -14,18 +14,12 @@ public class Server {
 	private ServerSocket  isServerSocket;
     Vector isVector = new Vector(); //  소켓을  관리하는  벡터
 
-<<<<<<< HEAD
+
 
     void  startServer() {
         try {
             isServerSocket = new ServerSocket(13080);
-=======
-    void  startServer()
-    {
-        try
-        {
-            server = new ServerSocket(13080);
->>>>>>> 2fd3350a56cedcd147b325e8acaf861bbd4b9a44
+
             System.out.println("서버소켓이 생성되었습니다.");
 
             while(true) {
