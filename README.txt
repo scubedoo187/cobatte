@@ -1,22 +1,7 @@
- this is a test file
+This project's purpose is taxi carpool Application.
 
- git add . (git add --all), (git add *)
+Taxiclient -> Android App.
+Server -> Java.
+Community site -> php
 
- git commit -m 'comment'
 
- git push
-
- sounds great!!
-
-//doqiuhoihgaw
-
-main(void)
-{
- 
-return 0;
-}
-
-sdgswdgsadg
-asdfoijwojeg
-awegpasjgpawj
-gawegpjawgjwag
