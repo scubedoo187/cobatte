@@ -8,65 +8,58 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class SocketThread extends Thread{
-	
+public class SocketThread extends Thread{	
 	Socket socket = null;
 	private static String str="";
-	private static String temp;
+	private String tempStr;
 	
-	PrintWriter pw;
-	BufferedReader br;
-	MsgString ms;
+	PrintWriter printWriter;
+	BufferedReader buffReader;
+	MsgString messageStr;
 	
-	public SocketThread(MsgString m)
-	{
-		ms = m;
+	public SocketThread(MsgString m){
+		messageStr = m;
 	}
 
-	public void run()
-	{
-		try
-		{	
+	public void run(){
+		try{	
 			socket = new Socket("192.168.219.100", 13080);			
 			OutputStream out = socket.getOutputStream();
 			InputStream in = socket.getInputStream();
 			
-			pw = new PrintWriter(new OutputStreamWriter(out, "utf-8"));
-			br = new BufferedReader(new InputStreamReader(in, "utf-8"));
+			printWriter = new PrintWriter(new OutputStreamWriter(out, "utf-8"));
+			buffReader = new BufferedReader(new InputStreamReader(in, "utf-8"));
 			
-			while(true){
-				
-				if(ms.isActivityChange()){
-
-					str = ms.getActivityStr();
-					pw.println(str);
-					pw.flush();
+			while(true){				
+				if(messageStr.isActivityChange()){
+					str = messageStr.getActivityStr();
+					printWriter.println(str);
+					printWriter.flush();
 					System.out.println("메시지 \t전송" + str);	
-					temp = br.readLine();	
-					System.out.println("Server : " + temp);
+					tempStr = buffReader.readLine();	
+					System.out.println("Server : " + tempStr);
 						
-					str = temp;
-					ms.setThreadStr(str);
-					System.out.println("str = temp : " + str);
-					if(str.toString().equals("quit"))
-					{
+					str = tempStr;
+					messageStr.setThreadStr(str);
+					System.out.println("str = tempStr : " + str);
+					if(str.toString().equals("quit")){
 						System.out.println("Server : " + str);
 						break;
 					}
-					str = "";//초기화
+					str = "";
 				}				
-				try{Thread.sleep(100);}
+				try{
+					Thread.sleep(100);
+				}
 				catch(Exception e){}
 			}
-		}catch(Exception e) { }
+		}catch(Exception e){}
 		finally{
 			try{
-				pw.close();
-				br.close();
+				printWriter.close();
+				buffReader.close();
 				socket.close();
-			
-				
-			}catch( Exception e) { e.getStackTrace(); }
+			}catch( Exception e){}
 		}
 	}
 }

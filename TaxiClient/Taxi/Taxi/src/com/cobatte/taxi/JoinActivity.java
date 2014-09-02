@@ -271,8 +271,7 @@ public class JoinActivity extends Activity{
 			}			
 		});
         
-        clearAll.setOnClickListener(new View.OnClickListener() {			
-			@Override
+        clearAll.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				inputId.setText("");
@@ -298,8 +297,7 @@ public class JoinActivity extends Activity{
 		AlertDialog.Builder ab = null;
 		ab = new AlertDialog.Builder( JoinActivity.this );
 		ab.setMessage("회원가입을 그만하시겠습니까?");
-		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {			
-			@Override
+		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				finish();
 			}
