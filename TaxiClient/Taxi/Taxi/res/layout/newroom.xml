@@ -30,25 +30,6 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" >
-            <TextView 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="비밀번호 : "
-                android:textSize="20dp"/>
-            <EditText 
-                android:id="@+id/roomPasswd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="(선택 사항)"
-                android:textSize="20dp"
-                android:password="true"/>            	
-        </TableRow>
-
-        <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

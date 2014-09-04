@@ -9,45 +9,35 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 
 public class CreateRoomActivity extends Activity{
-
-	Button create, back;
-	EditText roomName, roomPasswd, place;
-	TimePicker time;
+	Button createBtn;
+	Button backBtn;
+	EditText roomName;
+	EditText placeName;
+	TimePicker timePick;
 	
-	@Override
-	 protected void onCreate(Bundle savedInstanceState) {
-      super.onCreate(savedInstanceState);
-      setContentView(R.layout.newroom);
-      setTitle("새로운 방 만들기");
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+	    setContentView(R.layout.newroom);
+	    setTitle("새로운 방 만들기");
+	     
+	    createBtn = (Button)findViewById(R.id.create);
+	    backBtn = (Button)findViewById(R.id.back);
+	    roomName = (EditText)findViewById(R.id.roomName);
+	    placeName = (EditText)findViewById(R.id.place);
+	    timePick = (TimePicker)findViewById(R.id.timepick);
+	      
+	    createBtn.setOnClickListener(new View.OnClickListener() {			
+	    	public void onClick(View v) {
+				Intent intent = new Intent(CreateRoomActivity.this, WaitingActivity.class);
+				startActivity(intent);
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
+			}
+	     });
       
-      create = (Button)findViewById(R.id.create);
-      back = (Button)findViewById(R.id.back);
-      roomName = (EditText)findViewById(R.id.roomName);
-      roomPasswd = (EditText)findViewById(R.id.roomPasswd);
-      place = (EditText)findViewById(R.id.place);
-      time = (TimePicker)findViewById(R.id.timepick);
-      
-      create.setOnClickListener(new View.OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			Intent intent = new Intent(CreateRoomActivity.this, WaitingActivity.class);
-			startActivity(intent);
-			overridePendingTransition(R.anim.left_in, R.anim.left_out);
-		}
-	});
-      
-      back.setOnClickListener(new View.OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			finish();
-		}
-	});
-      
-      
+	    backBtn.setOnClickListener(new View.OnClickListener() {
+	    	public void onClick(View v) {
+	    		finish();
+			}
+	    });
 	}
-	
 }

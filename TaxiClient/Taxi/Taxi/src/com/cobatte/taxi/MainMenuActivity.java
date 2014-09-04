@@ -14,8 +14,7 @@ public class MainMenuActivity extends Activity{
 	Button createBtn;
 	Button joinBtn;
 	
-	@Override
-	 protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainmenu);
         setTitle("메뉴");
@@ -28,7 +27,6 @@ public class MainMenuActivity extends Activity{
         
         createBtn.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {				
 				Intent intent = new Intent(MainMenuActivity.this, CreateRoomActivity.class);
 				startActivity(intent);
@@ -37,7 +35,6 @@ public class MainMenuActivity extends Activity{
 		});
         
         joinBtn.setOnClickListener(new View.OnClickListener() {			
-			@Override
 			public void onClick(View v) {				
 				Intent intent = new Intent(MainMenuActivity.this, RoomListActivity.class);
 				startActivity(intent);
@@ -51,7 +48,6 @@ public class MainMenuActivity extends Activity{
 		ab = new AlertDialog.Builder( MainMenuActivity.this );
 		ab.setMessage("로그아웃 하시겠습니까?");
 		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {			
-			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				messageObj.setActivityStr("quit");
 				finish();

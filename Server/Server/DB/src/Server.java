@@ -10,19 +10,17 @@ import java.net.Socket;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
-public class Server {
+public class Server{
 	private ServerSocket  isServerSocket;
     Vector isVector = new Vector(); //  소켓을  관리하는  벡터
 
-
-
-    void  startServer() {
-        try {
-            isServerSocket = new ServerSocket(13080);
+    void startServer(){
+        try{
+        	isServerSocket = new ServerSocket(13080);
 
             System.out.println("서버소켓이 생성되었습니다.");
 
-            while(true) {
+            while(true){
             	int i = 0;
                 Socket socket=isServerSocket.accept();
                 System.out.println("클라이언트와 연결되었습니다.");
@@ -35,21 +33,20 @@ public class Server {
                 System.out.println(inetaddr.getHostAddress() + " 님이 접속하셧습니다."); // IP찍어쥬공
                 System.out.println("현재 접속자 수: " + isVector.size());
             }
-        }
-        
-        catch(Exception  e) {
+        }        
+        catch(Exception  e){
             System.out.println(e);
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         LinkDatabase isLinkDatabase = new LinkDatabase();
         Server server = new Server();
         server.startServer(); // 서버를 실행한다.
         isLinkDatabase.close();
     }
     
-    class User_Thread extends Thread {
+    class User_Thread extends Thread{
         Socket isSocket; // 소켓의 레퍼런스
         private BufferedReader isReader;
         private PrintWriter isWriter;
@@ -58,32 +55,32 @@ public class Server {
             this.isSocket=socket;
         }
 
-        public void run() {
-            try {
-                LinkDatabase db = new LinkDatabase();
+        public void run(){
+            try{
+            	LinkDatabase db = new LinkDatabase();
                 OutputStream out = isSocket.getOutputStream();
                 InputStream in = isSocket.getInputStream();
                 
                 isReader = new BufferedReader(new InputStreamReader(in, "utf-8"));
                 isWriter = new PrintWriter(new OutputStreamWriter(out, "utf-8"));
-                String  msg = null;
+                String msg = null;
                 
-                while(true) {
+                while(true){
 	                msg = isReader.readLine();
-	                if(!msg.toString().equals("")) {
+	                if(!msg.toString().equals("")){
 		                StringTokenizer tok = new StringTokenizer(msg, "\t");
 		                System.out.println(msg);
 		                
 		                int header = 0; // 일련번호
+		                int i = 0; //우선 가장앞에 있는 헤더를 따로 int형으로 저장
 		                String result = null; // 리턴값
 		                String parameter[] = new String[5];
-		                int i = 0; //우선 가장앞에 있는 헤더를 따로 int형으로 저장
 		                header = Integer.parseInt(tok.nextToken()); // 앞으 헤더부분을 int형으로 변환
 		                
 		                while(tok.hasMoreTokens())
 		                	parameter[i++] = tok.nextToken();
 		                
-		            	switch(header) {
+		            	switch(header){
 		            		case 0 : // 헤더가 0일때 로그인 시도
 		             			result = db.login(parameter[0], parameter[1]); // return 값 0 or -1
 		             			isWriter.println(result); // 클라에 결과값 쏴주고
@@ -116,10 +113,10 @@ public class Server {
                 }
             }
             
-            catch(Exception  e) {}
+            catch(Exception  e){}
             
-            finally {
-                try {
+            finally{
+                try{
                 	InetAddress inetaddr = isSocket.getInetAddress();
                     isVector.remove(isSocket); // 소켓 관리자 리스트에서 소켓을 제거한다.
                     
@@ -139,7 +136,6 @@ public class Server {
                     System.out.println(inetaddr.getHostAddress() + "종료하셧습니다.");
                     System.out.println("현재 클라이언트 수: "+ isVector.size());
                 }
-                
                 catch(Exception  e) {}
             }
         }
