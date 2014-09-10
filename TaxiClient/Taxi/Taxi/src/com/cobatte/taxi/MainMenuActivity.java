@@ -51,6 +51,9 @@ public class MainMenuActivity extends Activity{
 			public void onClick(DialogInterface dialog, int which) {
 				messageObj.setActivityStr("quit");
 				System.out.println("quit Message has been send");
+				Intent intent = new Intent(MainMenuActivity.this, LoginActivity.class);
+				startActivity(intent);
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 				finish();
 			}
 		});
