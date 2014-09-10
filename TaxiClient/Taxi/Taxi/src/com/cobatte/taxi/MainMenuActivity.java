@@ -40,7 +40,7 @@ public class MainMenuActivity extends Activity{
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
-		});        
+		});
 	}
 	
 	public void onBackPressed(){
@@ -50,6 +50,7 @@ public class MainMenuActivity extends Activity{
 		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {			
 			public void onClick(DialogInterface dialog, int which) {
 				messageObj.setActivityStr("quit");
+				System.out.println("quit Message has been send");
 				finish();
 			}
 		});

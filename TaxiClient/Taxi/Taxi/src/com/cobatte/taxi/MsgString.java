@@ -6,7 +6,7 @@ import java.io.Serializable;
 	 * 로그인 시도 = 0
 	 * id중복체크 = 1
 	 * 회원가입 시도 = 2	 
-	 * 소켓종료 = quit
+	 * 소켓종료 = 9 "quit"
 	 * protocol 구분 '\t'
 	 */
 

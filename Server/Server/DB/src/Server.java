@@ -113,7 +113,7 @@ public class Server{
                 }
             }
             
-            catch(Exception  e){}
+            catch(Exception e){}
             
             finally{
                 try{
@@ -136,7 +136,7 @@ public class Server{
                     System.out.println(inetaddr.getHostAddress() + "종료하셧습니다.");
                     System.out.println("현재 클라이언트 수: "+ isVector.size());
                 }
-                catch(Exception  e) {}
+                catch(Exception e) {}
             }
         }
     }
