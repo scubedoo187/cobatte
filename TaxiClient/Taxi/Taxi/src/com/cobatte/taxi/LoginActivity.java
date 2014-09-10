@@ -15,7 +15,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity {
-
 	EditText inputId; // 아이디 입력
 	EditText inputPw; // 비밀번호 입력
 	Button loginBtn; // 확인 버튼
@@ -23,7 +22,6 @@ public class LoginActivity extends Activity {
 	MsgString messageObj; // 메세지 객체
 	String tempStr; // 임시 문자열 저장 변수
 
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
@@ -35,7 +33,6 @@ public class LoginActivity extends Activity {
 		joinIn = (Button) findViewById(R.id.regist);
 
 		loginBtn.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				String idTmp = inputId.getText().toString();
@@ -94,7 +91,6 @@ public class LoginActivity extends Activity {
 		});
 
 		joinIn.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(LoginActivity.this,
@@ -135,8 +131,7 @@ public class LoginActivity extends Activity {
 		ab.setTitle("알림");
 		ab.show();
 	}
-
-	@Override
+	
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
