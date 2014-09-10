@@ -53,6 +53,7 @@ public class MainMenuActivity extends Activity{
 				messageObj.setActivityStr("9");
 				System.out.println("quit Message has been send");
 				finish();	
+
 			}
 		});
 		ab.setNegativeButton(android.R.string.cancel, null);

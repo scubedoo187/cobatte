@@ -34,7 +34,6 @@ public class LoginActivity extends Activity {
 
 		loginBtn.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				String idTmp = inputId.getText().toString();
 				String pwTmp = inputPw.getText().toString();
 
@@ -67,6 +66,7 @@ public class LoginActivity extends Activity {
 									intent.putExtra("message", messageObj);
 									startActivity(intent);
 									overridePendingTransition(R.anim.left_in, R.anim.left_out);
+									finish();
 									break;
 								} else if (tempStr.equals("quit")) {
 									AlertDialog.Builder ab = null;
@@ -92,14 +92,12 @@ public class LoginActivity extends Activity {
 
 		joinIn.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent(LoginActivity.this,
 						JoinActivity.class);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
 		});
-
 	}
 
 	private boolean isNetworkAvailable() {
@@ -121,9 +119,7 @@ public class LoginActivity extends Activity {
 		ab.setMessage("애플리케이션을 종료하시겠습니까?");
 		ab.setPositiveButton(android.R.string.ok,
 				new DialogInterface.OnClickListener() {
-					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
 						finish();
 					}
 				});
@@ -133,7 +129,6 @@ public class LoginActivity extends Activity {
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
