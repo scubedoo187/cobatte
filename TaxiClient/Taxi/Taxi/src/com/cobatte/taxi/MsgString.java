@@ -13,10 +13,10 @@ import java.io.Serializable;
 public class MsgString implements Serializable{		
 	private static final long serialVersionUID = 1L;	
 	private String idValue; 
-	private String threadStr;
-	private String activityStr;
-	private boolean activityNewStr;
-	private boolean threadNewStr;
+	private static String threadStr;
+	private static String activityStr;
+	private static boolean activityNewStr;
+	private static boolean threadNewStr;
 
 	public MsgString(){
 		activityNewStr = false;

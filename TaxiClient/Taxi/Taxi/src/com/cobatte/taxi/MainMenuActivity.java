@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -49,9 +50,9 @@ public class MainMenuActivity extends Activity{
 		ab.setMessage("로그아웃 하시겠습니까?");
 		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {			
 			public void onClick(DialogInterface dialog, int which) {
-				messageObj.setActivityStr("quit");
+				messageObj.setActivityStr("9");
 				System.out.println("quit Message has been send");
-				finish();
+				finish();	
 			}
 		});
 		ab.setNegativeButton(android.R.string.cancel, null);
