@@ -23,7 +23,7 @@ public class SocketThread extends Thread{
 
 	public void run(){
 		try{	
-			socket = new Socket("192.168.219.173", 13080);			
+			socket = new Socket("210.115.229.243", 13080);
 			OutputStream out = socket.getOutputStream();
 			InputStream in = socket.getInputStream();
 			
