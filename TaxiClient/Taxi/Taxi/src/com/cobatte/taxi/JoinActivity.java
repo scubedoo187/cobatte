@@ -34,7 +34,7 @@ public class JoinActivity extends Activity{
 	
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register);
+        setContentView(R.layout.join);
         setTitle("회원가입");
         
         Spinner year = (Spinner)findViewById(R.id.birth_y);
@@ -67,40 +67,59 @@ public class JoinActivity extends Activity{
         day.setAdapter(adtDay);
         
         year.setOnItemSelectedListener(new OnItemSelectedListener() {
-			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 				birthYear = parent.getItemAtPosition(pos).toString();
 			}
-			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
         
         month.setOnItemSelectedListener(new OnItemSelectedListener() {
-			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 				birthMonth = parent.getItemAtPosition(pos).toString();
 			}
-			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
         
         day.setOnItemSelectedListener(new OnItemSelectedListener() {        	
-			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 				birthDay = parent.getItemAtPosition(pos).toString();
 			}
-			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {}
 		});
         
         checkId.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
 			public void onClick(View v) {
+				boolean specialCharacter = true;
+				String idTemp = inputId.getText().toString();
+				for( int i=0; i<idTemp.length(); i++ ){
+					if((byte)idTemp.charAt(i)>=65&&(byte)idTemp.charAt(i)<91)  //영문 소문자 검증.
+						specialCharacter = false;
+					else if((byte)idTemp.charAt(i)>=97&&(byte)idTemp.charAt(i)<123)	// 영문 대문자 검증.
+						specialCharacter = false;
+					else if((byte)idTemp.charAt(i)>=48&&(byte)idTemp.charAt(i)<58)	// 숫자 검증.
+						specialCharacter = false;
+					else if((byte)idTemp.charAt(i)>=33&&(byte)idTemp.charAt(i)<48)
+						specialCharacter = true;
+					else if((byte)idTemp.charAt(i)>=58&&(byte)idTemp.charAt(i)<65)
+						specialCharacter = true;
+					else if((byte)idTemp.charAt(i)>=91&&(byte)idTemp.charAt(i)<97)
+						specialCharacter = true;
+					else if((byte)idTemp.charAt(i)>=123&&(byte)idTemp.charAt(i)<127)
+						specialCharacter = true;
+					else
+						specialCharacter = true;
+				}					
 				if( inputId.getText().toString().equals("") ){
 					AlertDialog.Builder ab = null;
 					ab = new AlertDialog.Builder( JoinActivity.this);
 					ab.setMessage("아이디를 먼저 입력하세요.");
+					ab.setTitle("경고");
+					ab.setPositiveButton("확인", null);
+					ab.show();
+				}else if(specialCharacter == true){
+					AlertDialog.Builder ab = null;
+					ab = new AlertDialog.Builder( JoinActivity.this);
+					ab.setMessage("아이디는 영문(대)소문자와 숫자만 입력이 가능합니다.");
 					ab.setTitle("경고");
 					ab.setPositiveButton("확인", null);
 					ab.show();
@@ -110,7 +129,6 @@ public class JoinActivity extends Activity{
 					ab = new AlertDialog.Builder( JoinActivity.this);
 					ab.setMessage(checkIdTemp);
 					ab.setNegativeButton("중복  확인", new DialogInterface.OnClickListener() {						
-						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							String idtmp = inputId.getText().toString();
 							messageObj = new MsgString();
@@ -166,7 +184,6 @@ public class JoinActivity extends Activity{
 		});
         
         doneBtn.setOnClickListener(new View.OnClickListener() {
-			
 			public void onClick(View v) {
 				String idtmp, pwTmp1, pwTmp2, mTmp;
 				idtmp = inputId.getText().toString();
@@ -276,9 +293,8 @@ public class JoinActivity extends Activity{
 		ConnectivityManager conn = 
 				(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);		
 		NetworkInfo netInfo = conn.getActiveNetworkInfo();		
-		if(netInfo != null && netInfo.isAvailable()){
+		if(netInfo != null && netInfo.isAvailable())
 			available = true;
-		}		
 		return available;
     }
 	
@@ -287,7 +303,7 @@ public class JoinActivity extends Activity{
 		ab = new AlertDialog.Builder( JoinActivity.this );
 		ab.setMessage("회원가입을 그만하시겠습니까?");
 		ab.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int which) {
+			public void onClick(DialogInterface dialog, int which){
 				finish();
 			}
 		});

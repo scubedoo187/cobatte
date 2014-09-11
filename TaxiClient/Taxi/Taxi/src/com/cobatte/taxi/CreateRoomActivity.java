@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-public class CreateRoomActivity extends Activity implements OnTimeSetListener{
+public class CreateRoomActivity extends Activity{
 	Button createBtn;
 	Button backBtn;
 	Button timePickBtn;
@@ -41,14 +41,16 @@ public class CreateRoomActivity extends Activity implements OnTimeSetListener{
  
 	    final TimePickerDialog.OnTimeSetListener timeListener = new OnTimeSetListener() {
 			public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-				timeView.setText(String.format("%d : %d", hourOfDay, minute));
+				timeView.setText(String.format("%2d 시  %2d 분", hourOfDay, minute));
 			}
 		};
 		
 	    timePickBtn.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Calendar cal = Calendar.getInstance();
-				TimePickerDialog timePickDlg = new TimePickerDialog(CreateRoomActivity.this, timeListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true);
+				TimePickerDialog timePickDlg = 
+						new TimePickerDialog(CreateRoomActivity.this, timeListener, 
+								cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true);				
 				timePickDlg.setTitle("모임 시간 설정");
 				timePickDlg.show();
 			}
@@ -97,7 +99,7 @@ public class CreateRoomActivity extends Activity implements OnTimeSetListener{
 	    });
 	}
 
-	public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+	/*public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 		timeView.setText(String.format("%d : %d", hourOfDay, minute));
-	}
+	}*/
 }

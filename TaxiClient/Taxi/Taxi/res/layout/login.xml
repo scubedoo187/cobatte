@@ -2,14 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <LinearLayout 
+    android:orientation="vertical"
+    android:background="#FFFFE9" >
+   
+    <LinearLayout
+        android:layout_weight="1" 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:layout_margin="20dp">    
-    <LinearLayout        
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -18,7 +32,7 @@
             android:layout_weight="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="I D : "
+            android:text="   ID : "
             android:textSize="30dp"/>
         
         <EditText 
@@ -30,7 +44,6 @@
             android:textSize="30dp"/>
         
     </LinearLayout>
-    
     <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +53,7 @@
             android:layout_weight="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="P W : "
+            android:text="   PW : "
             android:textSize="30dp"/>
         
         <EditText 
@@ -51,11 +64,10 @@
             android:hint="비밀번호 입력 "
             android:textSize="30dp"
             android:password="true"/>
-                
     </LinearLayout>    
     </LinearLayout>
     
-    <LinearLayout 
+	<LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -63,25 +75,15 @@
         
         <Button 
             android:id="@+id/confirm"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="로그인"/>
-        
-    </LinearLayout>
-    
-    <LinearLayout 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
-        
         <Button 
             android:id="@+id/regist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="회원 가입"/>
-        
     </LinearLayout>
-    
 </LinearLayout>
