@@ -61,6 +61,7 @@ public class LoginActivity extends Activity {
 							if (messageObj.isThreadChange()) {
 								tempStr = messageObj.getThreadStr();
 								if (tempStr.equals("0")) {
+									messageObj.setId(idTmp);
 									Intent intent = new Intent(
 											LoginActivity.this, MainMenuActivity.class);
 									intent.putExtra("message", messageObj);

@@ -26,10 +26,10 @@ public class MainMenuActivity extends Activity{
         createBtn = (Button)findViewById(R.id.create);
         joinBtn = (Button)findViewById(R.id.join);
         
-        createBtn.setOnClickListener(new View.OnClickListener() {
-			
-			public void onClick(View v) {				
-				Intent intent = new Intent(MainMenuActivity.this, CreateRoomActivity.class);
+        createBtn.setOnClickListener(new View.OnClickListener() {			
+			public void onClick(View v) {
+				Intent intent = new Intent( MainMenuActivity.this, CreateRoomActivity.class );
+									intent.putExtra("message", messageObj);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}

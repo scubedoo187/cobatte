@@ -32,7 +32,6 @@ public class JoinActivity extends Activity{
 	String tempStr;
 	String checkIdTemp;
 	
-	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
@@ -70,7 +69,6 @@ public class JoinActivity extends Activity{
         year.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-				// TODO Auto-generated method stub
 				birthYear = parent.getItemAtPosition(pos).toString();
 			}
 			@Override
@@ -79,9 +77,7 @@ public class JoinActivity extends Activity{
         
         month.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int pos, long id) {
-				// TODO Auto-generated method stub
+			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 				birthMonth = parent.getItemAtPosition(pos).toString();
 			}
 			@Override
@@ -90,9 +86,7 @@ public class JoinActivity extends Activity{
         
         day.setOnItemSelectedListener(new OnItemSelectedListener() {        	
 			@Override
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int pos, long id) {
-				// TODO Auto-generated method stub
+			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 				birthDay = parent.getItemAtPosition(pos).toString();
 			}
 			@Override
@@ -103,7 +97,6 @@ public class JoinActivity extends Activity{
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				if( inputId.getText().toString().equals("") ){
 					AlertDialog.Builder ab = null;
 					ab = new AlertDialog.Builder( JoinActivity.this);
@@ -119,7 +112,6 @@ public class JoinActivity extends Activity{
 					ab.setNegativeButton("중복  확인", new DialogInterface.OnClickListener() {						
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
-							// TODO Auto-generated method stub
 							String idtmp = inputId.getText().toString();
 							messageObj = new MsgString();
 							SocketThread st = new SocketThread(messageObj);
@@ -175,9 +167,7 @@ public class JoinActivity extends Activity{
         
         doneBtn.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				String idtmp, pwTmp1, pwTmp2, mTmp;
 				idtmp = inputId.getText().toString();
 				pwTmp1 = inputPw.getText().toString();
@@ -273,7 +263,6 @@ public class JoinActivity extends Activity{
         
         clearAll.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				inputId.setText("");
 				inputPw.setText("");
 				inputRePw.setText("");

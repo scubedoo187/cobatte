@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 public class MsgString implements Serializable{		
 	private static final long serialVersionUID = 1L;	
-	private String idValue; 
+	private static String idValue; 
 	private static String threadStr;
 	private static String activityStr;
 	private static boolean activityNewStr;
