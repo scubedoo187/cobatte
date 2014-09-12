@@ -88,6 +88,50 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
+	public void createRoom(String admin, String roomName, String place, int hour, int minute) {
+		try {
+			isStatement.executeUpdate("insert into roominfo(admin, roomname, place, minute, hour) "
+					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"', "+minute+", "+hour+")");
+		}
+		
+		catch(Exception e) {
+			System.out.println("Insert Error " + e);
+		}
+	}
+	
+	public void deleteRoom() {
+		
+	}
+	
+	public String roomList() {
+		try {
+			isResultSet = isStatement.executeQuery("select * from UserInfo");
+			boolean checklogin = false; // 비교할때 쓸꺼임
+			
+			while(isResultSet.next()) {
+				//if(Name.toString().equals(isResultSet.getString("id")) 
+				//		&& Password.toString().equals(isResultSet.getString("passwd")))
+					checklogin = true; // 맞으면 true
+			}
+			
+			if(checklogin)
+				isResultValue = "0"; // true이면 0
+			
+			else
+				isResultValue = "quit"; // false이면 -1
+		}
+		
+		catch (Exception e) {
+			System.out.println("Login Error " + e);
+		}
+		
+		return isResultValue;
+	}
+	
+	public String roominfo() {
+		return "k";
+	}
+	
 	public void close() {
 		try {
 			if(isResultSet != null) // ResultSet 객체를 닫는다.
