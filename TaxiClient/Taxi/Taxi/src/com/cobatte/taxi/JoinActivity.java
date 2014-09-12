@@ -98,16 +98,26 @@ public class JoinActivity extends Activity{
 						specialCharacter = false;
 					else if((byte)idTemp.charAt(i)>=48&&(byte)idTemp.charAt(i)<58)	// 숫자 검증.
 						specialCharacter = false;
-					else if((byte)idTemp.charAt(i)>=33&&(byte)idTemp.charAt(i)<48)
+					else if((byte)idTemp.charAt(i)>=33&&(byte)idTemp.charAt(i)<48){
 						specialCharacter = true;
-					else if((byte)idTemp.charAt(i)>=58&&(byte)idTemp.charAt(i)<65)
+						break;
+					}
+					else if((byte)idTemp.charAt(i)>=58&&(byte)idTemp.charAt(i)<65){
 						specialCharacter = true;
-					else if((byte)idTemp.charAt(i)>=91&&(byte)idTemp.charAt(i)<97)
+						break;
+					}
+					else if((byte)idTemp.charAt(i)>=91&&(byte)idTemp.charAt(i)<97){
 						specialCharacter = true;
-					else if((byte)idTemp.charAt(i)>=123&&(byte)idTemp.charAt(i)<127)
+						break;
+					}
+					else if((byte)idTemp.charAt(i)>=123&&(byte)idTemp.charAt(i)<127){
 						specialCharacter = true;
-					else
+						break;
+						}
+					else{
 						specialCharacter = true;
+						break;
+					}
 				}					
 				if( inputId.getText().toString().equals("") ){
 					AlertDialog.Builder ab = null;

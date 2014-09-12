@@ -4,17 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TableLayout
+    <LinearLayout 
         android:layout_weight="1"
-        android:layout_margin="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" >
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
             <TextView 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -26,14 +20,15 @@
                 android:layout_height="wrap_content"
                 android:hint="방 제목 입력"
                 android:textSize="20dp"
+                android:maxLength="15"
                 android:ems="15"/>            
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" >
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
             <TextView 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,28 +39,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="(명확하게 표시)"
-                android:textSize="20dp"/>
-        </TableRow>
-        		
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" >
-            <TextView 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="모임 시간 : "
-                android:textSize="20dp"/>
-            <TextView
-                android:id="@+id/timeView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="시간을 선택하세요"
-                android:textSize="25dp"/>
-        </TableRow>     
-    </TableLayout>
+                android:textSize="20dp"
+                android:maxLength="15"
+                android:ems="15"/>
+	</LinearLayout>
 
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" >
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="모임 시간 : "
+		            android:textSize="20dp"/>
+		        <TextView
+		            android:layout_weight="1"
+		            android:id="@+id/hourView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text=""
+		            android:textSize="25dp"/>
+		        <TextView 
+		            android:text="시"
+		            android:textSize="20dp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"/>
+		        <TextView
+		            android:layout_weight="1"
+		            android:id="@+id/minView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text=""
+		            android:textSize="25dp"/>
+		        <TextView 
+		            android:text="분"
+		            android:textSize="20dp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"/>
+		    </LinearLayout>    
+    
     <LinearLayout 
         android:layout_weight="1"
         android:layout_margin="15dp"
@@ -73,19 +86,22 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
                 
-        <Button 
+        <Button
+            android:layout_weight="1" 
             android:id="@+id/timePickBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="시간 선택"
             android:textSize="20dp"/>
         <Button 
+            android:layout_weight="1" 
             android:id="@+id/create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="생성"
             android:textSize="20dp"/>
         <Button 
+            android:layout_weight="1" 
             android:id="@+id/back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

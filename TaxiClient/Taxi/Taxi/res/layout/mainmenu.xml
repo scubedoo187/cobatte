@@ -5,14 +5,16 @@
     android:orientation="vertical" >
 
     <Button
+	   	android:layout_weight="1"	    			
         android:id="@+id/create"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="방만들기" />
 
     <Button
+	   	android:layout_weight="1"	    			
         android:id="@+id/join"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="참여하기" />
     

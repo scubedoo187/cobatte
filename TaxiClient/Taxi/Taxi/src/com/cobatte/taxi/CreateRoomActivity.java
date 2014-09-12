@@ -5,7 +5,10 @@ import java.util.Calendar;
 import android.app.Activity;
 import android.app.TimePickerDialog;
 import android.app.TimePickerDialog.OnTimeSetListener;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,7 +23,8 @@ public class CreateRoomActivity extends Activity{
 	Button timePickBtn;
 	EditText roomName;
 	EditText placeName;
-	TextView timeView;
+	TextView hourView;
+	TextView minView;
 	MsgString messageObj;
 	String tempStr;
   	
@@ -37,11 +41,13 @@ public class CreateRoomActivity extends Activity{
 	    timePickBtn = (Button)findViewById(R.id.timePickBtn);
 	    roomName = (EditText)findViewById(R.id.roomName);
 	    placeName = (EditText)findViewById(R.id.place);
-	    timeView = (TextView)findViewById(R.id.timeView);
+	    hourView = (TextView)findViewById(R.id.hourView);
+	    minView = (TextView)findViewById(R.id.minView);
  
 	    final TimePickerDialog.OnTimeSetListener timeListener = new OnTimeSetListener() {
 			public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-				timeView.setText(String.format("%2d 시  %2d 분", hourOfDay, minute));
+				hourView.setText(String.format("%2d", hourOfDay));
+				minView.setText(String.format("%2d", minute));
 			}
 		};
 		
@@ -68,9 +74,12 @@ public class CreateRoomActivity extends Activity{
 	    		
 	    		if( rName.equals("") || pName.equals("") ){
 	    			Toast.makeText(getApplicationContext(), "방 이름, 혹은 모임 장소를 모두 입력 해 주세요", Toast.LENGTH_LONG).show();
-	    		}else if( timeView.getText().toString().equals("시간을 선택하세요") ){
+	    		}else if( hourView.getText().toString().equals("시간을 선택하세요") ){
 	    			Toast.makeText(getApplicationContext(), "시간을 선택하세요", Toast.LENGTH_LONG).show();
 	    		}else{
+	    			messageObj = new MsgString();
+					SocketThread st = new SocketThread(messageObj);
+					
 	    			tempStr = "3";
 	    			tempStr += "\t";
 	    			tempStr += adminId;
@@ -79,18 +88,36 @@ public class CreateRoomActivity extends Activity{
 	    			tempStr += "\t";
 	    			tempStr += pName;
 	    			tempStr += "\t";
-	    			tempStr += timeView.getText().toString();
-	    			//messageObj.send Message Query (tempStr);
-	    			// test Message 
-	    			Toast.makeText(getApplicationContext(), tempStr, Toast.LENGTH_LONG).show();
+	    			tempStr += hourView.getText().toString();
+	    			tempStr += "\t";
+	    			tempStr += minView.getText().toString();
+	    			messageObj.setActivityStr(tempStr);
 	    			
-	    			Intent intent = new Intent(CreateRoomActivity.this, WaitingActivity.class);
-	    			intent.putExtra("message", messageObj);
-	    			startActivity(intent);
-	    			overridePendingTransition(R.anim.left_in, R.anim.left_out);
+	    			if(isNetworkAvailable()){
+	    				try{
+	    					st.start();
+	    				}catch( Exception e ){}
+	    				while(true){
+	    					if( messageObj.isThreadChange() ){
+	    						tempStr = messageObj.getThreadStr();
+	    						if( tempStr.equals("3") ){
+	    							Intent intent = new Intent(CreateRoomActivity.this,	WaitingActivity.class);
+	    							intent.putExtra("message", messageObj);
+	    							startActivity(intent);
+	    							overridePendingTransition(R.anim.left_in, R.anim.left_out);
+	    							break;
+	    						}else if( tempStr.equals("quit") ){
+		    						Toast.makeText(getApplicationContext(),
+		    								"오류가 발생하였습니다. 잠시후 재시도 해주세요.", Toast.LENGTH_LONG).show();
+		    						break;
+	    						}
+	    					}	
+	    				}
+	    			}else
+	    				Toast.makeText(getApplicationContext(), "네트워크를 사용할 수 없습니다.", Toast.LENGTH_LONG).show();
 	    		}
-			}
-	     });
+	    	}
+	    });
       
 	    backBtn.setOnClickListener(new View.OnClickListener() {
 	    	public void onClick(View v) {
@@ -99,7 +126,16 @@ public class CreateRoomActivity extends Activity{
 	    });
 	}
 
-	/*public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-		timeView.setText(String.format("%d : %d", hourOfDay, minute));
-	}*/
+	private boolean isNetworkAvailable() {
+		boolean available = false;
+		
+		ConnectivityManager conn
+			= (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo netInfo = conn.getActiveNetworkInfo();
+		
+		if (netInfo != null && netInfo.isAvailable())
+			available = true;
+
+		return available;
+	}
 }
