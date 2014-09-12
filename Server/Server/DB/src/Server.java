@@ -25,19 +25,19 @@ public class Server{
             while(true){
             	int i = 0;
                 Socket socket=isServerSocket.accept();
-                System.out.println("클라이언트와 연결되었습니다.");
+                log.info("클라이언트와 연결되었습니다.");
 
                 User_Thread pt = new User_Thread(socket); // 클라이언트와 통신하는 스레드를 생성하고 실행시킨다
             	isVector.add(socket); // 소켓 관리자 리스트에 소켓을 추가한다.
             	
             	pt.start();                 
                 InetAddress inetaddr = socket.getInetAddress(); // 접속자의 IP를 알아낸다
-                System.out.println(inetaddr.getHostAddress() + " 님이 접속하셧습니다."); // IP찍어쥬공
-                System.out.println("현재 접속자 수: " + isVector.size());
+                log.info(inetaddr.getHostAddress() + " 님이 접속하셧습니다."); // IP찍어쥬공
+                log.info("현재 접속자 수: " + isVector.size());
             }
         }        
         catch(Exception  e){
-            System.out.println(e);
+            log.error("서버 실행 실패");
         }
     }
 
@@ -118,7 +118,7 @@ public class Server{
 		            			break;
 		            			
 		        			default :
-		        				System.out.println("Not Found Header Number");
+		        				log.error("Not Found Header Number");
 		        				break;
 		            	}
 		            	msg = "";
@@ -126,7 +126,9 @@ public class Server{
                 }
             }
             
-            catch(Exception e){}
+            catch(Exception e){
+            	log.fatal("클라이언트 연결 실패");
+            }
             
             finally{
                 try{
@@ -146,10 +148,12 @@ public class Server{
                     isWriter=null;  
                     isSocket=null;
                     // 소켓과 IO Stream을 close
-                    System.out.println(inetaddr.getHostAddress() + "종료하셧습니다.");
-                    System.out.println("현재 클라이언트 수: "+ isVector.size());
+                    log.info(inetaddr.getHostAddress() + "종료하셧습니다.");
+                    log.info("현재 클라이언트 수: "+ isVector.size());
                 }
-                catch(Exception e) {}
+                catch(Exception e) {
+                	log.error("소켓 비정상 종료");
+                }
             }
         }
     }

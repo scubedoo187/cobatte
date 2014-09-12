@@ -3,7 +3,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import org.apache.log4j.Logger;
+
 public class LinkDatabase {
+	static Logger log = Logger.getLogger(LinkDatabase.class.getName());
 	Connection isConnect = null;
 	Statement isStatement = null;
 	ResultSet isResultSet = null;
@@ -25,7 +28,7 @@ public class LinkDatabase {
 		}
 		
 		catch(Exception e) {
-			System.out.println("Connect error : " + e);
+			log.error("Connect error : " + e);
 		}
 	}
 
@@ -35,7 +38,7 @@ public class LinkDatabase {
 		}
 		
 		catch(Exception e) {
-			System.out.println("Insert Error " + e);
+			log.error("Insert Error " + e);
 		}
 	}
 	
@@ -58,7 +61,7 @@ public class LinkDatabase {
 		}
 		
 		catch (Exception e) {
-			System.out.println("Login Error " + e);
+			log.error("Login Error " + e);
 		}
 		
 		return isResultValue;
@@ -82,7 +85,7 @@ public class LinkDatabase {
 		}
 		
 		catch (Exception e) {
-			System.out.println("Login Error " + e);
+			log.error("Login Error " + e);
 		}
 		
 		return isResultValue;
@@ -95,7 +98,7 @@ public class LinkDatabase {
 		}
 		
 		catch(Exception e) {
-			System.out.println("Insert Error " + e);
+			log.error("Insert Error " + e);
 		}
 	}
 	
@@ -105,30 +108,18 @@ public class LinkDatabase {
 	
 	public String roomList() {
 		try {
-			isResultSet = isStatement.executeQuery("select * from UserInfo");
-			boolean checklogin = false; // 비교할때 쓸꺼임
-			
-			while(isResultSet.next()) {
-				//if(Name.toString().equals(isResultSet.getString("id")) 
-				//		&& Password.toString().equals(isResultSet.getString("passwd")))
-					checklogin = true; // 맞으면 true
-			}
-			
-			if(checklogin)
-				isResultValue = "0"; // true이면 0
-			
-			else
-				isResultValue = "quit"; // false이면 -1
+			//방목록
 		}
 		
 		catch (Exception e) {
-			System.out.println("Login Error " + e);
+			log.error("Login Error " + e);
 		}
 		
 		return isResultValue;
 	}
 	
 	public String roominfo() {
+		//방 정보
 		return "k";
 	}
 	
@@ -145,7 +136,7 @@ public class LinkDatabase {
 		}
 		
 		catch(Exception e) {
-			System.out.println("Close Error" + e);
+			log.error("Close Error" + e);
 		}	
 	}
 }
