@@ -10,7 +10,10 @@ import java.net.Socket;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
+import org.apache.log4j.Logger;
+
 public class Server{
+	static Logger log = Logger.getLogger(Server.class.getName());
 	private ServerSocket  isServerSocket;
     Vector isVector = new Vector(); //  소켓을  관리하는  벡터
 
@@ -18,8 +21,7 @@ public class Server{
         try{
         	isServerSocket = new ServerSocket(13080);
 
-            System.out.println("서버소켓이 생성되었습니다.");
-
+        	log.info("서버가 실행되었습니다.");
             while(true){
             	int i = 0;
                 Socket socket=isServerSocket.accept();
