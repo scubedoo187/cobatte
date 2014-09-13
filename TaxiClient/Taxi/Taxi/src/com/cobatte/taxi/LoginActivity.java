@@ -20,12 +20,14 @@ public class LoginActivity extends Activity {
 	Button loginBtn; // 확인 버튼
 	Button joinIn; // 회원가입 버튼
 	MsgString messageObj; // 메세지 객체
-	String tempStr; // 임시 문자열 저장 변수
+	String idInfoStr; // 임시 문자열 저장 변수
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
 		setTitle("로그인");
+
+		final Config config = new Config(this);
 
 		inputId = (EditText) findViewById(R.id.id);
 		inputPw = (EditText) findViewById(R.id.passwd);
@@ -37,21 +39,21 @@ public class LoginActivity extends Activity {
 				String idTmp = inputId.getText().toString();
 				String pwTmp = inputPw.getText().toString();
 
-				if (idTmp.equals("") || pwTmp.equals("")){
+				if (idTmp.equals("") || pwTmp.equals("")) {
 					Toast.makeText(getApplicationContext(),
 							"아이디와 패스워드를 입력해 주세요.", Toast.LENGTH_LONG).show();
-				}else{
+				} else {
 					messageObj = new MsgString();
 					SocketThread st = new SocketThread(messageObj);
 
-					tempStr = "0"; // 로그인 메세지 헤더
-					tempStr += "\t";
-					tempStr += idTmp;
-					tempStr += "\t";
-					tempStr += pwTmp;
-					messageObj.setActivityStr(tempStr);
+					idInfoStr = "0"; // 로그인 메세지 헤더
+					idInfoStr += "\t";
+					idInfoStr += idTmp;
+					idInfoStr += "\t";
+					idInfoStr += pwTmp;
+					messageObj.setActivityStr(idInfoStr);
 
-					if (isNetworkAvailable()){
+					if (config.isNetworkAvailable()) {
 						try {
 							st.start();
 						} catch (Exception e) {
@@ -59,19 +61,22 @@ public class LoginActivity extends Activity {
 						}
 						while (true) {
 							if (messageObj.isThreadChange()) {
-								tempStr = messageObj.getThreadStr();
-								if (tempStr.equals("0")) {
+								idInfoStr = messageObj.getThreadStr();
+								if (idInfoStr.equals("0")) {
 									messageObj.setId(idTmp);
 									Intent intent = new Intent(
-											LoginActivity.this, MainMenuActivity.class);
+											LoginActivity.this,
+											MainMenuActivity.class);
 									intent.putExtra("message", messageObj);
 									startActivity(intent);
-									overridePendingTransition(R.anim.left_in, R.anim.left_out);
+									overridePendingTransition(R.anim.left_in,
+											R.anim.left_out);
 									finish();
 									break;
-								} else if (tempStr.equals("quit")) {
+								} else if (idInfoStr.equals("quit")) {
 									AlertDialog.Builder ab = null;
-									ab = new AlertDialog.Builder(LoginActivity.this);
+									ab = new AlertDialog.Builder(
+											LoginActivity.this);
 									ab.setMessage("아이디와 패스워드를 다시 확인해 주세요.");
 									ab.setPositiveButton("확인", null);
 									ab.setTitle("로그인 할 수 없습니다!");
@@ -79,7 +84,8 @@ public class LoginActivity extends Activity {
 									break;
 								} else {
 									Toast.makeText(getApplicationContext(),
-											"로그인 시도중 알수없는 오류가 발생하였습니다.", Toast.LENGTH_LONG).show();
+											"로그인 시도중 알수없는 오류가 발생하였습니다.",
+											Toast.LENGTH_LONG).show();
 									break;
 								}
 							}
@@ -101,19 +107,6 @@ public class LoginActivity extends Activity {
 		});
 	}
 
-	private boolean isNetworkAvailable() {
-		boolean available = false;
-		
-		ConnectivityManager conn
-			= (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		NetworkInfo netInfo = conn.getActiveNetworkInfo();
-		
-		if (netInfo != null && netInfo.isAvailable())
-			available = true;
-
-		return available;
-	}
-
 	public void onBackPressed() {
 		AlertDialog.Builder ab = null;
 		ab = new AlertDialog.Builder(LoginActivity.this);
@@ -127,10 +120,5 @@ public class LoginActivity extends Activity {
 		ab.setNegativeButton(android.R.string.cancel, null);
 		ab.setTitle("알림");
 		ab.show();
-	}
-	
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 }
