@@ -40,6 +40,7 @@ public class MainMenuActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent(MainMenuActivity.this,
 						RoomListActivity.class);
+				intent.putExtra("message", messageObj);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
 			}
