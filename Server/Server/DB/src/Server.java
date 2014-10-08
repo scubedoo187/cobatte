@@ -71,7 +71,7 @@ public class Server{
 	                msg = isReader.readLine();
 	                if(!msg.toString().equals("")){
 		                StringTokenizer tok = new StringTokenizer(msg, "\t");
-		                System.out.println(msg);
+		                log.info(msg);
 		                
 		                int header = 0; // 일련번호
 		                int i = 0; //우선 가장앞에 있는 헤더를 따로 int형으로 저장

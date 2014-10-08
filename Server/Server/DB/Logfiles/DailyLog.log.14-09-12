@@ -1,0 +1,28 @@
+[2014-09-12 17:22:36] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-09-12 17:23:44] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-09-12 17:39:43] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-09-12 17:57:08] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-09-12 21:12:42] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-09-12 21:12:42] [INFO ] Server.java, Server.startServer(Server.java:35) - 182.227.121.156 님이 접속하셧습니다. 
+[2014-09-12 21:12:42] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-09-12 21:12:42] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-09-12 21:12:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 182.227.121.156종료하셧습니다. 
+[2014-09-12 21:12:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 0 
+[2014-09-12 21:12:50] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-09-12 21:12:50] [INFO ] Server.java, Server.startServer(Server.java:35) - 182.227.121.156 님이 접속하셧습니다. 
+[2014-09-12 21:12:50] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-09-12 21:12:50] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-09-12 21:12:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 182.227.121.156종료하셧습니다. 
+[2014-09-12 21:12:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 0 
+[2014-09-12 21:12:58] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-09-12 21:12:58] [INFO ] Server.java, Server.startServer(Server.java:35) - 182.227.121.156 님이 접속하셧습니다. 
+[2014-09-12 21:12:58] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-09-12 21:13:17] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-09-12 21:13:17] [INFO ] Server.java, Server.startServer(Server.java:35) - 182.227.121.156 님이 접속하셧습니다. 
+[2014-09-12 21:13:17] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-09-12 21:13:23] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-09-12 21:13:23] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 182.227.121.156종료하셧습니다. 
+[2014-09-12 21:13:23] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 1 
+[2014-09-12 21:18:30] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-09-12 21:18:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 182.227.121.156종료하셧습니다. 
+[2014-09-12 21:18:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 0 

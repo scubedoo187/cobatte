@@ -93,6 +93,7 @@ public class LinkDatabase {
 	
 	public void createRoom(String admin, String roomName, String place, int hour, int minute) {
 		try {
+			String query = "d";
 			isStatement.executeUpdate("insert into roominfo(admin, roomname, place, minute, hour) "
 					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"', "+minute+", "+hour+")");
 		}
