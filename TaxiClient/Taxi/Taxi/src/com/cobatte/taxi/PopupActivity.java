@@ -32,7 +32,6 @@ public class PopupActivity extends Activity {
 
 		okBtn.setOnClickListener(new View.OnClickListener() { // 확인 버튼 클릭시 이벤트
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent(PopupActivity.this,
 						LoginActivity.class); // 로그인 액티비티로 인텐트~
 				startActivity(intent);
@@ -43,11 +42,10 @@ public class PopupActivity extends Activity {
 		});
 
 		cancelBtn.setOnClickListener(new View.OnClickListener() { // 취소 버튼 클릭시
-																	// 이벤트
-					public void onClick(View v) {
-						// TODO Auto-generated method stub
-						finish(); // 취소 클릭시 현재 액티비티 끝냄.
-					}
-				});
+																// 이벤트
+		public void onClick(View v) {
+			finish(); // 취소 클릭시 현재 액티비티 끝냄.
+		}
+		});
 	}
 }
