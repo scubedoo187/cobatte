@@ -47,7 +47,7 @@ public class LinkDatabase {
 			isResultSet = isStatement.executeQuery("select * from UserInfo");
 			boolean checklogin = false; // 비교할때 쓸꺼임
 			
-			while(isResultSet.next()) {
+			while (isResultSet.next()) {
 				if(Name.toString().equals(isResultSet.getString("id")) 
 						&& Password.toString().equals(isResultSet.getString("passwd")))
 					checklogin = true; // 맞으면 true
@@ -72,7 +72,7 @@ public class LinkDatabase {
 			isResultSet = isStatement.executeQuery("select * from UserInfo");
 			boolean alogin = false;
 			
-			while(isResultSet.next()) {
+			while (isResultSet.next()) {
 				if(Name.toString().equals(isResultSet.getString("id")))
 					alogin = true;
 			}
@@ -94,7 +94,7 @@ public class LinkDatabase {
 	public void createRoom(String admin, String roomName, String place, int hour, int minute) {
 		try {
 			String query = "d";
-			isStatement.executeUpdate("insert into roominfo(admin, roomname, place, minute, hour) "
+			isStatement.executeUpdate("insert into RoomInfo(admin, roomname, place, minute, hour) "
 					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"', "+minute+", "+hour+")");
 		}
 		
@@ -109,7 +109,11 @@ public class LinkDatabase {
 	
 	public String roomList() {
 		try {
-			//방목록
+			isResultSet = isStatement.executeQuery("select * from RoomInfo");
+			
+			while (isResultSet.next()) {
+				
+			}
 		}
 		
 		catch (Exception e) {
