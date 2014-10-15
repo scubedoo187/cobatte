@@ -110,9 +110,23 @@ public class LinkDatabase {
 	public String roomList() {
 		try {
 			isResultSet = isStatement.executeQuery("select * from RoomInfo");
+			int numberOfPeople = 0;
 			
 			while (isResultSet.next()) {
+				isResultValue += isResultSet.getString("admin") + "\t"
+								+ isResultSet.getString("roomname") + "\t"
+								+ isResultSet.getString("place") + "\t"
+								+ isResultSet.getString("hour") + "\t"
+								+ isResultSet.getString("minute") + "\t";
 				
+				if(isResultSet.getString("user1") == null)
+					numberOfPeople++;
+				if(isResultSet.getString("user2") == null)
+					numberOfPeople++;
+				if(isResultSet.getString("user3") == null)
+					numberOfPeople++;
+				
+				isResultValue += String.valueOf(4-numberOfPeople) + "\t";
 			}
 		}
 		
@@ -121,6 +135,10 @@ public class LinkDatabase {
 		}
 		
 		return isResultValue;
+	}
+	
+	public void enterARoom(String admin) {
+		//방에 참가
 	}
 	
 	public String roominfo() {
