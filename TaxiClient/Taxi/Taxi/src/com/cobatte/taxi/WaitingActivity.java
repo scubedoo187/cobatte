@@ -13,7 +13,11 @@ public class WaitingActivity extends Activity {
 		setContentView(R.layout.waiting);
 		setTitle("´ë±â½Ç");
 
+		final Config config = new Config(this);
+
 		Intent intent = getIntent();
 		messageObj = (MsgString) intent.getExtras().getSerializable("message");
+		
+		
 	}
 }

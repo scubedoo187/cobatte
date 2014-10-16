@@ -4,10 +4,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ExpandableListView
-        android:id="@+id/list"
+    <LinearLayout 
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </ExpandableListView>
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="8">
+        
+    	<ListView
+        	android:id="@+id/list"
+        	android:layout_width="match_parent"
+    	    android:layout_height="match_parent" >
+    	</ListView>        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+    	
+    	<Button 
+        	android:id="@+id/refresh"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+    	    android:text="새로 고침"
+        	android:textSize="30dp"/>
+	</LinearLayout>
 </LinearLayout>

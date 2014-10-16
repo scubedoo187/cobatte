@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainMenuActivity extends Activity {
-	SocketThread sktThread;
 	MsgString messageObj;
 	Button createBtn;
 	Button joinBtn;

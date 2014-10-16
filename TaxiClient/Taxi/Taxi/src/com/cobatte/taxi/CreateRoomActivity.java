@@ -84,9 +84,6 @@ public class CreateRoomActivity extends Activity {
 					Toast.makeText(getApplicationContext(), "시간을 선택하세요",
 							Toast.LENGTH_LONG).show();
 				} else {
-					messageObj = new MsgString();
-					SocketThread st = new SocketThread(messageObj);
-
 					roomInfoStr = "3";
 					roomInfoStr += "\t";
 					roomInfoStr += adminId;
@@ -98,13 +95,9 @@ public class CreateRoomActivity extends Activity {
 					roomInfoStr += hourView.getText().toString();
 					roomInfoStr += "\t";
 					roomInfoStr += minView.getText().toString();
-					messageObj.setActivityStr(roomInfoStr);
 
 					if (config.isNetworkAvailable()) {
-						try {
-							st.start();
-						} catch (Exception e) {
-						}
+						messageObj.setActivityStr(roomInfoStr);
 						while (true) {
 							if (messageObj.isThreadChange()) {
 								roomInfoStr = messageObj.getThreadStr();
@@ -122,6 +115,8 @@ public class CreateRoomActivity extends Activity {
 											"오류가 발생하였습니다. 잠시후 재시도 해주세요.",
 											Toast.LENGTH_LONG).show();
 									break;
+								} else {
+									Toast.makeText(getApplicationContext(), "방 생성 실패", Toast.LENGTH_LONG).show();
 								}
 							}
 						}
