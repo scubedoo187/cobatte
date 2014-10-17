@@ -107,6 +107,9 @@ public class Server{
 		            			isWriter.flush();
 		            			break;
 		            		case 4 :
+		            			result = db.roomList();
+		            			isWriter.println(result);
+		            			isWriter.flush();
 		            			break;
 		            		case 5 :
 		            			break;

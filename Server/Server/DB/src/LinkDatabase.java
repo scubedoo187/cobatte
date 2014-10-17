@@ -93,7 +93,6 @@ public class LinkDatabase {
 	
 	public void createRoom(String admin, String roomName, String place, int hour, int minute) {
 		try {
-			String query = "d";
 			isStatement.executeUpdate("insert into RoomInfo(admin, roomname, place, minute, hour) "
 					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"', "+minute+", "+hour+")");
 		}
@@ -110,9 +109,10 @@ public class LinkDatabase {
 	public String roomList() {
 		try {
 			isResultSet = isStatement.executeQuery("select * from RoomInfo");
-			int numberOfPeople = 0;
+			isResultValue = "";
 			
 			while (isResultSet.next()) {
+				int numberOfPeople = 0;
 				isResultValue += isResultSet.getString("admin") + "\t"
 								+ isResultSet.getString("roomname") + "\t"
 								+ isResultSet.getString("place") + "\t"
@@ -137,7 +137,7 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
-	public void enterARoom(String admin) {
+	public void enterARoom(String admin, String id) {
 		//방에 참가
 	}
 	

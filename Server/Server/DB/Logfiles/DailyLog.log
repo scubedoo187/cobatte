@@ -1,1 +1,599 @@
-[2014-10-08 14:43:07] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-16 14:20:31] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-16 14:21:12] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 14:21:12] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 14:21:12] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 14:21:12] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 14:21:39] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-10-16 14:21:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 14:21:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 0 
+[2014-10-16 14:21:54] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 14:21:54] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 14:21:54] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 14:21:54] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 14:23:14] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-10-16 14:23:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 14:23:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 0 
+[2014-10-16 14:23:30] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 14:23:30] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 14:23:30] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 14:23:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 14:23:45] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 14:23:46] [FATAL] Server.java, Server$User_Thread.run(Server.java:130) - 클라이언트 연결 실패 
+[2014-10-16 14:23:46] [INFO ] Server.java, Server$User_Thread.run(Server.java:151) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 14:23:46] [INFO ] Server.java, Server$User_Thread.run(Server.java:152) - 현재 클라이언트 수: 0 
+[2014-10-16 14:25:40] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-16 15:01:24] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:01:24] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.76 님이 접속하셧습니다. 
+[2014-10-16 15:01:24] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 15:01:24] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:06:15] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:06:15] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.70 님이 접속하셧습니다. 
+[2014-10-16 15:06:15] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 15:06:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:06:18] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:06:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.70종료하셧습니다. 
+[2014-10-16 15:06:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 15:07:53] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:07:53] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.70 님이 접속하셧습니다. 
+[2014-10-16 15:07:53] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 15:07:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:07:54] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:10:19] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:10:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.70종료하셧습니다. 
+[2014-10-16 15:10:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 15:10:40] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:10:40] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.70 님이 접속하셧습니다. 
+[2014-10-16 15:10:40] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 15:10:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:10:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:15:18] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:15:18] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 15:15:18] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 15:15:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:16:27] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:16:27] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 15:16:27] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 15:16:47] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:16:47] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 15:16:47] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 15:16:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:16:49] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:17:25] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:17:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 15:17:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 15:17:38] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:17:38] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 15:17:38] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 15:17:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:17:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:17:56] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:17:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 15:17:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 15:23:22] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:23:22] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 15:23:22] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 15:23:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:23:26] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:25:03] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:25:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 15:25:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 15:25:29] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:25:29] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 15:25:29] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 15:25:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:25:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:27:07] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:27:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 15:27:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 15:27:31] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:27:31] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 15:27:31] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 15:27:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:27:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 15:32:52] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 15:32:52] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.70 님이 접속하셧습니다. 
+[2014-10-16 15:32:52] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 15:32:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 15:33:50] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 15:33:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.70종료하셧습니다. 
+[2014-10-16 15:33:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 16:08:29] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:08:29] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:08:29] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 16:08:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:08:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:08:33] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 16:08:33] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 16:08:33] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 16:09:15] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:09:15] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:09:15] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 16:09:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:09:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:20] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:20] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:20] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:23] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:09:23] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:10:47] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 16:10:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 16:10:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 16:10:59] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:10:59] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:10:59] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 16:10:59] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:11:00] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:11:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 16:11:15] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 16:11:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 16:11:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 16:16:08] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:16:08] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:16:08] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 16:16:08] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:16:18] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 16:16:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 16:16:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 16:18:37] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:18:37] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:18:37] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 16:18:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:19:44] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:19:44] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:19:44] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 5 
+[2014-10-16 16:19:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:20:02] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 16:20:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 16:20:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 4 
+[2014-10-16 16:20:15] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:20:15] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:20:15] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 5 
+[2014-10-16 16:20:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:24:14] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 16:24:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 16:24:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 4 
+[2014-10-16 16:26:42] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:26:42] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:26:42] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 5 
+[2014-10-16 16:26:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 16:26:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:43:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 16:44:52] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-16 16:45:21] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 16:45:21] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 16:45:21] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 16:45:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 16:45:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 18:04:01] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:04:01] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:04:01] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:04:01] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 18:04:42] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:04:42] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:04:42] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:04:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	테스트	춘천역가실분	한림대 구정문앞	18	 0 
+[2014-10-16 18:04:42] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:04:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:04:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 18:04:48] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:04:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:04:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:04:59] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:04:59] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:04:59] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:04:59] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 18:05:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	테스트	춘천역 가실분	한림대 구정문앞	18	 5 
+[2014-10-16 18:05:25] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:05:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:05:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:05:25] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:05:25] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:05:25] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:09:18] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:09:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:09:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:09:35] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:09:35] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:09:35] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:09:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 18:09:51] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:09:51] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:09:51] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:09:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	테스트	춘천역 가실분	한림대 구정문 앞	18	10 
+[2014-10-16 18:10:54] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:10:54] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:10:54] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 18:10:54] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	테스트	학교 가실분	춘천역 횡단보도 앞	 8	30 
+[2014-10-16 18:10:54] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:10:54] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:10:54] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 18:10:58] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:10:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:10:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 18:10:58] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:10:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:10:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:11:20] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:11:20] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:11:20] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:11:20] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 18:11:56] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:11:56] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:11:56] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:11:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test	학교 가실분	춘천역 횡단보도 앞		 
+[2014-10-16 18:11:56] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:11:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:11:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 18:11:58] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:11:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:11:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:12:13] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:12:13] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:12:13] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:12:13] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 18:12:35] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:12:35] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:12:35] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:12:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test	학교가실분	춘천역 횡단보도 앞	 8	25 
+[2014-10-16 18:12:35] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:12:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:12:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 18:12:39] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:12:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:12:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:13:03] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:13:03] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:13:03] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:13:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test1	321 
+[2014-10-16 18:13:03] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:13:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:13:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:13:09] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:13:09] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:13:09] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:13:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test1	1234 
+[2014-10-16 18:13:09] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:13:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:13:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:13:22] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:13:22] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:13:22] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:13:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test2	321 
+[2014-10-16 18:13:40] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:13:40] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:13:40] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:13:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test2	학교가실분	춘천역 횡단보도 앞	 8	30 
+[2014-10-16 18:13:40] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:13:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:13:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 18:18:47] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:18:47] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.73 님이 접속하셧습니다. 
+[2014-10-16 18:18:47] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:18:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321. 
+[2014-10-16 18:18:48] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:18:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.73종료하셧습니다. 
+[2014-10-16 18:18:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 18:18:51] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:18:51] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.73 님이 접속하셧습니다. 
+[2014-10-16 18:18:51] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 18:18:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 18:22:44] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:22:44] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:22:44] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 18:22:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 18:23:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test	학교가실분	춘천역 횡단보도 앞	 8	42 
+[2014-10-16 18:23:11] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:23:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:23:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 18:23:35] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-16 18:24:18] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:24:18] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:24:18] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 18:24:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 18:24:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test	학교가실분	춘천역 앞	 9	29 
+[2014-10-16 18:24:38] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:24:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:24:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 0 
+[2014-10-16 18:29:18] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:29:18] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:29:18] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 18:29:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test	321 
+[2014-10-16 18:29:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test	학교가실분	춘천역 앞	10	34 
+[2014-10-16 18:30:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 18:30:03] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:30:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:30:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 0 
+[2014-10-16 18:30:13] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:30:13] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:30:13] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 18:30:13] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 18:30:33] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test3	구리가실분	학교 정문앞	18	30 
+[2014-10-16 18:30:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 18:30:41] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:30:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:30:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 0 
+[2014-10-16 18:38:49] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:38:49] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:38:49] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 18:38:49] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test4	321 
+[2014-10-16 18:38:49] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:38:49] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:38:49] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 0 
+[2014-10-16 18:38:55] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:38:55] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:38:55] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 18:38:55] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 18:38:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 18:44:07] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:44:07] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.70 님이 접속하셧습니다. 
+[2014-10-16 18:44:07] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:44:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 18:44:08] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 18:45:46] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:45:46] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.70종료하셧습니다. 
+[2014-10-16 18:45:46] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:45:59] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:45:59] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:45:59] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:45:59] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 18:46:01] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 18:47:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 18:47:32] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:47:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:47:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:47:57] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:47:57] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:47:57] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:47:57] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 18:47:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 18:48:42] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:48:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:48:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 18:51:02] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 18:51:02] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 18:51:02] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 18:51:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 18:51:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 18:51:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 18:51:41] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 18:51:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 18:51:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 19:22:31] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:22:31] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 19:22:31] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 19:22:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 19:22:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:22:34] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:22:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:22:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.178.75 님이 접속하셧습니다. 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 1	sex 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - quit 
+[2014-10-16 19:24:25] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.178.75종료하셧습니다. 
+[2014-10-16 19:24:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:24:55] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:24:55] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.178.75 님이 접속하셧습니다. 
+[2014-10-16 19:24:55] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:24:55] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 2	sex	123321 
+[2014-10-16 19:24:55] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:24:55] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.178.75종료하셧습니다. 
+[2014-10-16 19:24:55] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:25:06] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:25:06] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.178.75 님이 접속하셧습니다. 
+[2014-10-16 19:25:06] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:25:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	sex	123321 
+[2014-10-16 19:25:24] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:25:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:25:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server.startServer(Server.java:35) - 175.223.18.124 님이 접속하셧습니다. 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 4 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 1	ong21 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - quit 
+[2014-10-16 19:25:36] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 175.223.18.124종료하셧습니다. 
+[2014-10-16 19:25:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 3 
+[2014-10-16 19:25:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	sex	같이 타고 가요	한림대 병원앞	16	 0 
+[2014-10-16 19:25:44] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:25:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.178.75종료하셧습니다. 
+[2014-10-16 19:25:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:25:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 19:25:53] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:25:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 19:25:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 19:26:00] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:26:00] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 19:26:00] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 19:26:00] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	test3	321 
+[2014-10-16 19:26:04] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:26:04] [INFO ] Server.java, Server.startServer(Server.java:35) - 175.223.18.124 님이 접속하셧습니다. 
+[2014-10-16 19:26:04] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:26:04] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 2	ong21	890 
+[2014-10-16 19:26:04] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:26:04] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 175.223.18.124종료하셧습니다. 
+[2014-10-16 19:26:04] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:26:20] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	test3	춘천역 가실분	한림대 병원 앞	19	31 
+[2014-10-16 19:26:20] [ERROR] LinkDatabase.java, LinkDatabase.createRoom(LinkDatabase.java:101) - Insert Error com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'test3' for key 'PRIMARY' 
+[2014-10-16 19:26:22] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:26:22] [INFO ] Server.java, Server.startServer(Server.java:35) - 175.223.18.124 님이 접속하셧습니다. 
+[2014-10-16 19:26:22] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:26:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	ong21	890 
+[2014-10-16 19:26:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 19:26:53] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:26:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 19:26:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:27:02] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:27:02] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 19:27:02] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:27:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-16 19:27:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	ong21	서울갑니다	팔호광장	19	27 
+[2014-10-16 19:27:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:23] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:26] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:27] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:27] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:28] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:28] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:33] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:34] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:40] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 19:27:42] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:27:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 175.223.18.124종료하셧습니다. 
+[2014-10-16 19:27:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:27:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:55] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:27:58] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:28:00] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:28:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:28:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 19:28:22] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:28:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 19:28:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 1	joy567 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - quit 
+[2014-10-16 19:28:38] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 19:28:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 19:28:56] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:28:56] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 19:28:56] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 19:28:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 2	joy567	1009210 
+[2014-10-16 19:28:56] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:28:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 1.216.30.75종료하셧습니다. 
+[2014-10-16 19:28:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-16 19:29:10] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:29:10] [INFO ] Server.java, Server.startServer(Server.java:35) - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-16 19:29:10] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-16 19:29:10] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	joy567	1009210 
+[2014-10-16 19:29:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:29:33] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:29:33] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.178.75 님이 접속하셧습니다. 
+[2014-10-16 19:29:33] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:29:33] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	sex	123321 
+[2014-10-16 19:29:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:29:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	joy567	금곡 가실분	춘천 버스터미널	19	30 
+[2014-10-16 19:29:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:29:47] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:29:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.178.75종료하셧습니다. 
+[2014-10-16 19:29:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:30:04] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:10] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:12] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:13] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:13] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:44] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:30:44] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.178.75 님이 접속하셧습니다. 
+[2014-10-16 19:30:44] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 3 
+[2014-10-16 19:30:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	sex	123321 
+[2014-10-16 19:30:46] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:30:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:31:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	sex	같이가	병원앞	16	 0 
+[2014-10-16 19:31:09] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:31:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.178.75종료하셧습니다. 
+[2014-10-16 19:31:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 2 
+[2014-10-16 19:31:35] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-16 19:33:13] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:33:13] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.62.222.180 님이 접속하셧습니다. 
+[2014-10-16 19:33:13] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 19:33:13] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	sex	123321 
+[2014-10-16 19:33:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 3	sex	같이가	병원	16	 0 
+[2014-10-16 19:33:30] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:33:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.62.222.180종료하셧습니다. 
+[2014-10-16 19:33:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 0 
+[2014-10-16 19:50:28] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-16 19:50:28] [INFO ] Server.java, Server.startServer(Server.java:35) - 175.223.18.124 님이 접속하셧습니다. 
+[2014-10-16 19:50:28] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-16 19:50:28] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	ong21	890 
+[2014-10-16 19:50:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:50:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-16 19:50:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-16 19:50:51] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-16 19:50:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 175.223.18.124종료하셧습니다. 
+[2014-10-16 19:50:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 0 
