@@ -85,7 +85,7 @@ public class LinkDatabase {
 		}
 		
 		catch (Exception e) {
-			log.error("Login Error " + e);
+			log.error("IdCheck Error " + e);
 		}
 		
 		return isResultValue;
@@ -98,7 +98,7 @@ public class LinkDatabase {
 		}
 		
 		catch(Exception e) {
-			log.error("Insert Error " + e);
+			log.error("RoomCreate Error " + e);
 		}
 	}
 	
@@ -131,14 +131,33 @@ public class LinkDatabase {
 		}
 		
 		catch (Exception e) {
-			log.error("Login Error " + e);
+			log.error("RoomList Error " + e);
 		}
 		
 		return isResultValue;
 	}
 	
 	public void enterARoom(String admin, String id) {
-		//방에 참가
+		try {
+			isResultSet = isStatement.executeQuery("select user1, user2, user3"
+					+ " from RoomInfo where admin=\"" + admin + "\"");
+			while (isResultSet.next()) {
+				if (isResultSet.getString("user1") == null) {
+					isStatement.executeUpdate("update roominfo set user1=\"" + id
+							+ "\" where admin=\"" + admin + "\"");
+				}else if (isResultSet.getString("user2") == null) {
+					isStatement.executeUpdate("update roominfo set user2=\"" + id
+							+ "\" where admin=" + admin + "\"");
+				}else if (isResultSet.getString("user3") == null) {
+					isStatement.executeUpdate("update roominfo set user3=\"" + id
+							+ "\" where admin=" + admin + "\"");
+				}
+			}
+		}
+		
+		catch (Exception e) {
+			log.error("Enter Error " + e);
+		}
 	}
 	
 	public String roominfo() {
