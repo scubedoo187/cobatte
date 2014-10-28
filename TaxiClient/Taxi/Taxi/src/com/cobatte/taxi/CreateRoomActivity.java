@@ -116,7 +116,8 @@ public class CreateRoomActivity extends Activity {
 											Toast.LENGTH_LONG).show();
 									break;
 								} else {
-									Toast.makeText(getApplicationContext(), "规 积己 角菩", Toast.LENGTH_LONG).show();
+									Toast.makeText(getApplicationContext(), "规 积己 角菩",
+																		Toast.LENGTH_LONG).show();
 								}
 							}
 						}

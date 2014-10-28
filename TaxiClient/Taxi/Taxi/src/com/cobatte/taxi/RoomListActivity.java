@@ -54,7 +54,7 @@ public class RoomListActivity extends Activity {
 	}
 	
 	public void requestRoomList() {
-		getroomInfo = "4";		
+		getroomInfo = "4";	
 		
 		if (config.isNetworkAvailable()) {
 			messageObj.setActivityStr(getroomInfo);

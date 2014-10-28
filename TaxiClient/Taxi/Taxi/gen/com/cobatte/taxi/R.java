@@ -48,7 +48,7 @@ public final class R {
         public static final int taxi_icon=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0027;
+        public static final int action_settings=0x7f0a0028;
         public static final int back=0x7f0a001a;
         public static final int birth_d=0x7f0a000b;
         public static final int birth_m=0x7f0a0009;
@@ -67,7 +67,8 @@ public final class R {
         public static final int join=0x7f0a0014;
         public static final int list=0x7f0a0020;
         public static final int logo=0x7f0a0012;
-        public static final int member=0x7f0a0026;
+        public static final int meetplace=0x7f0a0025;
+        public static final int member=0x7f0a0027;
         public static final int minView=0x7f0a0018;
         public static final int ok=0x7f0a001e;
         public static final int passwd=0x7f0a000f;
@@ -86,7 +87,7 @@ public final class R {
         public static final int tableRow2=0x7f0a0006;
         public static final int tableRow3=0x7f0a0008;
         public static final int tableRow4=0x7f0a000a;
-        public static final int tableRow5=0x7f0a0025;
+        public static final int tableRow5=0x7f0a0026;
         public static final int timePickBtn=0x7f0a0019;
     }
     public static final class layout {
