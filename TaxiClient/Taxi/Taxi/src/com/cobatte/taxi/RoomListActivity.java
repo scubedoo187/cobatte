@@ -7,12 +7,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class RoomListActivity extends Activity {
+public class RoomListActivity extends Activity implements OnItemClickListener {
 	int index = 0;
 	ListView listView;
 	MsgString messageObj;
@@ -51,6 +53,13 @@ public class RoomListActivity extends Activity {
 				requestRoomList();
 			}
 		});
+		
+		
+	}
+	
+	public void onItemClick(AdapterView<?> parent, View view, int position,	long id) {
+		String roomInfoStr = (String)parent.getAdapter().getItem(position);
+		
 	}
 	
 	public void requestRoomList() {
@@ -81,7 +90,7 @@ public class RoomListActivity extends Activity {
 		}
 		
 		for (int i = 0; i < index; i++) {
-			room.add(roomName[i] + "\n" + "모임 장소 - " + place[i] + "\t" + 
+			room.add("방 이름 - " + roomName[i] + "\n" + "모임 장소 - " + place[i] + "\n" + 
 													"시각 - " + hour[i] + ":" + min[i]);
 		}
 	}
