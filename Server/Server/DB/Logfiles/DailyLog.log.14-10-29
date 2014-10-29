@@ -1,0 +1,95 @@
+[2014-10-29 17:03:35] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 17:03:36] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.186.2 님이 접속하셧습니다. 
+[2014-10-29 17:03:36] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 17:03:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 17:03:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 17:04:34] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 17:04:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 17:07:03] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 17:07:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.186.2종료하셧습니다. 
+[2014-10-29 17:07:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 17:07:17] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 17:07:17] [INFO ] Server.java, Server.startServer(Server.java:35) - 223.33.186.2 님이 접속하셧습니다. 
+[2014-10-29 17:07:17] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 17:07:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 17:07:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 17:11:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-29 17:11:22] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 17:11:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 223.33.186.2종료하셧습니다. 
+[2014-10-29 17:11:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 22:59:36] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 22:59:36] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 22:59:36] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 22:59:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 22:59:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 22:59:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:00:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-29 23:00:06] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 23:00:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 218.48.74.118종료하셧습니다. 
+[2014-10-29 23:00:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 23:04:35] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:04:35] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:04:35] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 23:04:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:04:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:19:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-29 23:19:16] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 23:19:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 218.48.74.118종료하셧습니다. 
+[2014-10-29 23:19:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 23:19:35] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:19:35] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:19:35] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 23:19:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:19:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:19:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:19:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-29 23:19:52] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 23:19:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 218.48.74.118종료하셧습니다. 
+[2014-10-29 23:19:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 23:21:18] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:21:18] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:21:18] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 23:21:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:21:20] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:21:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:21:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:21:34] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 9 
+[2014-10-29 23:21:34] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 23:21:34] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 218.48.74.118종료하셧습니다. 
+[2014-10-29 23:21:34] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 23:25:29] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:25:29] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:25:29] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 23:25:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:25:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:27:25] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 23:27:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 218.48.74.118종료하셧습니다. 
+[2014-10-29 23:27:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 23:27:38] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:27:38] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:27:38] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 23:27:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:27:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:46:52] [FATAL] Server.java, Server$User_Thread.run(Server.java:133) - 클라이언트 연결 실패 
+[2014-10-29 23:46:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 218.48.74.118종료하셧습니다. 
+[2014-10-29 23:46:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:155) - 현재 클라이언트 수: 1 
+[2014-10-29 23:47:06] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:47:06] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:47:06] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 2 
+[2014-10-29 23:47:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:47:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:48:44] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-29 23:49:59] [INFO ] Server.java, Server.startServer(Server.java:28) - 클라이언트와 연결되었습니다. 
+[2014-10-29 23:49:59] [INFO ] Server.java, Server.startServer(Server.java:35) - 218.48.74.118 님이 접속하셧습니다. 
+[2014-10-29 23:49:59] [INFO ] Server.java, Server.startServer(Server.java:36) - 현재 접속자 수: 1 
+[2014-10-29 23:49:59] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 0	테스트	321 
+[2014-10-29 23:50:00] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:50:09] [ERROR] Server.java, Server.startServer(Server.java:40) - 서버 실행 실패 
+[2014-10-29 23:50:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:50:41] [ERROR] Server.java, Server.startServer(Server.java:40) - 서버 실행 실패 
+[2014-10-29 23:51:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:74) - 4 
+[2014-10-29 23:51:09] [ERROR] Server.java, Server.startServer(Server.java:40) - 서버 실행 실패 
+[2014-10-29 23:51:55] [ERROR] Server.java, Server.startServer(Server.java:40) - 서버 실행 실패 
+[2014-10-29 23:52:09] [ERROR] Server.java, Server.startServer(Server.java:39) - 서버 실행 실패 
+[2014-10-29 23:53:17] [ERROR] Server.java, Server.startServer(Server.java:39) - 서버 실행 실패 
+[2014-10-29 23:56:17] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 

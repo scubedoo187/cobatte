@@ -23,7 +23,6 @@ public class Server{
 
         	log.info("서버가 실행되었습니다.");
             while(true){
-            	int i = 0;
                 Socket socket=isServerSocket.accept();
                 log.info("클라이언트와 연결되었습니다.");
 

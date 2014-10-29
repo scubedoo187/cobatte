@@ -1,9 +1,24 @@
-[2014-10-17 10:41:02] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:158) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
-[2014-10-17 10:41:02] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:158) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
-[2014-10-17 10:41:02] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:158) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
-[2014-10-17 10:43:54] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
-[2014-10-17 10:43:54] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
-[2014-10-17 10:43:54] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
-[2014-10-17 10:48:36] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error java.sql.SQLException: Operation not allowed after ResultSet closed 
-[2014-10-17 10:48:36] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"' at line 1 
-[2014-10-17 10:48:36] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"' at line 1 
+[2014-10-30 00:04:11] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-30 00:04:55] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-30 00:05:41] [INFO ] Server.java, Server.startServer(Server.java:27) - 클라이언트와 연결되었습니다. 
+[2014-10-30 00:05:41] [INFO ] Server.java, Server.startServer(Server.java:34) - 121.163.245.5 님이 접속하셧습니다. 
+[2014-10-30 00:05:41] [INFO ] Server.java, Server.startServer(Server.java:35) - 현재 접속자 수: 1 
+[2014-10-30 00:05:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:73) - 0	ong21	321 
+[2014-10-30 00:05:41] [FATAL] Server.java, Server$User_Thread.run(Server.java:132) - 클라이언트 연결 실패 
+[2014-10-30 00:05:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:153) - 121.163.245.5종료하셧습니다. 
+[2014-10-30 00:05:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 현재 클라이언트 수: 0 
+[2014-10-30 00:07:56] [INFO ] Server.java, Server.startServer(Server.java:24) - 서버가 실행되었습니다. 
+[2014-10-30 00:08:11] [INFO ] Server.java, Server.startServer(Server.java:27) - 클라이언트와 연결되었습니다. 
+[2014-10-30 00:08:11] [INFO ] Server.java, Server.startServer(Server.java:34) - 121.163.245.5 님이 접속하셧습니다. 
+[2014-10-30 00:08:11] [INFO ] Server.java, Server.startServer(Server.java:35) - 현재 접속자 수: 1 
+[2014-10-30 00:08:11] [INFO ] Server.java, Server$User_Thread.run(Server.java:73) - 0	ong21	123 
+[2014-10-30 00:08:12] [FATAL] Server.java, Server$User_Thread.run(Server.java:132) - 클라이언트 연결 실패 
+[2014-10-30 00:08:12] [INFO ] Server.java, Server$User_Thread.run(Server.java:153) - 121.163.245.5종료하셧습니다. 
+[2014-10-30 00:08:12] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 현재 클라이언트 수: 0 
+[2014-10-30 00:08:37] [INFO ] Server.java, Server.startServer(Server.java:27) - 클라이언트와 연결되었습니다. 
+[2014-10-30 00:08:37] [INFO ] Server.java, Server.startServer(Server.java:34) - 121.163.245.5 님이 접속하셧습니다. 
+[2014-10-30 00:08:37] [INFO ] Server.java, Server.startServer(Server.java:35) - 현재 접속자 수: 1 
+[2014-10-30 00:08:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:73) - 1	ong21 
+[2014-10-30 00:08:37] [FATAL] Server.java, Server$User_Thread.run(Server.java:132) - 클라이언트 연결 실패 
+[2014-10-30 00:08:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:153) - 121.163.245.5종료하셧습니다. 
+[2014-10-30 00:08:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 현재 클라이언트 수: 0 
