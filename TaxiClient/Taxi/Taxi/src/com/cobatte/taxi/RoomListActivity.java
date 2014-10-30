@@ -87,8 +87,8 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 								startActivity(intent);
 								overridePendingTransition(R.anim.left_in, R.anim.left_out);
 								break;
-							} else if (thdStr.equals("quit")) {
-								Toast.makeText(getApplicationContext(), "오류가 발생하였습니다.",
+							} else if (thdStr.equals("full")) {
+								Toast.makeText(getApplicationContext(), "방이 가득 찼습니다.",
 										Toast.LENGTH_LONG).show();
 								break;
 							} else {

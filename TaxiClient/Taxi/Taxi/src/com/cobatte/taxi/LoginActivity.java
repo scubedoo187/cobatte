@@ -63,7 +63,7 @@ public class LoginActivity extends Activity {
 							if (messageObj.isThreadChange()) {
 								idInfoStr = messageObj.getThreadStr();
 								if (idInfoStr.equals("0")) {
-									messageObj.setId(idTmp);
+									messageObj.setId(idTmp);	// 분기 부분 추가 -> 메뉴선택 | 방 대기실
 									Intent intent = new Intent(
 											LoginActivity.this,
 											MainMenuActivity.class);
