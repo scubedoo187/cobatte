@@ -137,27 +137,57 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
-	public void enterARoom(String admin, String id) {
+	public String selectUserInRoom(String admin, String id) {
 		try {
 			isResultSet = isStatement.executeQuery("select user1, user2, user3"
 					+ " from RoomInfo where admin=\"" + admin + "\"");
+			
 			while (isResultSet.next()) {
 				if (isResultSet.getString("user1") == null) {
-					isStatement.executeUpdate("update roominfo set user1=\"" + id
-							+ "\" where admin=\"" + admin + "\"");
-				}else if (isResultSet.getString("user2") == null) {
-					isStatement.executeUpdate("update roominfo set user2=\"" + id
-							+ "\" where admin=" + admin + "\"");
-				}else if (isResultSet.getString("user3") == null) {
-					isStatement.executeUpdate("update roominfo set user3=\"" + id
-							+ "\" where admin=" + admin + "\"");
-				}
+					isResultValue = "user1";
+
+				}else if (isResultSet.getString("user2") == (null)) {
+					isResultValue = "user2";
+					
+				}else if (isResultSet.getString("user3") == (null)) {
+					isResultValue = "user3";
+					
+				}else
+					isResultValue = "full";
 			}
 		}
 		
 		catch (Exception e) {
-			log.error("Enter Error " + e);
+			log.error("selectUserInRoom Error " + e);
 		}
+		
+		return isResultValue;
+	}
+	
+	public String enterARoom(String admin, String id) {
+		String isEmpty = selectUserInRoom(admin, id);
+		isResultValue = "5";
+		
+		try {
+			if (isEmpty.toString().equals("user1")) {
+				isStatement.executeUpdate("update roominfo set user1=\"" + id + "\""
+						+ " where admin=\"" + admin + "\"");
+			}else if (isEmpty.toString().equals("user2")) {
+				isStatement.executeUpdate("update roominfo set user2=\"" + id + "\""
+						+ " where admin=\"" + admin + "\"");
+			}else if (isEmpty.toString().equals("user3")) {
+				isStatement.executeUpdate("update roominfo set user3=\"" + id + "\""
+						+ " where admin=\"" + admin + "\"");
+			}else if (isEmpty.toString().equals("full")) {
+				isResultValue = "full";
+			}
+		}
+		
+		catch (Exception e) {
+			log.error("EnterARoom Error " + e);
+		}
+		
+		return isResultValue;
 	}
 	
 	public String roominfo() {

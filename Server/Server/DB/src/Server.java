@@ -111,6 +111,9 @@ public class Server{
 		            			isWriter.flush();
 		            			break;
 		            		case 5 :
+		            			result = db.enterARoom(parameter[0], parameter[1]);
+		            			isWriter.println(result);
+		            			isWriter.flush();
 		            			break;
 		            		case 6 :
 		            			break;

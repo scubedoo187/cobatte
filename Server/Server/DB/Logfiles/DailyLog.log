@@ -22,3 +22,56 @@
 [2014-10-30 00:08:37] [FATAL] Server.java, Server$User_Thread.run(Server.java:132) - 클라이언트 연결 실패 
 [2014-10-30 00:08:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:153) - 121.163.245.5종료하셧습니다. 
 [2014-10-30 00:08:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:154) - 현재 클라이언트 수: 0 
+[2014-10-30 00:27:54] [INFO ] Server.java, Server.startServer(Server.java:24)       - 서버가 실행되었습니다. 
+[2014-10-30 12:50:27] [INFO ] Server.java, Server.startServer(Server.java:27)       - 클라이언트와 연결되었습니다. 
+[2014-10-30 12:50:28] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.75 님이 접속하셧습니다. 
+[2014-10-30 12:50:28] [INFO ] Server.java, Server.startServer(Server.java:35)       - 현재 접속자 수: 1 
+[2014-10-30 12:50:28] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	테스트	321 
+[2014-10-30 12:50:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-10-30 12:59:24] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"' at line 1 
+[2014-10-30 12:59:24] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"' at line 1 
+[2014-10-30 13:02:52] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1 
+[2014-10-30 13:02:52] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1 
+[2014-10-30 13:03:30] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
+[2014-10-30 13:03:30] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
+[2014-10-30 13:05:22] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
+[2014-10-30 13:05:22] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:159) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
+[2014-10-30 13:53:29] [ERROR] LinkDatabase.java, LinkDatabase.selectUserInRoom(LinkDatabase.java:161) - Enter Error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'ong21' in 'where clause' 
+[2014-10-30 13:53:29] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:187) - Enter Error java.lang.NullPointerException 
+[2014-10-30 13:56:07] [ERROR] LinkDatabase.java, LinkDatabase.selectUserInRoom(LinkDatabase.java:161) - Enter Error java.lang.NullPointerException 
+[2014-10-30 13:56:07] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:187) - Enter Error java.lang.NullPointerException 
+[2014-10-30 13:56:36] [ERROR] LinkDatabase.java, LinkDatabase.selectUserInRoom(LinkDatabase.java:161) - Enter Error java.lang.NullPointerException 
+[2014-10-30 13:56:36] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:187) - Enter Error java.lang.NullPointerException 
+[2014-10-30 13:56:41] [ERROR] LinkDatabase.java, LinkDatabase.selectUserInRoom(LinkDatabase.java:161) - Enter Error java.lang.NullPointerException 
+[2014-10-30 13:56:41] [ERROR] LinkDatabase.java, LinkDatabase.enterARoom(LinkDatabase.java:187) - Enter Error java.lang.NullPointerException 
+[2014-10-30 14:07:19] [INFO ] Server.java, Server.startServer(Server.java:24)       - 서버가 실행되었습니다. 
+[2014-10-30 14:07:29] [INFO ] Server.java, Server.startServer(Server.java:27)       - 클라이언트와 연결되었습니다. 
+[2014-10-30 14:07:29] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 님이 접속하셧습니다. 
+[2014-10-30 14:07:29] [INFO ] Server.java, Server.startServer(Server.java:35)       - 현재 접속자 수: 1 
+[2014-10-30 14:07:29] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 1	rwe 
+[2014-10-30 14:07:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - quit 
+[2014-10-30 14:07:30] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - 클라이언트 연결 실패 
+[2014-10-30 14:07:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76종료하셧습니다. 
+[2014-10-30 14:07:30] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - 현재 클라이언트 수: 0 
+[2014-10-30 14:07:44] [INFO ] Server.java, Server.startServer(Server.java:27)       - 클라이언트와 연결되었습니다. 
+[2014-10-30 14:07:44] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 님이 접속하셧습니다. 
+[2014-10-30 14:07:44] [INFO ] Server.java, Server.startServer(Server.java:35)       - 현재 접속자 수: 1 
+[2014-10-30 14:07:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 2	rwe	111 
+[2014-10-30 14:07:44] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - 클라이언트 연결 실패 
+[2014-10-30 14:07:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76종료하셧습니다. 
+[2014-10-30 14:07:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - 현재 클라이언트 수: 0 
+[2014-10-30 14:07:56] [INFO ] Server.java, Server.startServer(Server.java:27)       - 클라이언트와 연결되었습니다. 
+[2014-10-30 14:07:56] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 님이 접속하셧습니다. 
+[2014-10-30 14:07:56] [INFO ] Server.java, Server.startServer(Server.java:35)       - 현재 접속자 수: 1 
+[2014-10-30 14:07:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	rwe	111 
+[2014-10-30 14:08:00] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-10-30 14:08:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	test	rwe 
+[2014-10-30 14:08:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-10-30 14:08:28] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - 클라이언트 연결 실패 
+[2014-10-30 14:08:28] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76종료하셧습니다. 
+[2014-10-30 14:08:28] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - 현재 클라이언트 수: 0 
+[2014-10-30 14:19:22] [INFO ] Server.java, Server.startServer(Server.java:24)       - 서버가 실행되었습니다. 
+[2014-10-30 14:22:30] [ERROR] Server.java, Server.startServer(Server.java:39)       - 서버 실행 실패 
+[2014-10-30 14:23:22] [ERROR] Server.java, Server.startServer(Server.java:39)       - 서버 실행 실패 
+[2014-10-30 14:24:32] [INFO ] Server.java, Server.startServer(Server.java:24)       - 서버가 실행되었습니다. 
+[2014-10-30 14:25:04] [INFO ] Server.java, Server.startServer(Server.java:24)       - 서버가 실행되었습니다. 
