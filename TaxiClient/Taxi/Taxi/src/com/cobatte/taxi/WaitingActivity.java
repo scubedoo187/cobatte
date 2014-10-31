@@ -7,12 +7,12 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class WaitingActivity extends Activity {
-	Config config;
 	MsgString messageObj;
 	TextView roomName;
 	TextView adminId;
@@ -21,16 +21,17 @@ public class WaitingActivity extends Activity {
 	TextView user1Id;
 	TextView user2Id;
 	TextView user3Id;
+	Button usrInfoRefBtn;
+	Button quitBtn;
 	String roomInfoStr;
 	String tmpmyId;
 	String tmpadminId;
-	
+	final Config config = new Config(this);
+		
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.waiting);
 		setTitle("대기실");
-
-		final Config config = new Config(this);
 
 		Intent intent = getIntent();
 		messageObj = (MsgString) intent.getExtras().getSerializable("message");
@@ -43,7 +44,44 @@ public class WaitingActivity extends Activity {
 		user1Id = (TextView) findViewById(R.id.user1);
 		user2Id = (TextView) findViewById(R.id.user2);
 		user3Id = (TextView) findViewById(R.id.user3);
+		usrInfoRefBtn = (Button) findViewById(R.id.usrInfoRefBtn);
+		quitBtn = (Button) findViewById(R.id.quitBtn);
 		
+		getRoomInfo();		
+		
+		usrInfoRefBtn.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				getRoomInfo();
+			}
+		});
+		
+		quitBtn.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				String quitStr = null;
+				if (config.isNetworkAvailable()) {
+					quitStr = "6" + "\t" + tmpadminId + "\t" + tmpmyId;
+					messageObj.setActivityStr(quitStr);
+					while (true) {
+						if (messageObj.isThreadChange()) {
+							quitStr = messageObj.getThreadStr();
+							break;
+						}
+					}
+				} else
+					Toast.makeText(getApplicationContext(),
+							"네트워크에 연결할 수 없습니다.", Toast.LENGTH_LONG).show();
+				if (quitStr == "6") {
+					Intent intent = new Intent(WaitingActivity.this, MainMenuActivity.class);
+					intent.putExtra("message", messageObj);
+					startActivity(intent);
+					overridePendingTransition(R.anim.left_in, R.anim.left_out);
+					finish();
+				}
+			}
+		});
+	}	
+
+	public void getRoomInfo() {
 		roomInfoStr = "7";
 		roomInfoStr += "\t";
 		roomInfoStr += tmpmyId;
@@ -72,28 +110,21 @@ public class WaitingActivity extends Activity {
 	public void onBackPressed(){
 		AlertDialog.Builder ab = null;
 		ab = new AlertDialog.Builder(WaitingActivity.this);
-		ab.setMessage("방에서 퇴장하시겠습니까?");
+		ab.setMessage("로그아웃 하시겠습니까?");
 		ab.setNegativeButton("취소", null);
 		ab.setPositiveButton("나가기", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
-				if (config.isNetworkAvailable()) {
 					// 6 + tap + admin + tap + myId
-					String quitStr = "6" + "\t" + tmpadminId + "\t" + tmpmyId;
-					messageObj.setActivityStr(quitStr);
-					while (true) {
-						if (messageObj.isThreadChange()) {
-							quitStr = messageObj.getThreadStr();
-							break;
-						}
-					}
-					if (quitStr == "6")
-						finish();
-				} else 
-					Toast.makeText(WaitingActivity.this, "네트워크를 사용할 수 없습니다.",
-							Toast.LENGTH_LONG).show();
+				messageObj.setActivityStr("9");
+				System.out.println("quit message has been send");
+				Intent intent = new Intent(WaitingActivity.this,
+						LoginActivity.class);
+				startActivity(intent);
+				overridePendingTransition(R.anim.left_in, R.anim.left_out);
+				finish();
 			}
 		});
-		ab.setTitle("알림");
+		ab.setTitle("알림 메세지");
 		ab.show();
 	}
 }

@@ -32,6 +32,7 @@ public class MainMenuActivity extends Activity {
 				intent.putExtra("message", messageObj);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
+				finish();
 			}
 		});
 
@@ -42,6 +43,7 @@ public class MainMenuActivity extends Activity {
 				intent.putExtra("message", messageObj);
 				startActivity(intent);
 				overridePendingTransition(R.anim.left_in, R.anim.left_out);
+				finish();
 			}
 		});
 	}

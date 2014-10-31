@@ -101,6 +101,7 @@ public class CreateRoomActivity extends Activity {
 						while (true) {
 							if (messageObj.isThreadChange()) {
 								roomInfoStr = messageObj.getThreadStr();
+								System.out.println("방만들기 요청 후 서버로부터 받은 메세지 "+roomInfoStr);
 								if (roomInfoStr.equals("3")) {
 									Intent intent = new Intent(
 											CreateRoomActivity.this,

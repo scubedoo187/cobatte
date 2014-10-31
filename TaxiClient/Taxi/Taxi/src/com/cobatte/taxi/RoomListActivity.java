@@ -86,6 +86,7 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 								intent.putExtra("message", messageObj);
 								startActivity(intent);
 								overridePendingTransition(R.anim.left_in, R.anim.left_out);
+								finish();
 								break;
 							} else if (thdStr.equals("full")) {
 								Toast.makeText(getApplicationContext(), "πÊ¿Ã ∞°µÊ √°Ω¿¥œ¥Ÿ.",
