@@ -116,6 +116,14 @@ public class Server{
 		            			isWriter.flush();
 		            			break;
 		            		case 6 :
+		            			db.leaveRoom(parameter[0], parameter[1]);
+		            			isWriter.println("6");
+		            			isWriter.flush();
+		            			break;
+		            		case 7 :
+		            			result = db.roominfo(parameter[0]);
+		            			isWriter.println(result);
+		            			isWriter.flush();
 		            			break;
 		            		case 9 : // 종료 
 		            			isWriter.println("quit"); // quit 값 전송

@@ -137,7 +137,7 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
-	public String selectUserInRoom(String admin, String id) {
+	public String emptyRoom(String admin, String id) {
 		try {
 			isResultSet = isStatement.executeQuery("select user1, user2, user3"
 					+ " from RoomInfo where admin=\"" + admin + "\"");
@@ -165,7 +165,7 @@ public class LinkDatabase {
 	}
 	
 	public String enterARoom(String admin, String id) {
-		String isEmpty = selectUserInRoom(admin, id);
+		String isEmpty = emptyRoom(admin, id);
 		isResultValue = "5";
 		
 		try {
@@ -190,9 +190,80 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
-	public String roominfo() {
-		//방 정보
-		return "k";
+	public String roominfo(String id) {
+		try {
+			isResultSet = isStatement.executeQuery("select * from roominfo "
+					+ "where admin=\"" + id + "\" or user1=\"" + id 
+					+ "\" or user2=\"" + id + "\" or user3=\"" + id + "\"");
+			
+			if (isResultSet.next()) {
+				isResultValue = isResultSet.getString("admin") + "\t";
+				isResultValue += isResultSet.getString("user1") + "\t";
+				isResultValue += isResultSet.getString("user2") + "\t";
+				isResultValue += isResultSet.getString("user3") + "\t";
+				isResultValue += isResultSet.getString("roomname") + "\t";
+				isResultValue += isResultSet.getString("place") + "\t";
+				isResultValue += isResultSet.getString("hour") + "\t";
+				isResultValue += isResultSet.getString("minute");
+			}else
+				isResultValue = "방이 존재하지 않습니다.";
+		}
+		
+		catch (Exception e) {
+			log.error("roominfo Error" + e);
+		}
+		
+		return isResultValue;
+	}
+	
+	public void leaveRoom(String admin, String id) {
+		String user = findUser(id);
+		
+		try {
+			if (user.toString().equals(admin)) {
+				isStatement.executeUpdate("delete from roominfo where admin=\"" + id + "\"");
+			}else if (user.toString().equals("user1")){
+				isStatement.executeUpdate("update roominfo set user1=\"" + null + "\""
+						+ " where user1=\"" + id + "\"");
+			}else if (user.toString().equals("user2")){
+				isStatement.executeUpdate("update roominfo set user2=\"" + null + "\""
+						+ " where user2=\"" + id + "\"");
+			}else if (user.toString().equals("user3")){
+				isStatement.executeUpdate("update roominfo set user3=\"" + null + "\""
+						+ " where user3=\"" + id + "\"");
+			}
+			
+		}
+		
+		catch (Exception e) {
+			log.error("leaveRoom Error" + e);
+		}
+		
+	}
+	
+	public String findUser(String id) {
+		try {
+			isResultSet = isStatement.executeQuery("select admin, user1, user2, user3 "
+					+ "from roominfo "
+					+ "where admin=\"" + id + "\" or user1=\"" + id 
+					+ "\" or user2=\"" + id + "\" or user3=\"" + id + "\"");
+			
+			if (!isResultSet.getString("admin").toString().equals(id)) {
+				isResultValue = "admin";
+			}else if (!isResultSet.getString("user1").toString().equals(id)) {
+				isResultValue = "user1";
+			}else if (!isResultSet.getString("user2").toString().equals(id)) {
+				isResultValue = "user2";
+			}else if (!isResultSet.getString("user3").toString().equals(id)) {
+				isResultValue = "user3";
+			}
+		}
+		
+		catch (Exception e) {
+			log.error("findUser Error" + e);
+		}
+		
+		return isResultValue;
 	}
 	
 	public void close() {
