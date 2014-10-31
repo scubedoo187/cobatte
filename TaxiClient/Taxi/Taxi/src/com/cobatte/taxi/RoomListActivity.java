@@ -94,10 +94,8 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 							} else {
 								Toast.makeText(getApplicationContext(), "알 수 없는 오류",
 										Toast.LENGTH_LONG).show();
+								break;
 							}
-						} else {
-							Toast.makeText(getApplicationContext(), "네트워크를 사용할 수 없습니다.",
-									Toast.LENGTH_LONG).show();
 						}
 					}
 				}
