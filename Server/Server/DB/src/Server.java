@@ -100,9 +100,9 @@ public class Server{
 		            			isWriter.flush(); // 버퍼비워주고
 		            			break;
 		            		case 3 :
-		            			db.createRoom(parameter[0], parameter[1], parameter[2],
-		            					Integer.parseInt(parameter[3]), Integer.parseInt(parameter[4]));
-		            			isWriter.println("3");
+		            			result = db.createRoom(parameter[0], parameter[1], parameter[2],
+		            						parameter[3], parameter[4]);
+		            			isWriter.println(result);
 		            			isWriter.flush();
 		            			break;
 		            		case 4 :

@@ -1,150 +1,126 @@
-[2014-10-31 00:01:32] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:15:24] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:18:04] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:19:37] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:19:37] [INFO ] Server.java, Server.startServer(Server.java:34)       - 121.163.245.5 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 00:19:37] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 00:19:37] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	rwe	111 
-[2014-10-31 00:19:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 00:19:45] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 00:19:49] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 00:19:49] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 121.163.245.5Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 00:19:49] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 00:22:04] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:22:04] [FATAL] Server.java, Server.startServer(Server.java:25)       - ½Ã¹ß 
-[2014-10-31 00:22:04] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:22:04] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:22:04] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:22:06] [INFO ] Server.java, Server.startServer(Server.java:31)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:22:06] [INFO ] Server.java, Server.startServer(Server.java:38)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 00:22:06] [INFO ] Server.java, Server.startServer(Server.java:39)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 00:22:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:77)   - 0	Å×½ºÆ®	321 
-[2014-10-31 00:22:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:77)   - 4 
-[2014-10-31 00:22:14] [INFO ] Server.java, Server$User_Thread.run(Server.java:77)   - 4 
-[2014-10-31 00:22:18] [FATAL] Server.java, Server$User_Thread.run(Server.java:139)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 00:22:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:160)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 00:22:18] [INFO ] Server.java, Server$User_Thread.run(Server.java:161)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 00:23:50] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:23:50] [FATAL] Server.java, Server.startServer(Server.java:25)       - ½Ã¹ß 
-[2014-10-31 00:23:50] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:23:50] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:23:50] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:23:53] [INFO ] Server.java, Server.startServer(Server.java:31)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:23:53] [INFO ] Server.java, Server.startServer(Server.java:38)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 00:23:53] [INFO ] Server.java, Server.startServer(Server.java:39)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 00:23:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:77)   - 0	test3	322 
-[2014-10-31 00:23:53] [FATAL] Server.java, Server$User_Thread.run(Server.java:139)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 00:23:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:160)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 00:23:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:161)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 00:25:53] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:25:53] [FATAL] Server.java, Server.startServer(Server.java:25)       - ½Ã¹ß 
-[2014-10-31 00:25:53] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:25:53] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:25:53] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:28:49] [ERROR] Server.java, Server.startServer(Server.java:43)       - ¼­¹ö ½ÇÇà ½ÇÆĞ 
-[2014-10-31 00:28:51] [ERROR] Server.java, Server.startServer(Server.java:43)       - ¼­¹ö ½ÇÇà ½ÇÆĞ 
-[2014-10-31 00:34:13] [ERROR] Server.java, Server.startServer(Server.java:43)       - ¼­¹ö ½ÇÇà ½ÇÆĞ 
-[2014-10-31 00:35:18] [ERROR] Server.java, Server.startServer(Server.java:43)       - ¼­¹ö ½ÇÇà ½ÇÆĞ 
-[2014-10-31 00:36:52] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:36:52] [FATAL] Server.java, Server.startServer(Server.java:25)       - ½Ã¹ß 
-[2014-10-31 00:36:52] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:36:52] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:36:52] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:37:27] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:37:27] [FATAL] Server.java, Server.startServer(Server.java:25)       - [1;31m½Ã¹ß 
-[2014-10-31 00:37:27] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:37:27] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:37:27] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:38:17] [ERROR] Server.java, Server.startServer(Server.java:43)       - ¼­¹ö ½ÇÇà ½ÇÆĞ 
-[2014-10-31 00:38:46] [INFO ] Server.java, Server.startServer(Server.java:24)       - [0;32m¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:38:46] [FATAL] Server.java, Server.startServer(Server.java:25)       - [1;31m½Ã¹ß 
-[2014-10-31 00:38:46] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:38:46] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:38:46] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:41:47] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:41:47] [FATAL] Server.java, Server.startServer(Server.java:25)       - ¹ß 
-[2014-10-31 00:41:47] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:41:47] [DEBUG] Server.java, Server.startServer(Server.java:27)       - ¹¹ 
-[2014-10-31 00:41:47] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 00:42:35] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 00:42:35] [FATAL] Server.java, Server.startServer(Server.java:25)       - ¹ß 
-[2014-10-31 00:42:35] [ERROR] Server.java, Server.startServer(Server.java:26)       - »ö¹Ù²¸¶ó 
-[2014-10-31 00:42:35] [DEBUG] Server.java, Server.startServer(Server.java:27)       - [0;36m¹¹ 
-[2014-10-31 00:42:35] [WARN ] Server.java, Server.startServer(Server.java:28)       - d 
-[2014-10-31 09:59:36] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 10:13:12] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:01:33] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:01:34] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:01:34] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 16:01:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	¤Á¤Ã	ss. 
-[2014-10-31 16:01:36] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 16:01:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:01:36] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 1	¾Æ¾Æ 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - quit 
-[2014-10-31 16:02:15] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:02:15] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 16:02:21] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:02:21] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:02:21] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 16:02:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 2	¾Æ¾Æ	111 
-[2014-10-31 16:02:22] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 16:02:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:02:22] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 16:02:32] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:02:32] [INFO ] Server.java, Server.startServer(Server.java:34)       - 1.216.30.76 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:02:32] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 16:02:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	¾Æ¾Æ	111 
-[2014-10-31 16:02:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:42] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:44] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:45] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:45] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 16:02:47] [FATAL] Server.java, Server$User_Thread.run(Server.java:135)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 16:02:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:156)  - 1.216.30.76Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 16:02:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:157)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 16:49:56] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:54:31] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 16:55:31] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:11:50] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:11:50] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 17:11:50] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 17:11:50] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
-[2014-10-31 17:11:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 17:12:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	joy567	Å×½ºÆ® 
-[2014-10-31 17:12:08] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	Å×½ºÆ® 
-[2014-10-31 17:12:08] [ERROR] LinkDatabase.java, LinkDatabase.roominfo(LinkDatabase.java:210) - roominfo Errorcom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Å×½ºÆ®' at line 1 
-[2014-10-31 17:13:06] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:16:01] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:16:01] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 17:16:01] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 17:16:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
-[2014-10-31 17:16:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 17:16:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	joy567	Å×½ºÆ® 
-[2014-10-31 17:16:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	Å×½ºÆ® 
-[2014-10-31 17:16:06] [ERROR] LinkDatabase.java, LinkDatabase.roominfo(LinkDatabase.java:213) - roominfo Errorcom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Å×½ºÆ®' at line 1 
-[2014-10-31 17:18:06] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
-[2014-10-31 17:18:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 17:18:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
-[2014-10-31 17:18:38] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:18:38] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 17:18:38] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 17:18:38] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
-[2014-10-31 17:18:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 17:18:45] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	test3	Å×½ºÆ® 
-[2014-10-31 17:18:46] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	Å×½ºÆ® 
-[2014-10-31 17:18:46] [ERROR] LinkDatabase.java, LinkDatabase.roominfo(LinkDatabase.java:213) - roominfo Errorcom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Å×½ºÆ®' at line 1 
-[2014-10-31 17:20:36] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:21:48] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
-[2014-10-31 17:21:48] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
-[2014-10-31 17:21:48] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
-[2014-10-31 17:21:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
-[2014-10-31 17:21:51] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
-[2014-10-31 17:22:09] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	test3	Å×½ºÆ® 
-[2014-10-31 17:22:10] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	Å×½ºÆ® 
+[2014-11-01 00:00:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	temp1	¼ºÈ£°ü °¡½ÇºĞ	ÃáÃµ¿ª ÅÃ½ÃÁ¤·ùÀå	 8	20 
+[2014-11-01 00:00:16] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:00:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:00:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:01:08] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:01:08] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:01:08] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:01:08] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
+[2014-11-01 00:01:13] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:03:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 9 
+[2014-11-01 00:03:56] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:03:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:03:56] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:04:02] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:04:02] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:04:02] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:04:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
+[2014-11-01 00:04:24] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	Å×½ºÆ®	Å×½ºÆ® ¹æÀÔ´Ï´Ù.	²Ş³ª¶ó	10	11 
+[2014-11-01 00:04:24] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	Å×½ºÆ® 
+[2014-11-01 00:06:17] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:06:17] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:06:17] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 2 
+[2014-11-01 00:06:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	temp	qwer 
+[2014-11-01 00:07:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:07:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	Å×½ºÆ®	temp 
+[2014-11-01 00:07:07] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	temp 
+[2014-11-01 00:08:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 6	Å×½ºÆ®	temp 
+[2014-11-01 00:08:06] [ERROR] LinkDatabase.java, LinkDatabase.findUser(LinkDatabase.java:263) - findUser Errorjava.sql.SQLException: Before start of result set 
+[2014-11-01 00:08:12] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 6	Å×½ºÆ®	temp 
+[2014-11-01 00:08:12] [ERROR] LinkDatabase.java, LinkDatabase.findUser(LinkDatabase.java:263) - findUser Errorjava.sql.SQLException: Before start of result set 
+[2014-11-01 00:08:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 6	Å×½ºÆ®	temp 
+[2014-11-01 00:08:25] [ERROR] LinkDatabase.java, LinkDatabase.findUser(LinkDatabase.java:263) - findUser Errorjava.sql.SQLException: Before start of result set 
+[2014-11-01 00:08:27] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 6	Å×½ºÆ®	temp 
+[2014-11-01 00:08:27] [ERROR] LinkDatabase.java, LinkDatabase.findUser(LinkDatabase.java:263) - findUser Errorjava.sql.SQLException: Before start of result set 
+[2014-11-01 00:11:57] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:13:02] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:13:02] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:13:02] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:13:02] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
+[2014-11-01 00:13:17] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:13:17] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:13:17] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 2 
+[2014-11-01 00:13:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	temp	qwer 
+[2014-11-01 00:13:21] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:13:26] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:13:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	temp	ÇØ¼º¾Æ	²Ş³ª¶ó	 3	13 
+[2014-11-01 00:13:48] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:13:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:13:48] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 1 
+[2014-11-01 00:14:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	Å×½ºÆ®	ÇØ¼º¾Æ	²Ş³ª¶ó	 5	14 
+[2014-11-01 00:14:06] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:14:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:14:06] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:14:39] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:14:39] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:14:39] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:14:39] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	temp1	qwer 
+[2014-11-01 00:14:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	temp1	ÇØ¼ºÀÌ	²Ş³ª¶ó	 4	14 
+[2014-11-01 00:14:52] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:14:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:14:52] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:16:41] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:16:41] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:16:41] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:16:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	temp1	qwer 
+[2014-11-01 00:16:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	temp1	again	²Ş³ª¶ó	 6	16 
+[2014-11-01 00:16:53] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:16:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:16:53] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:17:16] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:17:16] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:17:16] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:17:16] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	test2	321 
+[2014-11-01 00:17:17] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:23] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:24] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:24] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:25] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:33] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:17:35] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 00:18:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	test2	temp2 ÀÇ ¹æ ÇÑ¸²´ë	ÃáÃµ¿ª	 4	18 
+[2014-11-01 00:18:05] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:18:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:18:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:39:44] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:41:41] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:41:41] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:41:41] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:41:41] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
+[2014-11-01 00:43:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	Å×½ºÆ®	Á¹¸®´Ù	ÇØ¼ºÀÌ	 3	43 
+[2014-11-01 00:43:03] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:43:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:43:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:46:19] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:46:19] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:46:19] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:46:19] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	temp1	qwer 
+[2014-11-01 00:46:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	temp1	Á¹·Á	²Ş³ª¶ó	 8	46 
+[2014-11-01 00:46:31] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:46:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:46:31] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 00:49:47] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 00:49:47] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:49:47] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 00:49:47] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
+[2014-11-01 00:50:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	Å×½ºÆ®	Á¹·Á	²Ş³ª¶ó	22	 0 
+[2014-11-01 00:50:05] [FATAL] Server.java, Server$User_Thread.run(Server.java:143)  - Å¬¶óÀÌ¾ğÆ® ¿¬°á ½ÇÆĞ 
+[2014-11-01 00:50:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:164)  - 218.48.74.118Á¾·áÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 00:50:05] [INFO ] Server.java, Server$User_Thread.run(Server.java:165)  - ÇöÀç Å¬¶óÀÌ¾ğÆ® ¼ö: 0 
+[2014-11-01 01:00:00] [INFO ] Server.java, Server.startServer(Server.java:24)       - ¼­¹ö°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 01:00:32] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 01:00:32] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 01:00:32] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 1 
+[2014-11-01 01:00:32] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	Å×½ºÆ®	321 
+[2014-11-01 01:00:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 3	Å×½ºÆ®	Á¹·Á	²Ş³ª¶ó	 9	 8 
+[2014-11-01 01:00:43] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	Å×½ºÆ® 
+[2014-11-01 01:02:03] [INFO ] Server.java, Server.startServer(Server.java:27)       - Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áµÇ¾ú½À´Ï´Ù. 
+[2014-11-01 01:02:03] [INFO ] Server.java, Server.startServer(Server.java:34)       - 218.48.74.118 ´ÔÀÌ Á¢¼ÓÇÏ¼Ë½À´Ï´Ù. 
+[2014-11-01 01:02:03] [INFO ] Server.java, Server.startServer(Server.java:35)       - ÇöÀç Á¢¼ÓÀÚ ¼ö: 2 
+[2014-11-01 01:02:03] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 0	temp1	qwer 
+[2014-11-01 01:02:04] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 4 
+[2014-11-01 01:02:08] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 5	Å×½ºÆ®	temp1 
+[2014-11-01 01:02:08] [INFO ] Server.java, Server$User_Thread.run(Server.java:73)   - 7	temp1 

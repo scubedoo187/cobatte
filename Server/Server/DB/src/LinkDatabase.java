@@ -32,7 +32,9 @@ public class LinkDatabase {
 		}
 	}
 
-	public void signup(String Name, String Password) {
+	public String signup(String Name, String Password) {
+		isResultValue = "2";
+		
 		try {
 			isStatement.executeUpdate("insert into UserInfo values('"+Name+"', '"+Password+"')");
 		}
@@ -40,6 +42,8 @@ public class LinkDatabase {
 		catch(Exception e) {
 			log.error("Insert Error " + e);
 		}
+		
+		return isResultValue;
 	}
 	
 	public String login(String Name, String Password) {
@@ -91,15 +95,19 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
-	public void createRoom(String admin, String roomName, String place, int hour, int minute) {
+	public String createRoom(String admin, String roomName, String place, String hour, String minute) {
+		isResultValue = "3";
+		
 		try {
-			isStatement.executeUpdate("insert into RoomInfo(admin, roomname, place, minute, hour) "
-					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"', "+minute+", "+hour+")");
+			isStatement.executeUpdate("insert into roominfo(admin, roomname, place, hour, minute) "
+					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"' ,'"+hour+"' ,'"+minute+"')");
 		}
 		
 		catch(Exception e) {
 			log.error("RoomCreate Error " + e);
 		}
+		
+		return isResultValue;
 	}
 	
 	public void deleteRoom() {
@@ -191,6 +199,7 @@ public class LinkDatabase {
 	}
 	
 	public String roominfo(String id) {
+		isResultValue = "7";
 		try {
 			isResultSet = isStatement.executeQuery("select * from roominfo "
 					+ "where admin=\"" + id + "\" or user1=\"" + id 
@@ -248,14 +257,16 @@ public class LinkDatabase {
 					+ "where admin=\"" + id + "\" or user1=\"" + id 
 					+ "\" or user2=\"" + id + "\" or user3=\"" + id + "\"");
 			
-			if (!isResultSet.getString("admin").toString().equals(id)) {
-				isResultValue = "admin";
-			}else if (!isResultSet.getString("user1").toString().equals(id)) {
-				isResultValue = "user1";
-			}else if (!isResultSet.getString("user2").toString().equals(id)) {
-				isResultValue = "user2";
-			}else if (!isResultSet.getString("user3").toString().equals(id)) {
-				isResultValue = "user3";
+			if (isResultSet.next()) {
+				if (!isResultSet.getString("admin").toString().equals(id)) {
+					isResultValue = "admin";
+				}else if (!isResultSet.getString("user1").toString().equals(id)) {
+					isResultValue = "user1";
+				}else if (!isResultSet.getString("user2").toString().equals(id)) {
+					isResultValue = "user2";
+				}else if (!isResultSet.getString("user3").toString().equals(id)) {
+					isResultValue = "user3";
+				}
 			}
 		}
 		
