@@ -15,49 +15,61 @@ import org.apache.log4j.Logger;
 public class Server{
 	static Logger log = Logger.getLogger(Server.class.getName());
 	private ServerSocket  isServerSocket;
-    Vector isVector = new Vector(); //  소켓을  관리하는  벡터
+	final int SERVER_LOGIN = 0;
+	final int SERVER_IDCHECK = 1;
+	final int SERVER_SINGUP = 2;
+	final int SERVER_CREATEROOM = 3;
+	final int SERVER_ROOMLIST = 4;
+	final int SERVER_ENTERROOM = 5;
+	final int SERVER_LEAVEROOM = 6;
+	final int SERVER_ROOMINFO = 7;
+	final int SERVER_QUIT = 9;
+	final int SERVER_PORTNUMBER = 13080;
+    Vector isVector = new Vector();
 
-    void startServer(){
-        try{
-        	isServerSocket = new ServerSocket(13080);
+    void startServer() {
+        try {
+        	isServerSocket = new ServerSocket(SERVER_PORTNUMBER);
 
         	log.info("서버가 실행되었습니다.");
-            while(true){
-                Socket socket=isServerSocket.accept();
+        	
+            while (true) {
+                Socket socket = isServerSocket.accept();
                 log.info("클라이언트와 연결되었습니다.");
 
-                User_Thread pt = new User_Thread(socket); // 클라이언트와 통신하는 스레드를 생성하고 실행시킨다
-            	isVector.add(socket); // 소켓 관리자 리스트에 소켓을 추가한다.
+                UserThread pt = new UserThread(socket);
+            	isVector.add(socket);
             	
             	pt.start();                 
-                InetAddress inetaddr = socket.getInetAddress(); // 접속자의 IP를 알아낸다
-                log.info(inetaddr.getHostAddress() + " 님이 접속하셧습니다."); // IP찍어쥬공
+                InetAddress inetaddr = socket.getInetAddress();
+                log.info(inetaddr.getHostAddress() + " 님이 접속하셧습니다.");
                 log.info("현재 접속자 수: " + isVector.size());
             }
-        }        
-        catch(Exception  e){
+        }
+        
+        catch (Exception  e) {
             log.error("서버 실행 실패");
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         LinkDatabase isLinkDatabase = new LinkDatabase();
         Server server = new Server();
-        server.startServer(); // 서버를 실행한다.
+        server.startServer();
         isLinkDatabase.close();
     }
     
-    class User_Thread extends Thread{
-        Socket isSocket; // 소켓의 레퍼런스
+    class UserThread extends Thread {
+        Socket isSocket;
         private BufferedReader isReader;
         private PrintWriter isWriter;
         
-        User_Thread(Socket socket) {
+        UserThread(Socket socket) {
             this.isSocket=socket;
         }
 
-        public void run(){
-            try{
+        public void run() {
+            try {
             	LinkDatabase db = new LinkDatabase();
                 OutputStream out = isSocket.getOutputStream();
                 InputStream in = isSocket.getInputStream();
@@ -66,68 +78,86 @@ public class Server{
                 isWriter = new PrintWriter(new OutputStreamWriter(out, "utf-8"));
                 String msg = null;
                 
-                while(true){
+                while (true) {
 	                msg = isReader.readLine();
-	                if(!msg.toString().equals("")){
+	                
+	                if (!msg.toString().equals("")) {
 		                StringTokenizer tok = new StringTokenizer(msg, "\t");
 		                log.info(msg);
 		                
-		                int header = 0; // 일련번호
-		                int i = 0; //우선 가장앞에 있는 헤더를 따로 int형으로 저장
-		                String result = null; // 리턴값
+		                int header = 0;
+		                int i = 0;
+		                String result = null;
 		                String parameter[] = new String[5];
-		                header = Integer.parseInt(tok.nextToken()); // 앞으 헤더부분을 int형으로 변환
+		                header = Integer.parseInt(tok.nextToken());
 		                
-		                while(tok.hasMoreTokens())
+		                while (tok.hasMoreTokens())
 		                	parameter[i++] = tok.nextToken();
 		                
-		            	switch(header){
-		            		case 0 : // 헤더가 0일때 로그인 시도
-		             			result = db.login(parameter[0], parameter[1]); // return 값 0 or -1
-		             			isWriter.println(result); // 클라에 결과값 쏴주고
-		            			isWriter.flush(); // 버퍼 비워주고
+		            	switch (header) {
+		            		case SERVER_LOGIN :
+		             			result = db.login(parameter[0], parameter[1]);
+		             			if (result.equals("0")) {
+		             				result = db.roominfo(parameter[0]);
+		             				if (result.equals("0")) {
+			             				isWriter.println(result);
+				            			isWriter.flush();
+		             				}else {
+		             					isWriter.println("exist");
+				            			isWriter.flush();
+		             				}
+		             			}else {
+			             			isWriter.println(result);
+			            			isWriter.flush();
+		             			}
 		            			break;
 		            			
-		            		case 1 : // 헤더가 1일때 id 중복체크
-		            			result = db.checkOverlapId(parameter[0]); // return값 1 or -1
-		            			isWriter.println(result); // 클라에 결과값 쏴주고
-		            			isWriter.flush(); // 버퍼비워주고
+		            		case SERVER_IDCHECK :
+		            			result = db.checkOverlapId(parameter[0]);
+		            			isWriter.println(result);
+		            			isWriter.flush();
 		            			break;
 		  	            			
-		            		case 2 : // 헤더가 2일때 회원가입 시도
-		            			db.signup(parameter[0], parameter[1]); // 이름, 패스워드를 DB에 저장
-		            			isWriter.println("quit"); // 클라에 quit값 쏴주고
-		            			isWriter.flush(); // 버퍼비워주고
+		            		case SERVER_SINGUP :
+		            			db.signup(parameter[0], parameter[1]);
+		            			isWriter.println("quit");
+		            			isWriter.flush();
 		            			break;
-		            		case 3 :
+		            			
+		            		case SERVER_CREATEROOM :
 		            			result = db.createRoom(parameter[0], parameter[1], parameter[2],
 		            						parameter[3], parameter[4]);
 		            			isWriter.println(result);
 		            			isWriter.flush();
 		            			break;
-		            		case 4 :
+		            			
+		            		case SERVER_ROOMLIST :
 		            			result = db.roomList();
 		            			isWriter.println(result);
 		            			isWriter.flush();
 		            			break;
-		            		case 5 :
+		            			
+		            		case SERVER_ENTERROOM :
 		            			result = db.enterARoom(parameter[0], parameter[1]);
 		            			isWriter.println(result);
 		            			isWriter.flush();
 		            			break;
-		            		case 6 :
+		            			
+		            		case SERVER_LEAVEROOM :
 		            			db.leaveRoom(parameter[0], parameter[1]);
 		            			isWriter.println("6");
 		            			isWriter.flush();
 		            			break;
-		            		case 7 :
+		            			
+		            		case SERVER_ROOMINFO :
 		            			result = db.roominfo(parameter[0]);
 		            			isWriter.println(result);
 		            			isWriter.flush();
 		            			break;
-		            		case 9 : // 종료 
-		            			isWriter.println("quit"); // quit 값 전송
-		            			isWriter.flush();	// 버퍼 비워주고
+		            			
+		            		case SERVER_QUIT :
+		            			isWriter.println("quit");
+		            			isWriter.flush();
 		            			break;
 		            			
 		        			default :
@@ -139,32 +169,32 @@ public class Server{
                 }
             }
             
-            catch(Exception e){
+            catch (Exception e) {
             	log.fatal("클라이언트 연결 실패");
             }
             
-            finally{
-                try{
+            finally {
+            	try {
                 	InetAddress inetaddr = isSocket.getInetAddress();
                     isVector.remove(isSocket); // 소켓 관리자 리스트에서 소켓을 제거한다.
                     
-                    if(isReader!=null)  
+                    if (isReader != null)  
                     	isReader.close();
 
-                    if(isWriter!=null)  
+                    if (isWriter != null)  
                     	isWriter.close();
 
-                    if(isSocket!=null)  
+                    if (isSocket != null)  
                     	isSocket.close();
 
-                    isReader=null;  
-                    isWriter=null;  
-                    isSocket=null;
+                    isReader = null;  
+                    isWriter = null;  
+                    isSocket = null;
                     // 소켓과 IO Stream을 close
                     log.info(inetaddr.getHostAddress() + "종료하셧습니다.");
-                    log.info("현재 클라이언트 수: "+ isVector.size());
+                    log.info("현재 클라이언트 수: " + isVector.size());
                 }
-                catch(Exception e) {
+                catch (Exception e) {
                 	log.error("소켓 비정상 종료");
                 }
             }

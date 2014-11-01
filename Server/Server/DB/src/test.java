@@ -10,7 +10,8 @@ public class test
 		//db.createRoom("test", "ddd", "sss", 12, 30);
 		//db.enterARoom("ong21", "leesin");
 		//a = db.enterARoom("ong21", "taskkiller");
-		a = db.enterARoom("ong21", "bright");
+		//a = db.enterARoom("ong21", "bright");
+		db.leaveRoom("rwe", "rwe");
 		if(a == null)
 		System.out.println("ют╥б");
 		else

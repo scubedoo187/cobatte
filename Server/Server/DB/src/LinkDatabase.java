@@ -32,28 +32,29 @@ public class LinkDatabase {
 		}
 	}
 
-	public String signup(String Name, String Password) {
+	public String signup (String name, String password) {
 		isResultValue = "2";
 		
 		try {
-			isStatement.executeUpdate("insert into UserInfo values('"+Name+"', '"+Password+"')");
+			isStatement.executeUpdate("Insert into userInfo Values('"
+					+ name + "', '" + password + "')");
 		}
 		
-		catch(Exception e) {
+		catch (Exception e) {
 			log.error("Insert Error " + e);
 		}
 		
 		return isResultValue;
 	}
 	
-	public String login(String Name, String Password) {
+	public String login (String name, String password) {
 		try {
-			isResultSet = isStatement.executeQuery("select * from UserInfo");
-			boolean checklogin = false; // ºñ±³ÇÒ¶§ ¾µ²¨ÀÓ
+			isResultSet = isStatement.executeQuery("Select * From userInfo");
+			boolean checklogin = false;
 			
 			while (isResultSet.next()) {
-				if(Name.toString().equals(isResultSet.getString("id")) 
-						&& Password.toString().equals(isResultSet.getString("passwd")))
+				if (name.toString().equals(isResultSet.getString("id")) 
+						&& password.toString().equals(isResultSet.getString("passwd")))
 					checklogin = true; // ¸ÂÀ¸¸é true
 			}
 			
@@ -71,13 +72,13 @@ public class LinkDatabase {
 		return isResultValue;
 	}
 	
-	public String checkOverlapId(String Name) {
+	public String checkOverlapId(String name) {
 		try {
-			isResultSet = isStatement.executeQuery("select * from UserInfo");
+			isResultSet = isStatement.executeQuery("Select * From userInfo");
 			boolean alogin = false;
 			
 			while (isResultSet.next()) {
-				if(Name.toString().equals(isResultSet.getString("id")))
+				if (name.toString().equals(isResultSet.getString("id")))
 					alogin = true;
 			}
 			
@@ -99,24 +100,20 @@ public class LinkDatabase {
 		isResultValue = "3";
 		
 		try {
-			isStatement.executeUpdate("insert into roominfo(admin, roomname, place, hour, minute) "
-					+ "values('"+admin+"', '"+roomName+"' ,'"+place+"' ,'"+hour+"' ,'"+minute+"')");
+			isStatement.executeUpdate("Insert into roomInfo(admin, roomname, place, hour, minute) "
+					+ "Values('"+admin+"', '"+roomName+"' ,'"+place+"' ,'"+hour+"' ,'"+minute+"')");
 		}
 		
-		catch(Exception e) {
+		catch (Exception e) {
 			log.error("RoomCreate Error " + e);
 		}
 		
 		return isResultValue;
 	}
 	
-	public void deleteRoom() {
-		
-	}
-	
 	public String roomList() {
 		try {
-			isResultSet = isStatement.executeQuery("select * from RoomInfo");
+			isResultSet = isStatement.executeQuery("Select * From roomInfo");
 			isResultValue = "";
 			
 			while (isResultSet.next()) {
@@ -127,11 +124,11 @@ public class LinkDatabase {
 								+ isResultSet.getString("hour") + "\t"
 								+ isResultSet.getString("minute") + "\t";
 				
-				if(isResultSet.getString("user1") == null)
+				if (isResultSet.getString("user1") == null)
 					numberOfPeople++;
-				if(isResultSet.getString("user2") == null)
+				if (isResultSet.getString("user2") == null)
 					numberOfPeople++;
-				if(isResultSet.getString("user3") == null)
+				if (isResultSet.getString("user3") == null)
 					numberOfPeople++;
 				
 				isResultValue += String.valueOf(4-numberOfPeople) + "\t";
@@ -147,8 +144,8 @@ public class LinkDatabase {
 	
 	public String emptyRoom(String admin, String id) {
 		try {
-			isResultSet = isStatement.executeQuery("select user1, user2, user3"
-					+ " from RoomInfo where admin=\"" + admin + "\"");
+			isResultSet = isStatement.executeQuery("Select user1, user2, user3"
+					+ " From roomInfo Where admin=\"" + admin + "\"");
 			
 			while (isResultSet.next()) {
 				if (isResultSet.getString("user1") == null) {
@@ -178,14 +175,14 @@ public class LinkDatabase {
 		
 		try {
 			if (isEmpty.toString().equals("user1")) {
-				isStatement.executeUpdate("update roominfo set user1=\"" + id + "\""
-						+ " where admin=\"" + admin + "\"");
+				isStatement.executeUpdate("Update roomInfo Set user1=\"" + id + "\""
+						+ " Where admin=\"" + admin + "\"");
 			}else if (isEmpty.toString().equals("user2")) {
-				isStatement.executeUpdate("update roominfo set user2=\"" + id + "\""
-						+ " where admin=\"" + admin + "\"");
+				isStatement.executeUpdate("Update roomInfo Set user2=\"" + id + "\""
+						+ " Where admin=\"" + admin + "\"");
 			}else if (isEmpty.toString().equals("user3")) {
-				isStatement.executeUpdate("update roominfo set user3=\"" + id + "\""
-						+ " where admin=\"" + admin + "\"");
+				isStatement.executeUpdate("Update roominfo Set user3=\"" + id + "\""
+						+ " Where admin=\"" + admin + "\"");
 			}else if (isEmpty.toString().equals("full")) {
 				isResultValue = "full";
 			}
@@ -199,10 +196,9 @@ public class LinkDatabase {
 	}
 	
 	public String roominfo(String id) {
-		isResultValue = "7";
 		try {
-			isResultSet = isStatement.executeQuery("select * from roominfo "
-					+ "where admin=\"" + id + "\" or user1=\"" + id 
+			isResultSet = isStatement.executeQuery("Select * From roomInfo "
+					+ "Where admin=\"" + id + "\" or user1=\"" + id 
 					+ "\" or user2=\"" + id + "\" or user3=\"" + id + "\"");
 			
 			if (isResultSet.next()) {
@@ -215,7 +211,7 @@ public class LinkDatabase {
 				isResultValue += isResultSet.getString("hour") + "\t";
 				isResultValue += isResultSet.getString("minute");
 			}else
-				isResultValue = "¹æÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.";
+				isResultValue = "0";
 		}
 		
 		catch (Exception e) {
@@ -229,17 +225,17 @@ public class LinkDatabase {
 		String user = findUser(id);
 		
 		try {
-			if (user.toString().equals(admin)) {
-				isStatement.executeUpdate("delete from roominfo where admin=\"" + id + "\"");
+			if (user.toString().equals("admin")) {
+				isStatement.executeUpdate("Delete From roomInfo Where admin=\"" + id + "\"");
 			}else if (user.toString().equals("user1")){
-				isStatement.executeUpdate("update roominfo set user1=" + null
-						+ " where user1=\"" + id + "\"");
+				isStatement.executeUpdate("Update roomInfo Set user1=" + null
+						+ " Where user1=\"" + id + "\"");
 			}else if (user.toString().equals("user2")){
-				isStatement.executeUpdate("update roominfo set user2=" + null
-						+ " where user2=\"" + id + "\"");
+				isStatement.executeUpdate("Update roomInfo Set user2=" + null
+						+ " Where user2=\"" + id + "\"");
 			}else if (user.toString().equals("user3")){
-				isStatement.executeUpdate("update roominfo set user3=" + null
-						+ " where user3=\"" + id + "\"");
+				isStatement.executeUpdate("Update roomInfo Set user3=" + null
+						+ " Where user3=\"" + id + "\"");
 			}
 			
 		}
@@ -252,9 +248,9 @@ public class LinkDatabase {
 	
 	public String findUser(String id) {
 		try {
-			isResultSet = isStatement.executeQuery("select admin, user1, user2, user3 "
-					+ "from roominfo "
-					+ "where admin=\"" + id + "\" or user1=\"" + id 
+			isResultSet = isStatement.executeQuery("Select admin, user1, user2, user3 "
+					+ "From roomInfo "
+					+ "Where admin=\"" + id + "\" or user1=\"" + id 
 					+ "\" or user2=\"" + id + "\" or user3=\"" + id + "\"");
 			
 			if (isResultSet.next()) {
@@ -279,17 +275,17 @@ public class LinkDatabase {
 	
 	public void close() {
 		try {
-			if(isResultSet != null) // ResultSet °´Ã¼¸¦ ´Ý´Â´Ù.
+			if (isResultSet != null) // ResultSet °´Ã¼¸¦ ´Ý´Â´Ù.
 				isResultSet.close();       
 	      
-			if(isStatement != null) 
+			if (isStatement != null) 
 				isStatement.close();       // Statement °´Ã¼¸¦ ´Ý´Â´Ù.
 	      
-			if(isConnect != null) 
+			if (isConnect != null) 
 				isConnect.close(); // Connection °´Ã¼¸¦ ´Ý´Â´Ù.
 		}
 		
-		catch(Exception e) {
+		catch (Exception e) {
 			log.error("Close Error" + e);
 		}	
 	}
