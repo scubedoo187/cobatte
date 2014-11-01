@@ -73,6 +73,19 @@ public class LoginActivity extends Activity {
 											R.anim.left_out);
 									finish();
 									break;
+								} else if (idInfoStr.equals("exist")) {
+									messageObj.setId(idTmp);
+									Toast.makeText(getApplicationContext(),
+											"이전의 접속이 감지되어 참여중인 방으로 이동합니다.",
+											Toast.LENGTH_LONG).show();
+									Intent intent = new Intent(LoginActivity.this,
+											WaitingActivity.class);
+									intent.putExtra("message", messageObj);
+									startActivity(intent);
+									overridePendingTransition(R.anim.left_in,
+											R.anim.left_out);
+									finish();
+									break;
 								} else if (idInfoStr.equals("quit")) {
 									AlertDialog.Builder ab = null;
 									ab = new AlertDialog.Builder(

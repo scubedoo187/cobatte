@@ -139,4 +139,12 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 													"½Ã°¢ - " + hour[i] + ":" + min[i]);
 		}
 	}
+	
+	public void onBackPressed() {
+		Intent intent = new Intent(RoomListActivity.this, MainMenuActivity.class);
+		intent.putExtra("message", messageObj);
+		startActivity(intent);
+		overridePendingTransition(R.anim.left_in, R.anim.left_out);
+		finish();
+	}
 }

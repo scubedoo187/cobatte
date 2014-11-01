@@ -142,23 +142,26 @@
             android:layout_height="wrap_content">
             
             <LinearLayout 
+                android:weightSum="2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 
                 <Button 
+                    android:layout_weight="1"
                     android:id="@+id/usrInfoRefBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="새로고침"
-                    android:textSize="30dp"/>
+                    android:textSize="20dp"/>
                 
-                <Button 
+                <Button
+                    android:layout_weight="1" 
                     android:id="@+id/quitBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="방  퇴장"
-                    android:textSize="30dp"/>
+                    android:textSize="20dp"/>
             </LinearLayout>
         </TableRow>
         

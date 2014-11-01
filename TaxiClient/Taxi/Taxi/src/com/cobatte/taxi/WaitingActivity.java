@@ -4,6 +4,7 @@ import java.util.StringTokenizer;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,29 +57,29 @@ public class WaitingActivity extends Activity {
 		});
 		
 		quitBtn.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				String quitStr = null;
-				if (config.isNetworkAvailable()) {
-					quitStr = "6" + "\t" + tmpadminId + "\t" + tmpmyId;
-					messageObj.setActivityStr(quitStr);
-					while (true) {
-						if (messageObj.isThreadChange()) {
-							quitStr = messageObj.getThreadStr();
-							break;
-						}
-					}
-				} else
-					Toast.makeText(getApplicationContext(),
-							"네트워크에 연결할 수 없습니다.", Toast.LENGTH_LONG).show();
-				if (quitStr == "6") {
-					Intent intent = new Intent(WaitingActivity.this, MainMenuActivity.class);
-					intent.putExtra("message", messageObj);
-					startActivity(intent);
-					overridePendingTransition(R.anim.left_in, R.anim.left_out);
-					finish();
-				}
-			}
-		});
+	         public void onClick(View v) {
+	            String quitStr = null;
+	            if (config.isNetworkAvailable()) {
+	               quitStr = "6" + "\t" + tmpadminId + "\t" + tmpmyId;
+	               messageObj.setActivityStr(quitStr);
+	               while (true) {
+	                  if (messageObj.isThreadChange()) {
+	                     quitStr = messageObj.getThreadStr();
+	                     break;
+	                  }
+	               }
+	            } else
+	               Toast.makeText(getApplicationContext(),
+	                     "네트워크에 연결할 수 없습니다.", Toast.LENGTH_LONG).show();
+	            if (quitStr.equals("6")) {
+	               Intent intent = new Intent(WaitingActivity.this, MainMenuActivity.class);
+	               intent.putExtra("message", messageObj);
+	               startActivity(intent);
+	               overridePendingTransition(R.anim.left_in, R.anim.left_out);
+	               finish();
+	            }
+	         }
+	      });
 	}	
 
 	public void getRoomInfo() {
@@ -96,15 +97,32 @@ public class WaitingActivity extends Activity {
 			}
 		} 
 		
-		StringTokenizer roomInfos = new StringTokenizer(roomInfoStr, "\t");
-		adminId.setText(roomInfos.nextToken());
-		user1Id.setText(roomInfos.nextToken());
-		user2Id.setText(roomInfos.nextToken());
-		user3Id.setText(roomInfos.nextToken());
-		roomName.setText(roomInfos.nextToken());
-		meetPlace.setText(roomInfos.nextToken());
-		meetTime.setText(roomInfos.nextToken() + " : " + roomInfos.nextToken());
-		tmpadminId = adminId.getText().toString();
+		if (roomInfoStr.equals("0")) {
+			AlertDialog.Builder ab = null;
+			ab = new AlertDialog.Builder(WaitingActivity.this);
+			ab.setTitle("알림 메세지");
+			ab.setMessage("방장이 퇴장하여 방이 사라졌습니다.");
+			ab.setNegativeButton("확인", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					Intent intent = new Intent(WaitingActivity.this, MainMenuActivity.class);
+					intent.putExtra("message", messageObj);
+					startActivity(intent);
+					overridePendingTransition(R.anim.left_in, R.anim.left_out);
+					finish();
+				}
+			});
+			ab.show();
+		} else {
+			StringTokenizer roomInfos = new StringTokenizer(roomInfoStr, "\t");
+			adminId.setText(roomInfos.nextToken());
+			user1Id.setText(roomInfos.nextToken());
+			user2Id.setText(roomInfos.nextToken());
+			user3Id.setText(roomInfos.nextToken());
+			roomName.setText(roomInfos.nextToken());
+			meetPlace.setText(roomInfos.nextToken());
+			meetTime.setText(roomInfos.nextToken() + " : " + roomInfos.nextToken());
+			tmpadminId = adminId.getText().toString();
+		}
 	}
 	
 	public void onBackPressed(){
