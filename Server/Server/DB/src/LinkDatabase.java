@@ -232,13 +232,13 @@ public class LinkDatabase {
 			if (user.toString().equals(admin)) {
 				isStatement.executeUpdate("delete from roominfo where admin=\"" + id + "\"");
 			}else if (user.toString().equals("user1")){
-				isStatement.executeUpdate("update roominfo set user1=\"" + null + "\""
+				isStatement.executeUpdate("update roominfo set user1=" + null
 						+ " where user1=\"" + id + "\"");
 			}else if (user.toString().equals("user2")){
-				isStatement.executeUpdate("update roominfo set user2=\"" + null + "\""
+				isStatement.executeUpdate("update roominfo set user2=" + null
 						+ " where user2=\"" + id + "\"");
 			}else if (user.toString().equals("user3")){
-				isStatement.executeUpdate("update roominfo set user3=\"" + null + "\""
+				isStatement.executeUpdate("update roominfo set user3=" + null
 						+ " where user3=\"" + id + "\"");
 			}
 			
@@ -258,13 +258,13 @@ public class LinkDatabase {
 					+ "\" or user2=\"" + id + "\" or user3=\"" + id + "\"");
 			
 			if (isResultSet.next()) {
-				if (!isResultSet.getString("admin").toString().equals(id)) {
+				if (isResultSet.getString("admin").toString().equals(id)) {
 					isResultValue = "admin";
-				}else if (!isResultSet.getString("user1").toString().equals(id)) {
+				}else if (isResultSet.getString("user1").toString().equals(id)) {
 					isResultValue = "user1";
-				}else if (!isResultSet.getString("user2").toString().equals(id)) {
+				}else if (isResultSet.getString("user2").toString().equals(id)) {
 					isResultValue = "user2";
-				}else if (!isResultSet.getString("user3").toString().equals(id)) {
+				}else if (isResultSet.getString("user3").toString().equals(id)) {
 					isResultValue = "user3";
 				}
 			}

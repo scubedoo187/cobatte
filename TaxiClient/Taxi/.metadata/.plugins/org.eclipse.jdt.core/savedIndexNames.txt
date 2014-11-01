@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+C:\Users\¿µ±Õ\Desktop\Taxi\.metadata\.plugins\org.eclipse.jdt.core
-540796220.index
-4035649916.index
