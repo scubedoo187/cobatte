@@ -1,7 +1,6 @@
 package com.cobatte.taxi;
 
 import java.io.Serializable;
-
 /* taxi protocol
  * 로그인 시도 = 0
  * id중복체크 = 1
@@ -9,7 +8,6 @@ import java.io.Serializable;
  * 소켓종료 = 9 "quit"
  * protocol 구분 '\t'
  */
-
 public class MsgString implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private static String idValue;
