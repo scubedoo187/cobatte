@@ -68,19 +68,18 @@ public class CreateRoomActivity extends Activity {
 		});
 
 		createBtn.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-
-				if (rName.equals("") || pName.equals("")) {
-					Toast.makeText(getApplicationContext(),
-							"방 이름, 혹은 모임 장소를 모두 입력 해 주세요", Toast.LENGTH_LONG)
-							.show();
-				} else if (hourView.getText().toString().equals("시간을 선택하세요")) {
-					Toast.makeText(getApplicationContext(), "시간을 선택하세요",
-							Toast.LENGTH_LONG).show();
-				} else {
-					sendLoginMessage();
-				}
+		public void onClick(View v) {
+			if (roomName.getText().toString().equals("") || placeName.getText().toString().equals("")) {
+				Toast.makeText(getApplicationContext(),
+						"방 이름, 혹은 모임 장소를 모두 입력 해 주세요", Toast.LENGTH_LONG)
+						.show();
+			} else if (hourView.getText().toString().equals("시간을 선택하세요")) {
+				Toast.makeText(getApplicationContext(), "시간을 선택하세요",
+						Toast.LENGTH_LONG).show();
+			} else {
+				sendLoginMessage();
 			}
+		}	
 		});
 
 		backBtn.setOnClickListener(new View.OnClickListener() {
