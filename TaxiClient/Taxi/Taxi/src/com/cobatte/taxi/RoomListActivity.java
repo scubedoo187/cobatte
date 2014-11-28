@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 public class RoomListActivity extends Activity implements OnItemClickListener {
 	int index = 0;
+	public static final int MAXUSERS = 500;
 	ListView listView;
 	MsgString messageObj;
 	Button refreshBtn;
@@ -25,13 +26,8 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 	String roomInfoStr;
 	ArrayList<String> room = new ArrayList<String>();
 	ArrayAdapter<String> adt;
-	String admin[] = new String[500];
-	String roomName[] = new String[500];
-	String place[] = new String[500];
-	String hour[] = new String[500];
-	String min[] = new String[500];
-	String person[] = new String[500];
 	final Config config = new Config(this);
+	RoomInfo roominfo[] = new RoomInfo[MAXUSERS];
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,18 +53,18 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 		});
 	}
 	
-	public void onItemClick(AdapterView<?> parent, View view, int position,	long id) {
+	public void onItemClick(AdapterView<?> parent, View view, int pos,	long id) {
 		String roomInfoStr;
-		roomInfoStr = "방주인 : " + admin[position];
+		roomInfoStr = "방주인 : " + roominfo[pos].getAdmin();
 		roomInfoStr += "\n";
-		roomInfoStr += "모임장소 : " + place[position];
+		roomInfoStr += "모임장소 : " + roominfo[pos].getPlace();
 		roomInfoStr += "\n";
-		roomInfoStr += "모임시각 : " + hour[position] + " : " + min[position];
+		roomInfoStr += "모임시각 : " + roominfo[pos].getHour() + " : " + roominfo[pos].getMin();
 		roomInfoStr += "\n";
-		roomInfoStr += "인원 : " + person[position] + "/4";
+		roomInfoStr += "인원 : " + roominfo[pos].getPerson() + "/4";
 		
 		final String joinInfoStr;
-		joinInfoStr = "5" + "\t" + admin[position] + "\t" + messageObj.getId();
+		joinInfoStr = "5" + "\t" + roominfo[pos].getAdmin() + "\t" + messageObj.getId();
 				
 		AlertDialog.Builder ab = null;
 		ab = new AlertDialog.Builder(RoomListActivity.this);
@@ -125,18 +121,19 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 		StringTokenizer roomsInfo = new StringTokenizer(roomInfoStr, "\t" );
 		
 		while (roomsInfo.hasMoreTokens()) {
-			admin[index] = roomsInfo.nextToken();
-			roomName[index] = roomsInfo.nextToken();
-			place[index] = roomsInfo.nextToken();
-			hour[index] = roomsInfo.nextToken();
-			min[index] = roomsInfo.nextToken();
-			person[index] = roomsInfo.nextToken();
+			roominfo[index].setAdmin(roomsInfo.nextToken());
+			roominfo[index].setRoomname(roomsInfo.nextToken());
+			roominfo[index].setPlace(roomsInfo.nextToken());
+			roominfo[index].setHour(roomsInfo.nextToken());
+			roominfo[index].setMin(roomsInfo.nextToken());
+			roominfo[index].setPerson(roomsInfo.nextToken());
 			index++;
 		}
 		
 		for (int i = 0; i < index; i++) {
-			room.add("방 이름 - " + roomName[i] + "\n" + "모임 장소 - " + place[i] + "\n" + 
-													"시각 - " + hour[i] + ":" + min[i]);
+			room.add("방 이름 - " + roominfo[i].getRoomname() + "\n" + "모임 장소 - " + 
+								roominfo[i].getPlace() + "\n" + "시각 - " + 
+								roominfo[i].getHour() + ":" + roominfo[i].getMin());
 		}
 	}
 	
