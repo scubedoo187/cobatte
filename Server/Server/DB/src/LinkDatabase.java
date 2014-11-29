@@ -10,6 +10,9 @@ public class LinkDatabase {
 	Connection isConnect = null;
 	Statement isStatement = null;
 	ResultSet isResultSet = null;
+	final private String DB_URL = "jdbc:mysql://localhost:3306/Taxi";
+	final private String DB_ID = "root";
+	final private String DB_PASSWORD = "2550";
 	public String isResultValue; // return °ª
 	
 	public LinkDatabase() {
@@ -17,9 +20,9 @@ public class LinkDatabase {
 	}
 	
 	public void connect() {
-		String url = "jdbc:mysql://localhost:3306/Taxi";
-		String isDatabaseId = "root";
-		String isDatabasePassword = "2550";
+		String url = DB_URL;
+		String isDatabaseId = DB_ID;
+		String isDatabasePassword = DB_PASSWORD;
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
