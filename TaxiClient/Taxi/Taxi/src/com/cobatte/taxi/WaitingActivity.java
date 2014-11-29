@@ -123,6 +123,8 @@ public class WaitingActivity extends Activity {
 			meetTime.setText(roomInfos.nextToken() + " : " + roomInfos.nextToken());
 			tmpadminId = adminId.getText().toString();
 		}
+		
+		
 	}
 	
 	public void onBackPressed(){
