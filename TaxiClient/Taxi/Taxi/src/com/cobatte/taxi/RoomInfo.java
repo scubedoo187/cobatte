@@ -8,7 +8,14 @@ public class RoomInfo {
 	String min;
 	String person;
 	
-	public RoomInfo() {}	// default constructor
+	public RoomInfo() {
+		admin = null;
+		roomname = null;
+		place = null;
+		hour = null;
+		min = null;
+		person = null;
+	}	// default constructor
 	
 	public RoomInfo(String _admin, String _roomname, String _place,
 						String _hour, String _min, String _person) {

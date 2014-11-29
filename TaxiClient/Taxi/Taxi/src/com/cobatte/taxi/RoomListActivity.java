@@ -17,7 +17,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class RoomListActivity extends Activity implements OnItemClickListener {
-	int index = 0;
 	public static final int MAXUSERS = 500;
 	ListView listView;
 	MsgString messageObj;
@@ -36,6 +35,10 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 
 		Intent intent = getIntent();
 		messageObj = (MsgString) intent.getExtras().getSerializable("message");
+		
+		for (int i = 0; i < MAXUSERS; i++) {
+			roominfo[i] = new RoomInfo();
+		}
 		
 		adt = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, room);
 		listView = (ListView) findViewById(R.id.list);
@@ -104,6 +107,7 @@ public class RoomListActivity extends Activity implements OnItemClickListener {
 	}
 	
 	public void requestRoomList() {
+		int index = 0;
 		getroomInfo = "4";	
 		
 		if (config.isNetworkAvailable()) {

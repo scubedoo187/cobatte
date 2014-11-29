@@ -129,23 +129,7 @@ public class JoinActivity extends Activity {
 					else if ((byte) idTemp.charAt(i) >= NUMBER_Head
 							&& (byte) idTemp.charAt(i) < NUMBER_Tail) // 숫자 검증.
 						specialCharacter = false;
-					else if ((byte) idTemp.charAt(i) >= SPECIALCHAR1_Head
-							&& (byte) idTemp.charAt(i) < SPECIALCHAR1_Tail) {
-						specialCharacter = true;
-						break;
-					} else if ((byte) idTemp.charAt(i) >= SPECIALCHAR2_Head
-							&& (byte) idTemp.charAt(i) < SPECIALCHAR2_Tail) {
-						specialCharacter = true;
-						break;
-					} else if ((byte) idTemp.charAt(i) >= SPECIALCHAR3_Head
-							&& (byte) idTemp.charAt(i) < SPECIALCHAR3_Tail) {
-						specialCharacter = true;
-						break;
-					} else if ((byte) idTemp.charAt(i) >= SPECIALCHAR4_Head
-							&& (byte) idTemp.charAt(i) < SPECIALCHAR4_Tail) {
-						specialCharacter = true;
-						break;
-					} else {
+					else {
 						specialCharacter = true;
 						break;
 					}
