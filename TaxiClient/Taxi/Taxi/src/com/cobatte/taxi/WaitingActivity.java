@@ -124,7 +124,15 @@ public class WaitingActivity extends Activity {
 			tmpadminId = adminId.getText().toString();
 		}
 		
-		
+		if (user1Id.getText().toString().equals("null")) {
+			user1Id.setText(" ");
+		}
+		if (user2Id.getText().toString().equals("null")) {
+			user2Id.setText(" ");
+		}
+		if (user3Id.getText().toString().equals("null")) {
+			user3Id.setText(" ");
+		}
 	}
 	
 	public void onBackPressed(){
