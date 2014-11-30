@@ -39,14 +39,6 @@ public class JoinActivity extends Activity {
 	final int BIGALPHABET_Tail = 123;
 	final int NUMBER_Head = 48;
 	final int NUMBER_Tail = 58;
-	final int SPECIALCHAR1_Head = 33;
-	final int SPECIALCHAR1_Tail = 48;
-	final int SPECIALCHAR2_Head = 58;
-	final int SPECIALCHAR2_Tail = 65;
-	final int SPECIALCHAR3_Head = 91;
-	final int SPECIALCHAR3_Tail = 97;
-	final int SPECIALCHAR4_Head = 123;
-	final int SPECIALCHAR4_Tail = 127;
 	//Magic Number End
 	
 	protected void onCreate(Bundle savedInstanceState) {
